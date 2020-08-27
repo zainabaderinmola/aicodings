@@ -1,0 +1,1920 @@
+# aicodings
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Material Design Bootstrap</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&family=Nunito:wght@300&family=Playfair+Display&family=Slabo+27px&display=swap"
+        rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Astloch:wght@700&family=MuseoModerno&family=Righteous&display=swap" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.min.css" rel="stylesheet">
+    <style type="text/css">
+
+      html,
+      body,
+      header,
+      .carousel {
+        height: 100vh;
+      }
+
+      @media (max-width: 740px) {
+        html,
+        body,
+        header,
+        .carousel {
+          height: 100vh;
+        }
+      }
+
+      @media (min-width: 800px) and (max-width: 850px) {
+        html,
+        body,
+        header,
+        .carousel {
+          height: 100vh;
+        }
+      }
+
+      @media (min-width: 800px) and (max-width: 850px) {
+              .navbar:not(.top-nav-collapse) {
+                  background: #1C2331!important;
+              }
+          }
+          .logo{
+            padding: 0 10px;
+            
+          }
+          .logo .first{
+            background-color: white;
+            padding: 3px 15px;
+            font-weight:900;
+          
+            color: black;
+          }
+          .logo .second{
+            color: white;
+            background-color: black;
+            padding: 10px 15px 7px 15px;
+            
+            
+          }
+          .carousel-indicators li.active {
+            background-color: rgb(189, 91, 27);
+            
+        }
+
+        .carousel-item {
+            filter: brightness(60%);
+        }
+        
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            background-color: rgb(194, 78, 0);
+            padding: 30px;
+            border-radius: 50%;
+
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+            font-weight: 400;
+            -webkit-font-smoothing: antialiased;
+            color: #222;
+        }
+        .fa-laptop-code:hover{
+          color: orange;
+        }
+        
+        
+.btn-flip {
+  opacity: 1;
+  outline: 0;
+  color: #fff;
+  line-height: 40px;
+  position: relative;
+  text-align: center;
+  letter-spacing: 1px;
+  display: inline-block;
+  text-decoration: none;
+  font-family: 'Open Sans';
+  text-transform: uppercase;
+}
+.btn-flip:hover:after {
+  opacity: 1;
+  -webkit-transform: translateY(0) rotateX(0);
+          transform: translateY(-100%) rotateX(100%);
+}
+.btn-flip:hover:before {
+  opacity: 0;
+  -webkit-transform: translateY(50%) rotateX(90deg);
+          transform: translateY(50%) rotateX(90deg);
+}
+.btn-flip:after {
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 100%;
+  color: white;
+  font-weight: 600;
+  display: block;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  position: absolute;
+  background: teal;
+  content: attr(data-back);
+  -webkit-transform: translateY(-50%) rotateX(90deg);
+          transform: translateY(-50%) rotateX(90deg);
+}
+.btn-flip:before {
+  top: 0;
+  left: 0;
+  opacity: 1;
+  color: white;
+  display: block;
+  padding: 0 30px;
+  line-height: 40px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  position: relative;
+  background: rgb(206, 102, 4);
+  content: attr(data-front);
+  -webkit-transform: translateY(0) rotateX(0);
+          transform: translateY(0) rotateX(0);
+}
+
+
+.btn-cont {
+  text-align: center;
+  margin-top:10px;
+}
+.btn-cont .btn {
+  position: relative;
+  padding: 10px 50px;
+  border: 1px solid white;
+  color: white;
+  text-decoration: none;
+  font-size: 1.125em;
+  text-transform: uppercase;
+  font: bold 18px Arial;
+  transform: scaleX(0.6);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  -webkit-font-smoothing: antialiased;
+}
+.btn-cont .btn:hover {
+  border: none;
+}
+.btn-cont .btn:hover .line-1 {
+  -webkit-animation: move1 1500ms infinite ease;
+          animation: move1 1500ms infinite ease;
+}
+.btn-cont .btn:hover .line-2 {
+  -webkit-animation: move2 1500ms infinite ease;
+          animation: move2 1500ms infinite ease;
+}
+.btn-cont .btn:hover .line-3 {
+  -webkit-animation: move3 1500ms infinite ease;
+          animation: move3 1500ms infinite ease;
+}
+.btn-cont .btn:hover .line-4 {
+  -webkit-animation: move4 1500ms infinite ease;
+          animation: move4 1500ms infinite ease;
+}
+.btn-cont .line-1 {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 3px;
+  background-color: cyan;
+  left: 0;
+  bottom: 0;
+}
+.btn-cont .line-2 {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 2px;
+  background-color: cyan;;
+  left: 0;
+  top: 0;
+}
+.btn-cont .line-3 {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 3px;
+  background-color: cyan;;
+  right: 0;
+  top: 0;
+}
+.btn-cont .line-4 {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 2px;
+  background-color: cyan;;
+  right: 0;
+  bottom: 0;
+}
+
+@-webkit-keyframes move1 {
+  0% {
+    height: 100%;
+    bottom: 0;
+  }
+  54% {
+    height: 0;
+    bottom: 100%;
+  }
+  55% {
+    height: 0;
+    bottom: 0;
+  }
+  100% {
+    height: 100%;
+    bottom: 0;
+  }
+}
+
+@keyframes move1 {
+  0% {
+    height: 100%;
+    bottom: 0;
+  }
+  54% {
+    height: 0;
+    bottom: 100%;
+  }
+  55% {
+    height: 0;
+    bottom: 0;
+  }
+  100% {
+    height: 100%;
+    bottom: 0;
+  }
+}
+@-webkit-keyframes move2 {
+  0% {
+    width: 0;
+    left: 0;
+  }
+  50% {
+    width: 100%;
+    left: 0;
+  }
+  100% {
+    width: 0;
+    left: 100%;
+  }
+}
+@keyframes move2 {
+  0% {
+    width: 0;
+    left: 0;
+  }
+  50% {
+    width: 100%;
+    left: 0;
+  }
+  100% {
+    width: 0;
+    left: 100%;
+  }
+}
+@-webkit-keyframes move3 {
+  0% {
+    height: 100%;
+    top: 0;
+  }
+  54% {
+    height: 0;
+    top: 100%;
+  }
+  55% {
+    height: 0;
+    top: 0;
+  }
+  100% {
+    height: 100%;
+    top: 0;
+  }
+}
+@keyframes move3 {
+  0% {
+    height: 100%;
+    top: 0;
+  }
+  54% {
+    height: 0;
+    top: 100%;
+  }
+  55% {
+    height: 0;
+    top: 0;
+  }
+  100% {
+    height: 100%;
+    top: 0;
+  }
+}
+@-webkit-keyframes move4 {
+  0% {
+    width: 0;
+    right: 0;
+  }
+  55% {
+    width: 100%;
+    right: 0;
+  }
+  100% {
+    width: 0;
+    right: 100%;
+  }
+}
+@keyframes move4 {
+  0% {
+    width: 0;
+    right: 0;
+  }
+  55% {
+    width: 100%;
+    right: 0;
+  }
+  100% {
+    width: 0;
+    right: 100%;
+  }
+}
+.card-body{
+  background-color: rgb(1, 10, 19);
+}
+body{
+  background-color: rgb(1, 20, 36);
+  color: white;
+}
+.card-title:after {
+            content: '';
+            display: block;
+            width: 40px;
+            margin: auto;
+            padding-top: 10px;
+            border-bottom: 2px solid rgb(209, 111, 20);
+        }
+
+        .card-title1:after {
+            content: '';
+            display: block;
+            width: 25px;
+            margin: auto;
+            padding-top: 5px;
+            border-bottom: 2px solid rgb(197, 87, 13);
+        }
+
+  /* title button anime */      
+  
+  button {
+  font-family: 'Space Mono', monospace;
+  letter-spacing: 1px;
+  background: none;
+  color: white;
+  position: relative;
+  outline: none;
+  border: none;
+  height: 50px;
+  width: 190px;
+  font-size: 16px;
+  z-index: 2;
+  -webkit-transition: .01s .23s ease-out all;
+  transition: .01s .23s ease-out all;
+  box-shadow: 0px 0px 17px 1px rgba(0, 0, 0, 0.34);
+  overflow: hidden;
+}
+button:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 55%;
+  background: rgb(1, 10, 19);
+  z-index: -1;
+  -webkit-transition: .3s ease-in all;
+  transition: .3s ease-in all;
+}
+button:after {
+  content: '';
+  position: absolute;
+  left: -5%;
+  top: 5%;
+  height: 90%;
+  width: 5%;
+  background: white;
+  z-index: -1;
+  -webkit-transition: .4s .02s ease-in all;
+  transition: .4s .02s ease-in all;
+}
+button:hover {
+  cursor: pointer;
+  color: transparent;
+}
+button:hover:before {
+  left: 100%;
+  width: 25%;
+}
+button:hover:after {
+  left: 100%;
+  width: 70%;
+}
+button:hover .icon-right.after:after {
+  left: -80px;
+  color: white;
+  -webkit-transition: .2s .2s ease all;
+  transition: .2s .2s ease all;
+}
+button:hover .icon-right.after:before {
+  left: -104px;
+  top: 14px;
+  opacity: 0.2;
+  color: white;
+}
+
+.icon-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.icon-right:after {
+  font-family: "FontAwesome";
+  content: '\2192';
+  font-size: 24px;
+  display: inline-block;
+  position: relative;
+  top: 26px;
+  -webkit-transform: translate3D(0, -50%, 0);
+          transform: translate3D(0, -50%, 0);
+}
+.icon-right.after:after {
+  left: -250px;
+  color: black;
+  -webkit-transition: .15s .25s ease left, .5s .05s ease color;
+  transition: .15s .25s ease left, .5s .05s ease color;
+}
+.icon-right.after:before {
+  content: 'Explore';
+  position: absolute;
+  left: -230px;
+  top: 14px;
+  opacity: 0;
+  -webkit-transition: .2s ease-in all;
+  transition: .2s ease-in all;
+}
+
+/* button slice */
+
+.btn-slice {
+  cursor: pointer;
+  background-color: rgb(1, 10, 19);
+  width: 330px;
+  height: 64px;
+  line-height: 64px;
+  position: absolute;
+  left: 38%;
+  top: 10%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  box-shadow: 0px 0px 17px 1px rgba(0, 0, 0, 0.34);
+}
+.btn-slice span {
+  color: #fff;
+  display: inline-block;
+  padding-left: 35px;
+  text-transform: uppercase;
+  font: bold 18px/66px Arial;
+  transform: scaleX(0.6);
+  letter-spacing: 3px;
+  transform-origin: center left;
+  transition: color 0.3s ease;
+  position: relative;
+  z-index: 1;
+}
+.btn-slice em {
+  position: absolute;
+  height: 1px;
+  background: #fff;
+  width: 47%;
+  right: 23px;
+  top: 50%;
+  transform: scaleX(0.25);
+  transform-origin: center right;
+  transition: all 0.3s ease;
+  z-index: 1;
+}
+.btn-slice:before,
+.btn-slice:after {
+  content: '';
+  background: #fff;
+  height: 50%;
+  width: 0;
+  position: absolute;
+  transition: 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+.btn-slice:before {
+  top: 0;
+  left: 0;
+  right: auto;
+}
+.btn-slice:after {
+  bottom: 0;
+  right: 0;
+  left: auto;
+}
+.btn-slice:hover:before {
+  width: 100%;
+  right: 0;
+  left: auto;
+}
+.btn-slice:hover:after {
+  width: 100%;
+  left: 0;
+  right: auto;
+}
+.btn-slice:hover span {
+  color: #000;
+}
+.btn-slice:hover em {
+  background: #000;
+  transform: scaleX(1);
+}
+
+/* footer */
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+.footer-section {
+  background: #0c111b;
+  position: relative;
+}
+.footer-cta {
+  border-bottom: 1px solid #373636;
+}
+.single-cta i {
+  color: #ff5e14;
+  font-size: 30px;
+  float: left;
+  margin-top: 8px;
+}
+.cta-text {
+  padding-left: 15px;
+  display: inline-block;
+}
+.cta-text h4 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+.cta-text span {
+  color: #757575;
+  font-size: 15px;
+}
+.footer-content {
+  position: relative;
+  z-index: 2;
+}
+.footer-pattern img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 330px;
+  background-size: cover;
+  background-position: 100% 100%;
+}
+.footer-logo {
+  margin-bottom: 30px;
+}
+.footer-logo img {
+    max-width: 200px;
+}
+.footer-text p {
+  margin-bottom: 14px;
+  font-size: 14px;
+      color: #7e7e7e;
+  line-height: 28px;
+}
+.footer-social-icon span {
+  color: #fff;
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 20px;
+}
+.footer-social-icon a {
+  color: #fff;
+  font-size: 16px;
+  margin-right: 15px;
+}
+.footer-social-icon i {
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 38px;
+  border-radius: 50%;
+}
+.facebook-bg{
+  background: #3B5998;
+}
+.twitter-bg{
+  background: #55ACEE;
+}
+.gitlab-bg{
+  background: #fc6d26;
+}
+.footer-widget-heading h3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  position: relative;
+}
+.footer-widget-heading h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  height: 2px;
+  width: 50px;
+  background: #ff5e14;
+}
+.footer-widget ul li {
+  display: inline-block;
+  float: left;
+  width: 50%;
+  margin-bottom: 12px;
+}
+.footer-widget ul li a:hover{
+  color: #ff5e14;
+}
+.footer-widget ul li a {
+  color: #878787;
+  text-transform: capitalize;
+}
+.subscribe-form {
+  position: relative;
+  overflow: hidden;
+}
+.subscribe-form input {
+  width: 100%;
+  padding: 14px 28px;
+  background: #04070e;
+  border: 1px solid #04070e;
+  color: #fff;
+}
+.subscribe-form .sub {
+    position: absolute;
+    right: 0;
+    float: right;
+    background: #ff5e14;
+    padding: 13px 20px;
+    /* border: 1px solid #ff5e14; */
+    top: 0;
+}
+.subscribe-form .sub i {
+  color: #fff;
+  font-size: 22px;
+  transform: rotate(-6deg);
+}
+.copyright-area{
+  background: #060a13;
+  padding: 25px 0;
+}
+.copyright-text p {
+  margin: 0;
+  font-size: 14px;
+  color: #878787;
+}
+.copyright-text p a{
+  color: #ff5e14;
+}
+.footer-menu li {
+  display: inline-block;
+  margin-left: 20px;
+}
+.footer-menu li:hover a{
+  color: #ff5e14;
+}
+.footer-menu li a {
+  font-size: 14px;
+  color: #878787;
+}
+.img-holder img{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  
+}
+.img-holder img:hover{
+  transform: scale(1.1);
+  margin-bottom: 2px;
+}
+    </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+    <div class="container">
+
+      <!-- Brand -->
+      <a class="navbar-brand" href="index.html">
+        
+        <div class='logo'>
+          <h1 class='d-inline-block justify-content-center align-self-center first' style='font-family: Righteous, cursive;'>a</h1><h2 class='d-inline-block justify-content-center align-self-center second' style='font-family: Righteous, cursive;'>aicodings inc.</h2>
+        </div>
+      </a>
+
+      <!-- Collapse -->
+      <a href='#' class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </a>
+
+      <!-- Links -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <!-- Left -->
+        <ul class="navbar-nav px-5 mx-auto" style='font-family:Arial Narrow;'>
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pricing.html">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Who We Are</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Get In Touch</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Tech News</a>
+          </li>
+        </ul>
+
+        <!-- Right -->
+        <ul class="navbar-nav nav-flex-icons">
+          <li class="nav-item">
+            <a href="https://www.facebook.com/lagundoye1" class="nav-link" target="_blank">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="https://twitter.com/AILagundoye" class="nav-link" target="_blank">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="https://gitlab.com/Aifedayo" class="nav-link"
+              target="_blank">
+              <i class="fab fa-gitlab mr-2"></i>
+            </a>
+          </li>
+        </ul>
+
+      </div>
+
+    </div>
+  </nav>
+  <!-- Navbar -->
+
+  <!--Carousel Wrapper-->
+  <div id="carousel-example-1z" class="carousel slide carousel-fade" data-ride="carousel">
+
+    <!--Indicators-->
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-example-1z" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-example-1z" data-slide-to="1"></li>
+      <li data-target="#carousel-example-1z" data-slide-to="2"></li>
+      <li data-target="#carousel-example-1z" data-slide-to="3"></li>
+    </ol>
+    <!--/.Indicators-->
+
+    <!--Slides-->
+    <div class="carousel-inner" role="listbox">
+
+      <!--First slide-->
+      <div class="carousel-item active">
+        
+        <div class="view" style="background-image: url('https://www.blueclouddesign.co.za/wp-content/uploads/2016/03/web-design-banner.jpeg'); background-repeat: no-repeat; background-size: cover;">
+          <!-- Mask & flexbox options-->
+          <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+
+            <!-- Content -->
+            <div class="text-center white-text mx-5 wow fadeIn" style='font-family: Arial Narrow;'>
+              <h1 class="mb-4">
+                <strong>AICodings Incorporations</strong>
+              </h1>
+
+              <p>
+                <strong>Your best bet to getting a superb application design and implementation</strong>
+              </p>
+
+              
+
+              <a target="_blank" href="https://mdbootstrap.com/education/bootstrap/" class="btn btn-orange btn-lg">Web App Developers
+                <i class="fas fa-laptop-code"></i>
+              </a>
+            </div>
+            <!-- Content -->
+
+          </div>
+          <!-- Mask & flexbox options-->
+
+        </div>
+      </div>
+      <div class="carousel-item">
+        
+        <div class="view" style="background-image: url('https://evopaper.com/wp-content/uploads/2016/08/webdesign_1.jpg'); background-repeat: no-repeat; background-size: cover;">
+          <!-- Mask & flexbox options-->
+          <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+
+            <!-- Content -->
+            <div class="text-center white-text mx-5 wow fadeIn">
+              <h1 class="mb-4">
+                <strong>Learn Web Development</strong>
+              </h1>
+
+              <p>
+                <strong>Best guide to a responsive web design</strong>
+              </p>
+
+              <p class="mb-4 d-flex d-md-block">
+                <strong>The most comprehensive tutorial to Create your own, stunning website.</strong>
+              </p>
+
+              <a target="_blank" href="https://mdbootstrap.com/education/bootstrap/" class="btn btn-orange btn-lg">Learn Web Development
+                <i class="fas fa-chalkboard-teacher"></i>
+              </a>
+            </div>
+            <!-- Content -->
+
+          </div>
+          <!-- Mask & flexbox options-->
+
+        </div>
+      </div>
+      <!--/First slide-->
+
+      <!--Second slide-->
+      <div class="carousel-item">
+        <div class="view" style="background-image: url('https://orcharddesigns.com/wp-content/uploads/2017/05/web-design-background-image.jpg'); background-repeat: no-repeat; background-size: cover;">
+        
+
+          <!-- Mask & flexbox options-->
+          <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+
+            <!-- Content -->
+            <div class="text-center white-text mx-5 wow fadeIn">
+              <h1 class="mb-4">
+                <strong>Learn Django { Python Framework }</strong>
+              </h1>
+
+              <p>
+                <strong>Best Guide to learning Django</strong>
+              </p>
+
+              <p class="mb-4 d-none d-md-block">
+                <strong>The most comprehensive tutorial for Django</strong>
+              </p>
+
+              <a target="_blank" href="https://mdbootstrap.com/education/bootstrap/" class="btn btn-orange btn-lg">Learn Django 
+                <i class="fas fa-chalkboard"></i>
+              </a>
+            </div>
+            <!-- Content -->
+
+          </div>
+          <!-- Mask & flexbox options-->
+
+        </div>
+      </div>
+      <!--/Second slide-->
+
+      <!--Third slide-->
+      <div class="carousel-item">
+        <div class="view" style="background-image: url('https://cdn.techinasia.com/wp-content/uploads/2018/07/business-code-coding-943096.jpg'); background-repeat: no-repeat; background-size: cover;">
+
+          <!-- Mask & flexbox options-->
+          <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+
+            <!-- Content -->
+            <div class="text-center white-text mx-5 wow fadeIn">
+              <h1 class="mb-4">
+                <strong>Learn JavaScript</strong>
+              </h1>
+
+              <p>
+                <strong>Best & free guide of responsive web design</strong>
+              </p>
+
+              <p class="mb-4 d-none d-md-block">
+                <strong>The most comprehensive tutorial for the Bootstrap 4. </strong>
+              </p>
+
+              <a target="_blank" href="https://mdbootstrap.com/education/bootstrap/" class="btn btn-orange btn-lg">Start free tutorial
+                <i class="fas fa-laptop-code"></i>
+              </a>
+            </div>
+            <!-- Content -->
+
+          </div>
+          <!-- Mask & flexbox options-->
+
+        </div>
+      </div>
+      <!--/Third slide-->
+
+    </div>
+    <!--/.Slides-->
+
+    <!--Controls-->
+    <a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carousel-example-1z" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+    <!--/.Controls-->
+
+  </div>
+  <!--/.Carousel Wrapper-->
+
+  <!--Main layout-->
+  <main>
+    <div class="container">
+
+      <!--Section: Main info-->
+      <section class="mt-5 wow fadeIn">
+
+        <!--Grid row-->
+        <div class="row mx-auto">
+
+          <!--Grid column-->
+          <div class="fadeIn col-md-6 mt-5 mb-4">
+
+            <img src="https://wallpaperaccess.com/full/1657871.jpg" class="img-fluid z-depth-1-half" alt="">
+
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-md-6 mt-5 mb-4 grey-text">
+
+            <!-- Main heading -->
+            <h3 class="h3 mb-3">Welcome To AICodings Inc</h3>
+            <p>Here at <strong>AICodings</strong>, we help represent your brand online thereby helping to 
+              represent your business to the larger world.</p>
+            <p>Details below to learn more about AICodings.</p>
+            <!-- Main heading -->
+
+            <hr class='orange'>
+
+            <p>
+              <strong>Elegant</strong> material UI elements,
+              <strong>Premium</strong> Font and FontAwesome icons,
+              <strong>Clean</strong> CSS animations, SASS files, templates.
+              <strong>For Personal and Commercial use.</strong>
+            </p>
+
+            <!-- CTA -->
+            <a href="https://wa.me/2349050562160" target="_blank" class="btn-flip" style='font-family:Arial Narrow;' data-back="Let's Talk" data-front="Get In Touch"></a>
+            <a href="#pricing" class="btn-flip" style='font-family:Arial Narrow;' data-back="Cheapest" data-front="Get Pricing"></a>
+            
+
+          </div>
+          <!--Grid column-->
+
+        </div>
+        <!--Grid row-->
+
+      </section>
+      <!--Section: Main info-->
+
+      
+<!--     What we do section -->
+<hr class="my-6 white">
+<section>
+  <div class='container my-5 mx-auto'>
+    <div class='text-center'>
+      <button class="explore">OUR SERVICES
+        <span class="icon-right"></span>
+        <span class="icon-right after"></span>
+      </button>
+    </div>
+    <div class="row wow fadeIn  text-center">
+      <div class="col-lg-4 mx-auto col-md-2 mt-5">
+        <div class="card">
+      <!-- Card image -->
+          <div class="view overlay">
+            <img class="card-img-top" src="https://www.bnecreative.com/wp-content/uploads/2019/07/illus-webdesign-2.png"
+            alt="Card image cap">
+            <a href="#!">
+              <div class="mask rgba-white-slight"></div>
+            </a>
+          </div>
+      <!-- Card content -->
+          <div class="card-body">
+        <!-- Title -->
+            <h4 class="card-title text-white">Web Development</h4>
+            <!-- Text -->
+            <p class="card-text my-4">Dynamic web applications. 
+              Social networking sites, e-commerce. HTML5, CSS3, Bootstrap, Django, JavaScript, MySQL, PHP </p>
+            <!-- Button -->
+            <div class='btn-cont mt-5'>
+              <a class='btn' href='#'>
+                Learn More
+                <span class='line-1'></span>
+                <span class='line-2'></span>
+                <span class='line-3'></span>
+                <span class='line-4'></span>
+              </a>
+            </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-lg-4 mx-auto col-md-12 mt-5">
+      <div class="card">
+      <!-- Card image -->
+        <div class="view overlay">
+          <img class="card-img-top" src="https://i.pinimg.com/originals/69/9f/ed/699fed8ef94371493787f23ae623c9ea.png"
+          alt="Card image cap">
+          <a href="#!">
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+
+      <!-- Card content -->
+        <div class="card-body">
+
+        <!-- Title -->
+        <h4 class="card-title text-white">Digital Marketing</h4>
+        <!-- Text -->
+        <p class="card-text my-5">Email marketing, pay-per-click advertising, social media marketing, blogging, UX</p>
+        <!-- Button -->
+        <div class='btn-cont mt-5'>
+          <a class='btn' href='#'>
+            Learn More
+            <span class='line-1'></span>
+            <span class='line-2'></span>
+            <span class='line-3'></span>
+            <span class='line-4'></span>
+          </a>
+        </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 mx-auto col-md-12 mt-5">
+      <div class="card">
+      <!-- Card image -->
+        <div class="view overlay">
+          <img class="card-img-top" src="https://i.pinimg.com/originals/a4/48/f0/a448f012ac2681e47ebdd86aaf8a274a.gif"
+          alt="Card image cap">
+          <a href="#!">
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+
+      <!-- Card content -->
+        <div class="card-body">
+
+        <!-- Title -->
+        <h4 class="card-title text-white">Logo Design</h4>
+        <!-- Text -->
+        <p class="card-text my-5">Logo creation, Interface design, Illustration, Animations, Graphics Design</p>
+        <!-- Button -->
+        <div class='btn-cont mt-5'>
+          <a class='btn' href='#'>
+            Learn More
+            <span class='line-1'></span>
+            <span class='line-2'></span>
+            <span class='line-3'></span>
+            <span class='line-4'></span>
+          </a>
+        </div>
+
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+</section>
+<!-- Card -->
+<hr class="my-5 white">
+
+
+<section>
+        <div class='text-center my-5'>
+          <button class="explore">OUR WORK METHOD
+            <span class="icon-right"></span>
+            <span class="icon-right after"></span>
+          </button>
+        </div>
+        <!--Grid row-->
+        <div class="row wow fadeIn white-text">
+
+          <!--Grid column-->
+          <div class="col-md-6 mt-5 mb-4">
+
+            <!--First row-->
+            <div class="row mt-2">
+              <div class="col-1 mr-3">
+                <i class="fas fa-code fa-2x orange-text darken-3"></i>
+              </div>
+              <div class="col-10">
+                <h5 class="feature-title">Bootstrap</h5>
+                <a class="btn-slice"><span class='orange-text'>Modern Design</span><em></em></a>
+                <p class="grey-text mt-4">Thanks to our knowledge of the newest technologies in web development.</p>
+              </div>
+            </div>
+            <!--/First row-->
+
+            <div style="height:30px"></div>
+
+            <!--Second row-->
+            <div class="row">
+              <div class="col-1 mr-3">
+                <i class="fas fa-book fa-2x green-text"></i>
+              </div>
+              <div class="col-10">
+                <h5 class="feature-title">Detailing</h5>
+                <a class="btn-slice"><span class='green-text'>Detailed Code</span><em></em></a>
+                <p class='my-4'></p>
+                <p class="grey-text">We give you detailed and readable commented out codes at disposal. This is from the best of practice. 
+                  easily.
+                </p>
+              </div>
+            </div>
+            <!--/Second row-->
+
+            <div style="height:30px"></div>
+
+            <!--Third row-->
+            <div class="row">
+              <div class="col-1 mr-3">
+                <i class="fas fa-graduation-cap fa-2x mdb-color-text darken-3"></i>
+              </div>
+              <div class="col-10">
+                <h5 class="feature-title"></h5>
+                <a class="btn-slice"><span class='mdb-color-text'>Easy To Use</span><em></em></a>
+                <p class='my-5'></p>
+                <p class="grey-text">We care about users experience. We have the design simple and yet so enchanting.</p>
+              </div>
+            </div>
+            <!--/Third row-->
+
+          </div>
+          <!--/Grid column-->
+
+          <!--Grid column-->
+          <div class="col-md-6 mt-5 mb-4">
+            <img src="https://i.pinimg.com/originals/b5/cc/4f/b5cc4f17bec8b6b845b4326c523ce5b5.gif" class="img-fluid z-depth-1-half" alt="">
+            
+          </div>
+          <!--/Grid column-->
+
+        </div>
+        <!--/Grid row-->
+
+      </section>
+      <!--Section: Main features & Quick Start-->
+
+      <hr class="my-5 white">
+
+      <!--Section: Not enough-->
+      <section>
+
+        <div class='text-center my-5'>
+          <button class="explore">WHY CHOOSE US???
+            <span class="icon-right"></span>
+            <span class="icon-right after"></span>
+          </button>
+        </div>
+
+        <!--First row-->
+        <div class="row features-small mb-5 mt-3 wow fadeIn">
+
+          <!--First column-->
+          <div class="col-md-6">
+            <!--First row-->
+            <div class="row">
+              <div class="col-2">
+                <i class="fas fa-thumbs-up fa-2x orange-text"></i>
+              </div>
+              <div class="col-10">
+                <h6 class="feature-title">Our Focus on Trendy Innovation</h6>
+                <p class="grey-text">Our design is user-friendly and always evolving. It keeps up with the latest trend and in-thing.
+                </p>
+                <div style="height:15px"></div>
+              </div>
+            </div>
+            <!--/First row-->
+
+            <!--Second row-->
+            <div class="row">
+              <div class="col-2">
+                <i class="fas fa-award fa-2x orange-text"></i>
+              </div>
+              <div class="col-10">
+                <h6 class="feature-title">Dedicated Teams</h6>
+                <p class="grey-text">Our Team is always on the go to deliver quality and reliable services.</p>
+                <div style="height:15px"></div>
+              </div>
+            </div>
+            
+            <!--/Second row-->
+
+            <!--Third row-->
+            <div class="row">
+              <div class="col-2">
+                <i class="fas fa-trophy fa-2x orange-text"></i>
+              </div>
+              <div class="col-10">
+                <h6 class="feature-title">FontAwesome icons</h6>
+                <p class="grey-text">Hundreds of useful, scalable, vector icons for illustrations and effects.</p>
+                <div style="height:15px"></div>
+              </div>
+            </div>
+            <!--/Third row-->
+
+            <!--Fourth row-->
+            <div class="row">
+              <div class="col-2">
+                <i class="fas fa-crown fa-2x orange-text"></i>
+              </div>
+              <div class="col-10">
+                <h6 class="feature-title">Responsiveness</h6>
+                <p class="grey-text">It doesn't matter whether your project will be displayed on desktop, laptop, tablet or mobile phone. MDB
+                  looks great on each screen.</p>
+                <div style="height:15px"></div>
+              </div>
+            </div>
+            <!--/Fourth row-->
+          </div>
+          <!--/First column-->
+
+          <!--Second column-->
+          
+
+          <!--Third column-->
+          <div class="col-md-6 mt-2">
+            <!--First row-->
+            <div class="row">
+              <div class="col-2">
+                <i class="fas fa-thumbs-up fa-2x orange-text"></i>
+              </div>
+              <div class="col-10">
+                <h6 class="feature-title">CSS animations</h6>
+                <p class="grey-text">Neat and interactive animations, which will increase the interactivity of your project and delight your visitors.
+                </p>
+                <div style="height:15px"></div>
+              </div>
+            </div>
+            <!--/First row-->
+
+            <!--Second row-->
+            <div class="row">
+              <div class="col-2">
+                <i class="fas fa-award fa-2x orange-text"></i>
+              </div>
+              <div class="col-10">
+                <h6 class="feature-title">Awesome UI elements</h6>
+                <p class="grey-text">An impressive collection of flexible components we deploy to develop any project.
+                </p>
+                <div style="height:15px"></div>
+              </div>
+            </div>
+            <!--/Second row-->
+
+            <!--Third row-->
+            <div class="row">
+              <div class="col-2">
+                <i class="fas fa-trophy fa-2x orange-text"></i>
+              </div>
+              <div class="col-10">
+                <h6 class="feature-title">True partnership</h6>
+                <p class="grey-text">You will be surprised at how friendly and nice we will relate with you.
+                </p>
+                <div style="height:15px"></div>
+              </div>
+            </div>
+            <!--/Third row-->
+
+            <!--Fourth row-->
+            <div class="row">
+              <div class="col-2">
+                <i class="fas fa-crown fa-2x orange-text"></i>
+              </div>
+              <div class="col-10">
+                <h6 class="feature-title">Our respect for clients needs</h6>
+                <p class="grey-text">Our goal is straightforward and pleasant. Bent upon client's objectives, our components flexibility allows deep customization. Ease
+                  in adjusting each component to suit your needs.</p>
+                <div style="height:15px"></div>
+              </div>
+            </div>
+            <!--/Fourth row-->
+          </div>
+          <!--/Third column-->
+
+        </div>
+        <!--/First row-->
+
+      </section>
+      <!--Section: Not enough-->
+
+      <hr class="my-5 white">
+      <section class="mt-5 pt-4">
+        <div class="container" id='pricing'>
+    
+          <div class='container mx-auto'>
+            <div class='text-center'>
+              <button class="explore">OUR PRICING PLANS
+                <span class="icon-right"></span>
+                <span class="icon-right after"></span>
+              </button>
+            </div>
+          </div>
+          <!--Grid row-->
+          <div class="row d-flex justify-content-center">
+    
+            <!--Grid column-->
+            <div class="col-md-10">
+    
+              <div class='btn-cont mb-3'>
+                <a class='btn' href='#'>
+                  How it Works
+                  <span class='line-1'></span>
+                  <span class='line-2'></span>
+                  <span class='line-3'></span>
+                  <span class='line-4'></span>
+                </a>
+              </div>
+              <div class='d-flex'>
+                <h6 class='ml-2 mb-5'><i class="fab fa-amazon-pay orange-text fa-lg"></i> Part payment as commitment</h6>
+                <h6 class='ml-5 mb-5'><i class="fas fa-palette orange-text fa-lg"></i> Templates from which you will choose from</h6>
+                <h6 class='ml-5 mb-5'><i class="fas fa-layer-group orange-text fa-lg"></i> Full fledged Development</h6>
+              </div>
+            </div>
+            <!--Grid column-->
+    
+          </div>
+          <!--Grid row-->
+    
+          <!--Grid row-->
+          <div class="row text-center wow fadeIn">
+    
+            <!--Grid column-->
+            <div class="col-lg-4 col-md-12 mb-4">
+    
+              <!--Card-->
+              <div class="card cyan darken-4">
+    
+                <!-- Card header -->
+                <div class="card-header">
+                  <h4>
+                    <strong style='font-family: Arial Narrow;'>Lite</strong>
+                  </h4>
+                </div>
+    
+                <!--Card content-->
+                <div class="card-body">
+                  <div class='img-holder'><img src = 'https://cdn.lowgif.com/full/734c6ea00e76bc76-walk-cycles-by-jae-il-son-via-behance-2d-animations-pinterest-cycling-behance-and-sons.gif' alt=""></div>
+                  <h3 class="card-titl cyan-text pricing-card-title my-4" style='font-family: Arial Narrow;'>₦50,000
+                    <!-- <small class="text-muted">/ mo</small> -->
+                  </h3>
+    
+                  <ol class="list-unstyled mb-4" style='font-family: Arial Narrow;'>
+                    <li>Free Domain & Web Hosting
+                      <i class="fas fa-check-circle orange-text darken-4 ml-1"></i>
+                    </li>
+                    <hr>
+                    <li>Limited Pages
+                      <i class="fas fa-check-circle orange-text darken-4 ml-1"></i>
+                    </li>
+                    <hr>
+                    <li>Search Engine Optimization
+                      <i class="fas fa-check-circle orange-text darken-4 ml-1"></i>
+                    </li>
+                    <hr>
+                    <li>Limited Emails
+                      <i class="fas fa-check-circle orange-text darken-4 ml-1"></i>
+                    </li>
+                    <hr>
+                    <li>Basic Logo Design
+                      <i class="fas fa-check-circle orange-text darken-4 ml-1"></i>
+                    </li>
+                    <hr>
+                    <li>3 Month Support
+                      <i class="fas fa-check-circle orange-text darken-4 ml-1"></i>
+                    </li>
+                    <hr>
+                    <li>Email Marketing
+                      <i class="fas fa-check-circle orange-text darken-4 ml-1"></i>
+                    </li>
+                    <hr>
+                    <li>Mobile Responsive and Dynamism
+                      <i class="fas fa-check-circle orange-text darken-4 ml-1"></i>
+                    </li>
+                    <hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr>
+                    <hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><li></li><hr>
+                  </ol>
+    
+                  <a href="https://wa.me/2349050562160" target="_blank"><button type="button" class="btn btn-lg btn-block btn-outline-cyan waves-effect"><h6 class='white-text'>Let's Get started</h6></button></a>
+    
+                </div>
+    
+              </div>
+              <!--/.Card-->
+    
+            </div>
+            <!--Grid column-->
+    
+            <!--Grid column-->
+            <div class="col-lg-4 col-md-6 mb-4" style='font-family: Arial Narrow;'>
+    
+              <!--Card-->
+              <div class="card cyan darken-4">
+    
+                <!-- Card header -->
+                <div class="card-header">
+                  <h4>
+                    <strong>Pro</strong>
+                  </h4>
+                </div>
+    
+                <!--Card content-->
+                <div class="card-body">
+                  <div class='img-holder'><img src = 'https://static.dribbble.com/users/1475355/screenshots/9532551/media/445d29a545108a17844ca799d8a1cc33.gif' alt=""></div>
+                  <h3 class="card-titl cyan-text darken-4 pricing-card-title my-4">₦150,000
+                    <!-- <small class="text-muted">/ mo</small> -->
+                  </h3>
+    
+                  <ol class="list-unstyled mb-4">
+                    <li>Free Domain & Web Hosting
+                      <i class="fas fa-check-circle orange-text darken-4 ml-1"></i>
+                    </li>
+                    <hr>
+                    <li>Unlimited Fast Loading Pages
+                      <i class="fas fa-check-circle orange-text darken-4 ml-1"></i>
+                    </li>
+                    <hr>
+                    <li>Search Engine Optimization
+                      <i class="fas fa-check-circle orange-text darken-4 ml-1"></i>
+                    </li>
+                    <hr>
+                    <li>Help center access
+                      <i class="fas fa-check-circle orange-text darken-4 ml-1"></i>
+                    </li>
+                    <hr>
+                    <li>Premium Logo Design
+                      <i class="fas fa-check-circle orange-text darken-4 ml-1"></i>
+                    </li>
+                    <hr>
+                    <li>Custom Icons and Animations
+                      <i class="fas fa-check-circle orange-text darken-4 ml-1"></i>
+                    </li>
+                    <hr>
+                    <li>Email Support and Marketing
+                      <i class="fas fa-check-circle orange-text darken-4 ml-1"></i>
+                    </li>
+                    <hr>
+                    <li>Mobile Responsiveness and Dynamism
+                      <i class="fas fa-check-circle orange-text darken-4 ml-1"></i>
+                    </li>
+                    <hr>
+                    <li>Social Media Link Integration
+                      <i class="fas fa-check-circle orange-text darken-4 ml-1"></i>
+                    </li>
+                    <hr>
+                    <li>Payment Gateway Integration 
+                      <i class="fas fa-check-circle orange-text darken-4 ml-1"></i>
+                    </li>
+                    <hr>
+                    <li>1 Year Technical Support
+                      <i class="fas fa-check-circle orange-text darken-4 ml-1"></i>
+                    </li>
+                    <hr>
+                    <li>Fast Loading Pages and Features
+                      <i class="fas fa-check-circle orange-text darken-4 ml-1"></i>
+                    </li>
+                    <hr><hr><hr><hr><hr><hr><hr><br><hr><hr><hr><br><hr><hr><hr>
+                    </ol>
+    
+                    <a href="https://wa.me/2349050562160" target="_blank"><button type="button" class="btn btn-lg btn-block btn-outline-cyan waves-effect"><h6 class='white-text'>Let's Get started</h6></button></a>
+    
+                </div>
+    
+              </div>
+              <!--/.Card-->
+    
+            </div>
+            <!--Grid column-->
+    
+            <!--Grid column-->
+            <div class="col-lg-4 col-md-6 mb-4" style='font-family: Arial Narrow;'>
+    
+              <!--Card-->
+              <div class="card cyan darken-4">
+    
+                <!-- Card header -->
+                <div class="card-header">
+                  <h4>
+                    <strong>Enterprise</strong>
+                  </h4>
+                </div>
+    
+                <!--Card content-->
+                <div class="card-body">
+                  <div class='img-holder'><img src = 'https://static.dribbble.com/users/2374064/screenshots/4728503/superman.gif' alt=""></div>
+                  <h3 class="card-titl cyan-text pricing-card-title my-4">₦250,000
+                    <!-- <small class="text-muted">/ mo</small> -->
+                  </h3>
+    
+                  <ol class="list-unstyled mb-4">
+                    <li>Free Domain & Web Hosting
+                      <i class="fas fa-check-circle orange-text darken-4 ml-1"></i>
+                    </li>
+                    <hr>
+                    <li>Unlimited Fast Loading Pages
+                      <i class="fas fa-check-circle orange-text darken-4 ml-1"></i>
+                    </li>
+                    <hr>
+                    <li>Search Engine Optimization
+                      <i class="fas fa-check-circle orange-text darken-4 ml-1"></i>
+                    </li>
+                    <hr>
+                    <li>Help center access
+                      <i class="fas fa-check-circle orange-text darken-4 ml-1"></i>
+                    </li>
+                    <hr>
+                    <li>Premium Logo Design
+                      <i class="fas fa-check-circle orange-text darken-4 ml-1"></i>
+                    </li>
+                    <hr>
+                    <li>Custom Graphics Icons and Animations
+                      <i class="fas fa-check-circle orange-text darken-4 ml-1"></i>
+                    </li>
+                    <hr>
+                    <li>Custom Icons and Animations
+                      <i class="fas fa-check-circle orange-text darken-4 ml-1"></i>
+                    </li>
+                    <hr>
+                    <li>Email Support and Marketing
+                      <i class="fas fa-check-circle orange-text darken-4 ml-1"></i>
+                    </li>
+                    <hr>
+                    <li>Mobile Responsiveness and Dynamism
+                      <i class="fas fa-check-circle orange-text darken-4 ml-1"></i>
+                    </li>
+                    <hr>
+                    <li>Social Media Link Integration
+                      <i class="fas fa-check-circle orange-text darken-4 ml-1"></i>
+                    </li>
+                    <hr>
+                    <li>Payment Gateway Integration 
+                      <i class="fas fa-check-circle orange-text darken-4 ml-1"></i>
+                    </li>
+                    <hr>
+                    <li>Letter Head Design
+                      <i class="fas fa-check-circle orange-text darken-4 ml-1"></i>
+                    </li>
+                    <hr>
+                    <li>1 Year Technical Support
+                      <i class="fas fa-check-circle orange-text darken-4 ml-1"></i>
+                    </li>
+                    <hr>
+                    <li>Fast Loading Pages and Features
+                      <i class="fas fa-check-circle orange-text darken-4 ml-1"></i>
+                    </li>
+                    <hr>
+                    <li>Content Management System
+                      <i class="fas fa-check-circle orange-text darken-4 ml-1"></i>
+                    </li>
+                    <hr>
+                    <li>Coupon Code Activation
+                      <i class="fas fa-check-circle orange-text darken-4 ml-1"></i>
+                    </li>
+                    <hr>
+                    <li>2 Month Digital Marketing Services
+                      <i class="fas fa-check-circle orange-text darken-4 ml-1"></i>
+                    </li>
+                    <hr>
+                  </ol>
+    
+                  <a href="https://wa.me/2349050562160" target="_blank"><button type="button" class="btn btn-lg btn-block btn-outline-cyan waves-effect"><h6 class='white-text'>Let's Get started</h6></button></a>
+    
+                </div>
+    
+              </div>
+              <!--/.Card-->
+            </div>
+            
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </div>
+      </section>
+      <!--Main layout-->
+      
+      <hr class="my-5 white">
+      <!--Section: More-->
+      <section class='my-5'>
+
+        <div class='text-center my-5'>
+          <button class="explore">WHAT TO EXPECT
+            <span class="icon-right"></span>
+            <span class="icon-right after"></span>
+          </button>
+        </div>
+        <!--First row-->
+        <div class="row features-small mt-5 wow fadeIn">
+
+          <!--Grid column-->
+          <div class="col-xl-4 col-lg-6">
+            <!--Grid row-->
+            <div class="row">
+              <div class="col-2">
+                <i class="fab fa-firefox fa-2x mb-1 orange-text" aria-hidden="true"></i>
+              </div>
+              <div class="col-10 mb-2 pl-3">
+                <h5 class="feature-title font-bold mb-1">Cross-browser compatibility</h5>
+                <p class="grey-text mt-2">Chrome, Firefox, IE, Safari, Opera, Microsoft Edge - Works great.
+                </p>
+              </div>
+            </div>
+            <!--/Grid row-->
+          </div>
+          <!--/Grid column-->
+
+          <!--Grid column-->
+          <div class="col-xl-4 col-lg-6">
+            <!--Grid row-->
+            <div class="row">
+              <div class="col-2">
+                <i class="fas fa-level-up-alt fa-2x mb-1 orange-text" aria-hidden="true"></i>
+              </div>
+              <div class="col-10 mb-2">
+                <h5 class="feature-title font-bold mb-1">Constant Improvement</h5>
+                <p class="grey-text mt-2"> We improve every month. We love the project and enhance as much as possible.
+                </p>
+              </div>
+            </div>
+            <!--/Grid row-->
+          </div>
+          <!--/Grid column-->
+
+          <!--Grid column-->
+          <div class="col-xl-4 col-lg-6">
+            <!--Grid row-->
+            <div class="row">
+              <div class="col-2">
+                <i class="fas fa-comments fa-2x mb-1 orange-text" aria-hidden="true"></i>
+              </div>
+              <div class="col-10 mb-2">
+                <h5 class="feature-title font-bold mb-1">Active Technical Support</h5>
+                <p class="grey-text mt-2">Our team grows day by day. We focus on delivering qualitative services.
+                </p>
+              </div>
+            </div>
+            <!--/Grid row-->
+          </div>
+          <!--/Grid column-->
+
+          
+        </div>
+        <!--/First row-->
+
+        <!--Second row-->
+        <div class="row features-small mt-4 wow fadeIn">
+
+          <!--Grid column-->
+          <div class="col-xl-4 col-lg-6">
+            <!--Grid row-->
+            <div class="row">
+              <div class="col-2">
+                <i class="fas fa-cubes fa-2x mb-1 orange-text" aria-hidden="true"></i>
+              </div>
+              <div class="col-10 mb-2">
+                <h5 class="feature-title font-bold mb-1">Modularity</h5>
+                <p class="grey-text mt-2">Material Design for Bootstrap comes with both, compiled, ready to use libraries including all features as
+                  well as modules for CSS (SASS files) and JS.</p>
+              </div>
+            </div>
+            <!--/Grid row-->
+          </div>
+          <!--/Grid column-->
+
+          <!--Grid column-->
+          
+          <!--Grid column-->
+          <div class="col-xl-4 col-lg-6">
+            <!--Grid row-->
+            <div class="row">
+              <div class="col-2">
+                <i class="fas fa-th fa-2x mb-1 orange-text" aria-hidden="true"></i>
+              </div>
+              <div class="col-10 mb-2">
+                <h5 class="feature-title font-bold mb-1">Flexbox</h5>
+                <p class="grey-text mt-2">MDB fully supports Flex Box. You can forget about alignment issues.</p>
+              </div>
+            </div>
+            <!--/Grid row-->
+          </div>
+          <!--/Grid column-->
+
+          <!--Grid column-->
+          <div class="col-xl-4 col-lg-6">
+            <!--Grid row-->
+            <div class="row">
+              <div class="col-2">
+                <i class="far fa-file-code fa-2x mb-1 orange-text" aria-hidden="true"></i>
+              </div>
+              <div class="col-10 mb-2">
+                <h5 class="feature-title font-bold mb-1">SASS files</h5>
+                <p class="grey-text mt-2">Arranged and well documented .scss files can't wait until you compile them.</p>
+              </div>
+            </div>
+            <!--/Grid row-->
+          </div>
+          <!--/Grid column-->
+
+        </div>
+        <!--/Second row-->
+
+      </section>
+      <!--Section: More-->
+
+    </div>
+  </main>
+  <!--Main layout-->
+<!-- Card -->
+
+  <!--Footer-->
+  <footer class="footer-section">
+    <div class="container mr-2">
+        <div class="footer-cta pt-5 pb-5">
+            <div class="row wow fadeIn">
+                <div class="col-xl-4 col-md-4 mb-30">
+                    <div class="single-cta">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="cta-text">
+                            <h4>Find us</h4>
+                            <span>Ajah, Lagos, Nigeria</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-4 mb-30">
+                    <div class="single-cta">
+                        <i class="fas fa-phone"></i>
+                        <div class="cta-text">
+                            <h4>Call us</h4>
+                            <span>+234 8061 3895 94</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-4 mb-30">
+                    <div class="single-cta">
+                        <i class="far fa-envelope-open"></i>
+                        <div class="cta-text">
+                            <h4>Mail us</h4>
+                            <span>akeemifedayo@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-content pt-5 pb-5">
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 mb-50">
+                    <div class="footer-widget">
+                        <div class="footer-logo">
+                          <a class="navbar-brand" href="index.html">
+        
+                            <div class='logo'>
+                              <h1 class='d-inline-block justify-content-center align-self-center first' style='font-family: Righteous, cursive;'>a</h1><h2 class='d-inline-block justify-content-center align-self-center second' style='font-family: Righteous, cursive;'>aicodings inc.</h2>
+                            </div>
+                          </a>
+                    
+                        </div>
+                        <div class="footer-text">
+                          <p>Here at <strong>AICodings</strong>, we help represent your brand online thereby helping to 
+                            represent your business to the larger world.</p>
+                        </div>
+                        <div class="footer-social-icon">
+                            <span>Follow us</span>
+                            <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                            <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                            <a href="#"><i class="fab fa-gitlab gitlab-bg"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                    <div class="footer-widget">
+                        <div class="footer-widget-heading">
+                            <h3>Useful Links</h3>
+                        </div>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">about</a></li>
+                            <li><a href="#">services</a></li>
+                            <li><a href="#">portfolio</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Our Services</a></li>
+                            <li><a href="#">Expert Team</a></li>
+                            <li><a href="#">Contact us</a></li>
+                            <li><a href="#">Latest News</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                    <div class="footer-widget">
+                        <div class="footer-widget-heading">
+                            <h3>Subscribe</h3>
+                        </div>
+                        <div class="footer-text mb-25">
+                            <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+                        </div>
+                        <div class="subscribe-form">
+                            <form action="#">
+                                <input type="text" placeholder="Email Address">
+                                <a href='#' type='submit' class='sub'><i class="fab fa-telegram-plane"></i></a>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                    <div class="copyright-text">
+                        <p>Copyright &copy; 2020, All Right Reserved <a href="https://codepen.io/anupkumar92/"> AICodings Inc.</a></p>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                    <div class="footer-menu">
+                        <ul>
+                            <li class='card-title1'><a href="#">Home</a></li>
+                            <li class='card-title1'><a href="#">Terms</a></li>
+                            <li class='card-title1'><a href="#">Privacy</a></li>
+                            <li class='card-title1'><a href="#">Policy</a></li>
+                            <li class='card-title1'><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+  <!--/.Footer-->
+
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+      <!-- Initializations -->
+  <script type="text/javascript">
+    // Animations initialization
+    new WOW().init();
+  </script>
+</body>
+
+</html>
+
