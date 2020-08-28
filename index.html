@@ -14,8 +14,8 @@
         href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&family=Nunito:wght@300&family=Playfair+Display&family=Slabo+27px&display=swap"
         rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Astloch:wght@700&family=MuseoModerno&family=Righteous&display=swap" rel="stylesheet">
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Overlock&display=swap" rel="stylesheet">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Material Design Bootstrap -->
     <link href="css/mdb.min.css" rel="stylesheet">
     <!-- Your custom styles (optional) -->
@@ -26,7 +26,8 @@
       body,
       header,
       .carousel {
-        height: 100%;
+        height: 80vw;
+        width: 100%;
       }
 
       @media (max-width: 740px) {
@@ -34,7 +35,7 @@
         body,
         header,
         .carousel {
-          height: 70vw;
+          height: 80vw;
           width: 100%;
         }
         .carousel-item img {
@@ -44,9 +45,7 @@
         .logo .second{
           display:none;
         }
-        .additional-text{
-          display: none;
-        }
+        
         .spacing {
           display:none;
         }
@@ -58,15 +57,13 @@
         header,
         .carousel {
           width: 100%;
-          height: 100%;
+          height: 80vw;
           
         }
         .logo .second{
           display: none;
         }
-        .additional-text{
-          display: none;
-        }
+        
         .carousel-item img {
             width: 100%;
             height: auto;
@@ -88,11 +85,11 @@
             padding: 2px 10px;
             font-weight:900;
           
-            color: black;
+            color: rgb(1, 14, 27);
           }
           .logo .second{
             color: white;
-            background-color: rgb(0, 8, 15);
+            background-color: rgb(1, 14, 27);
             padding: 5px 10px;
 
           }
@@ -101,7 +98,7 @@
             height: auto;
         }
           .carousel-indicators li.active {
-            background-color: rgb(189, 91, 27);
+            background-color: #ff5e14;
             
         }
 
@@ -111,7 +108,7 @@
         
         .carousel-control-prev-icon,
         .carousel-control-next-icon {
-            background-color: rgb(194, 78, 0);
+            background-color: #ff5e14;
             padding: 15px;
             border-radius: 50%;
 
@@ -122,10 +119,7 @@
             -webkit-font-smoothing: antialiased;
             color: #222;
         }
-        .fa-laptop-code:hover{
-          color: orange;
-        }
-        
+       
         
 .btn-flip {
   opacity: 1;
@@ -178,7 +172,7 @@
   -webkit-transition: 0.5s;
   transition: 0.5s;
   position: relative;
-  background: rgb(206, 102, 4);
+  background: #ff5e14;
   content: attr(data-front);
   -webkit-transform: translateY(0) rotateX(0);
           transform: translateY(0) rotateX(0);
@@ -390,7 +384,7 @@
   }
 }
 .card-body{
-  background-color: rgb(2, 17, 32);
+  background-color: rgb(1, 14, 27);
 }
 body{
   background-color: rgb(1, 20, 36);
@@ -402,16 +396,17 @@ body{
             width: 40px;
             margin: auto;
             padding-top: 10px;
-            border-bottom: 2px solid rgb(209, 111, 20);
+            border-bottom: 2px solid #ff5e14;
         }
 
-        .card-title1:after {
-            content: '';
+        
+.card-title1:after {
+  content: '';
             display: block;
             width: 25px;
             margin: auto;
             padding-top: 5px;
-            border-bottom: 2px solid rgb(197, 87, 13);
+            border-bottom: 2px solid #ff5e14;
         }
 
   /* title button anime */      
@@ -518,11 +513,11 @@ button:hover .icon-right.after:before {
 .btn-slice {
   cursor: pointer;
   background-color: rgb(1, 10, 19);
-  width: 330px;
+  width: 85%;
   height: 64px;
   line-height: 64px;
   position: absolute;
-  left: 38%;
+  left: 48%;
   top: 10%;
   transform: translate(-50%, -50%);
   z-index: 0;
@@ -679,7 +674,7 @@ ul {
   background: #25d366;
 }
 .github-bg{
-  background: black;
+  background: #171515;
 }
 .instagram-bg{
   background: #f2003c;
@@ -739,7 +734,7 @@ ul {
   transform: rotate(-6deg);
 }
 .copyright-area{
-  background: #060a13;
+  background: #01040a;
   padding: 25px 0;
 }
 .copyright-text p {
@@ -794,7 +789,7 @@ ul {
       </a>
 
       <!-- Collapse -->
-      <a href='#' class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+      <a href='#' class="navbar-toggler orange darken-4" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
         aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </a>
@@ -854,10 +849,10 @@ ul {
 
     <!--Indicators-->
     <ol class="carousel-indicators">
-      <li data-target="#carousel-example-1z" data-slide-to="0" class="active"></li>
-      <li data-target="#carousel-example-1z" data-slide-to="1"></li>
-      <li data-target="#carousel-example-1z" data-slide-to="2"></li>
-      <li data-target="#carousel-example-1z" data-slide-to="3"></li>
+      <li data-target="#carousel-example-1z" data-slide-to="0" class="active" style='width:40px; height: 5px; border-radius: 10px;'></li>
+      <li data-target="#carousel-example-1z" data-slide-to="1" style='width:40px; height: 5px; border-radius: 10px;'></li>
+      <li data-target="#carousel-example-1z" data-slide-to="2" style='width:40px; height: 5px; border-radius: 10px;'></li>
+      <li data-target="#carousel-example-1z" data-slide-to="3" style='width:40px; height: 5px; border-radius: 10px;'></li>
     </ol>
     <!--/.Indicators-->
 
@@ -968,7 +963,7 @@ ul {
     <div class="container-fluid">
 
       <!--Section: Main info-->
-      <section class="mt-5 wow fadeIn">
+      <section class="wow fadeIn">
 
         <!--Grid row-->
         <div class="row">
@@ -985,25 +980,23 @@ ul {
           <div class="col-md-4 mt-5 mb-4 grey-text">
 
             <!-- Main heading -->
-            <h5 class="h5 mb-3">Welcome To AICodings Inc</h5>
-            <p>Here at <strong>AICodings</strong>, we help represent your brand online thereby helping to 
+            <p>Here at <strong style='font-family:Righteous, cursive; letter-spacing: 1px;'>aicodings inc.</strong>, we help represent your brand online thereby helping to 
               represent your business to the larger world.</p>
-            <p>Details below to learn more about AICodings.</p>
+              <hr class='cyan my-3'>
+            <p class='mb-4'>Details below to learn more about <strong style='font-family:Righteous, cursive; letter-spacing: 1px;'>aicodings inc.</strong></p>
             <!-- Main heading -->
-
-            <hr class='orange'>
-
-            <p class ='additional-text'>
+            <a href="https://wa.me/2349050562160" target="_blank" class="btn-flip" style='font-family:Arial Narrow;' data-back="Let's Talk" data-front="Get In Touch"></a>
+            
+            <!-- <p class ='additional-text'>
               <strong>Elegant</strong> material UI elements,
               <strong>Premium</strong> Font and FontAwesome icons,
               <strong>Clean</strong> CSS animations, SASS files, templates.
               <strong>For Personal and Commercial use.</strong>
             </p>
 
-            <!-- CTA -->
-            <a href="https://wa.me/2349050562160" target="_blank" class="btn-flip" style='font-family:Arial Narrow;' data-back="Let's Talk" data-front="Get In Touch"></a>
+            <!-- CTA 
             <a href="#pricing" class="btn-flip" style='font-family:Arial Narrow;' data-back="Cheapest" data-front="Get Pricing"></a>
-            
+             -->
 
           </div>
           <!--Grid column-->
@@ -1016,7 +1009,7 @@ ul {
 
       
 <!--     What we do section -->
-<hr class="my-6 white">
+<hr class="my-6">
 <section>
   <div class='container my-5 mx-auto'>
     <div class='text-center'>
@@ -1041,8 +1034,8 @@ ul {
         <!-- Title -->
             <h4 class="card-title text-white">Web Development</h4>
             <!-- Text -->
-            <p class="card-text px-5 my-4">Dynamic web applications. 
-              Social networking sites, e-commerce. HTML5, CSS3, Bootstrap, Django, JavaScript, MySQL, PHP </p>
+            <p class="card-text my-4">We use content management systems (CMS) to make content changes easier with basic technical skills.
+              Dynamic web applications. Social networking sites, E-commerce. HTML5, CSS3, Bootstrap, Django, JavaScript, MySQL. </p>
             <!-- Button -->
             <div class='btn-cont mt-5'>
               <a class='btn' href='#'>
@@ -1074,7 +1067,9 @@ ul {
         <!-- Title -->
         <h4 class="card-title text-white">Digital Marketing</h4>
         <!-- Text -->
-        <p class="card-text my-5">Email marketing, pay-per-click advertising, social media marketing, blogging, UX</p>
+        <p class="card-text my-5">We have a way to connect with and influence your potential customers. 
+          Since internet usage has more than doubled over the past decade.Email marketing,
+           pay-per-click advertising, social media marketing, blogging, UX</p>
         <!-- Button -->
         <div class='btn-cont mt-5'>
           <a class='btn' href='#'>
@@ -1106,7 +1101,9 @@ ul {
         <!-- Title -->
         <h4 class="card-title text-white">Logo Design</h4>
         <!-- Text -->
-        <p class="card-text my-5">Logo creation, Interface design, Illustration, Animations, Graphics Design</p>
+        <p class="card-text my-5">We use visual compositions to solve problems and 
+          communicate ideas through typography, imagery, color and form. Logo creation, 
+          Interface design, Illustration, Animations, Graphics Design</p>
         <!-- Button -->
         <div class='btn-cont mt-5'>
           <a class='btn' href='#'>
@@ -1125,10 +1122,10 @@ ul {
   </div>
 </section>
 <!-- Card -->
-<hr class="my-5 white">
+<hr class="my-5 cyan">
 
-
-<section>
+<!-- Our work method -->
+<section class='wow fadeIn'>
         <div class='text-center my-5'>
           <button class="explore">OUR WORK METHOD
             <span class="icon-right"></span>
@@ -1136,39 +1133,41 @@ ul {
           </button>
         </div>
         <!--Grid row-->
-        <div class="row wow fadeIn white-text">
-
           <!--Grid column-->
-          <div class="col-lg-6 mx-auto col-md-8 mt-5">
+          <div class="row wow fadeIn white-text">
 
             <!--First row-->
-            <div class="row mt-2">
-              <div class="col-1 mr-4">
-                <i class="fas fa-code fa-2x orange-text darken-3"></i>
+            <div class="col-lg-6 col-md-12">
+              <div class ='row'>
+                <div class="col-1 mr-3">
+                  <i class="fas fa-code fa-3x orange-text darken-3"></i>
+                </div>
+                <div class="col-10">
+                  <h5 class="feature-title"></h5>
+                  <a class="btn-slice"><span class='orange-text'>Modern Design</span><em></em></a>
+                  <p class='my-5'></p>
+                  <p class="grey-text text-left ml-4">Thanks to our knowledge of the newest technologies in web development.</p>
+                  <div style="height:15px"></div>
+                </div>
               </div>
-              <div class="col-10">
-                <h5 class="feature-title"></h5>
-                <a class="btn-slice"><span class='orange-text'>Modern Design</span><em></em></a>
-                <p class='my-5'></p>
-                <p class="grey-text">Thanks to our knowledge of the newest technologies in web development.</p>
-              </div>
-            </div>
+            
             <!--/First row-->
 
             <div style="height:30px"></div>
 
             <!--Second row-->
             <div class="row">
-              <div class="col-1 mr-4">
-                <i class="fas fa-book fa-2x green-text"></i>
+              <div class="col-1 mr-3">
+                <i class="fas fa-book fa-3x green-text"></i>
               </div>
               <div class="col-10">
                 <h5 class="feature-title"></h5>
                 <a class="btn-slice"><span class='green-text'>Detailed Code</span><em></em></a>
                 <p class='my-5'></p>
-                <p class="grey-text">We give you detailed and readable commented out codes at disposal. This is from the best of practice. 
+                <p class="grey-text text-left ml-4">We give you detailed and readable commented out codes at disposal. This is from the best of practice. 
                   easily.
                 </p>
+                <div style="height:15px"></div>
               </div>
             </div>
             <!--/Second row-->
@@ -1177,18 +1176,19 @@ ul {
 
             <!--Third row-->
             <div class="row">
-              <div class="col-1 mr-4">
-                <i class="fas fa-graduation-cap fa-2x mdb-color-text darken-3"></i>
+              <div class="col-1 mr-3">
+                <i class="fas fa-graduation-cap fa-3x mdb-color-text darken-3"></i>
               </div>
               <div class="col-10">
                 <h5 class="feature-title"></h5>
                 <a class="btn-slice"><span class='mdb-color-text'>Easy To Use</span><em></em></a>
                 <p class='my-5'></p>
-                <p class="grey-text">We care about users experience. We have the design simple and yet so enchanting.</p>
+                <p class="grey-text text-left ml-4">We care about users experience. We have the design simple and yet so enchanting.</p>
+                <div style="height:15px"></div>
               </div>
             </div>
             <!--/Third row-->
-
+            
           </div>
           <!--/Grid column-->
           <!--Grid column-->
@@ -1203,7 +1203,7 @@ ul {
       </section>
       <!--Section: Main features & Quick Start-->
 
-      <hr class="my-5 white">
+      <hr class="my-5 cyan">
 
       <!--Section: Not enough-->
       <section>
@@ -1223,7 +1223,7 @@ ul {
             <!--First row-->
             <div class="row">
               <div class="col-2">
-                <i class="fas fa-thumbs-up fa-2x orange-text"></i>
+                <i class="fas fa-thumbs-up fa-2x cyan-text"></i>
               </div>
               <div class="col-10">
                 <h6 class="feature-title">Our Focus on Trendy Innovation</h6>
@@ -1237,11 +1237,11 @@ ul {
             <!--Second row-->
             <div class="row">
               <div class="col-2">
-                <i class="fas fa-award fa-2x orange-text"></i>
+                <i class="fas fa-award fa-2x cyan-text"></i>
               </div>
               <div class="col-10">
                 <h6 class="feature-title">Dedicated Teams</h6>
-                <p class="grey-text">Our Team is always on the go to deliver quality and reliable services.</p>
+                <p class="grey-text">Our Team is always on the go to deliver quality and reliable services at the earliest time.</p>
                 <div style="height:15px"></div>
               </div>
             </div>
@@ -1251,7 +1251,7 @@ ul {
             <!--Third row-->
             <div class="row">
               <div class="col-2">
-                <i class="fas fa-trophy fa-2x orange-text"></i>
+                <i class="fas fa-trophy fa-2x cyan-text"></i>
               </div>
               <div class="col-10">
                 <h6 class="feature-title">FontAwesome icons</h6>
@@ -1264,7 +1264,7 @@ ul {
             <!--Fourth row-->
             <div class="row">
               <div class="col-2">
-                <i class="fas fa-crown fa-2x orange-text"></i>
+                <i class="fas fa-crown fa-2x cyan-text"></i>
               </div>
               <div class="col-10">
                 <h6 class="feature-title">Responsiveness</h6>
@@ -1281,15 +1281,15 @@ ul {
           
 
           <!--Third column-->
-          <div class="col-md-6 mt-2">
+          <div class="col-md-6">
             <!--First row-->
             <div class="row">
               <div class="col-2">
-                <i class="fas fa-thumbs-up fa-2x orange-text"></i>
+                <i class="fas fa-thumbs-up fa-2x cyan-text"></i>
               </div>
               <div class="col-10">
                 <h6 class="feature-title">CSS animations</h6>
-                <p class="grey-text">Neat and interactive animations, which will increase the interactivity of your project and delight your visitors.
+                <p class="grey-text">Neat and interactive animations, which will ensure interactivity of your project and delight your visitors.
                 </p>
                 <div style="height:15px"></div>
               </div>
@@ -1299,7 +1299,7 @@ ul {
             <!--Second row-->
             <div class="row">
               <div class="col-2">
-                <i class="fas fa-award fa-2x orange-text"></i>
+                <i class="fas fa-award fa-2x cyan-text"></i>
               </div>
               <div class="col-10">
                 <h6 class="feature-title">Awesome UI elements</h6>
@@ -1313,7 +1313,7 @@ ul {
             <!--Third row-->
             <div class="row">
               <div class="col-2">
-                <i class="fas fa-trophy fa-2x orange-text"></i>
+                <i class="fas fa-trophy fa-2x cyan-text"></i>
               </div>
               <div class="col-10">
                 <h6 class="feature-title">True partnership</h6>
@@ -1327,7 +1327,7 @@ ul {
             <!--Fourth row-->
             <div class="row">
               <div class="col-2">
-                <i class="fas fa-crown fa-2x orange-text"></i>
+                <i class="fas fa-crown fa-2x cyan-text"></i>
               </div>
               <div class="col-10">
                 <h6 class="feature-title">Our respect for clients needs</h6>
@@ -1344,53 +1344,77 @@ ul {
         <!--/First row-->
 
       </section>
-      <!--Section: Not enough-->
+      
+      <!--Pricing section-->
+      <hr class="my-5 cyan">
+<section class="mt-5 pt-4">
+  <div class="container" id='pricing'>
+    <div class='container'>
+      <div class='text-center'>
+        <button class="explore">OUR PRICING PLANS
+          <span class="icon-right"></span>
+          <span class="icon-right after"></span>
+        </button>
+      </div>
+    </div>
+          <!--Grid row-->    
+    <div class="row wow fadeIn text-center">
+      <div class='col-lg-12 col-md-12'>
+        <div class='btn-cont'>
+          <a class='btn' href='#'>How it Works
+            <span class='line-1'></span>
+            <span class='line-2'></span>
+            <span class='line-3'></span>
+            <span class='line-4'></span>
+          </a>
+        </div>
+      </div>
+    </div>
 
-      <hr class="my-5 white">
-      <section class="mt-5 pt-4">
-        <div class="container" id='pricing'>
-    
-          <div class='container mx-auto'>
-            <div class='text-center'>
-              <button class="explore">OUR PRICING PLANS
-                <span class="icon-right"></span>
-                <span class="icon-right after"></span>
-              </button>
-            </div>
+    <div class="row wow fadeIn">
+      <div class="col-xl-3 col-md-6 my-3">
+          <div class="single-cta ml-3">
+              <i class="fab fa-cc-amazon-pay"></i>
+              <div class="cta-text">
+                  <p></p>
+                  <span><strong>Dedicated Part Payment</strong></span>
+              </div>
           </div>
-          <!--Grid row-->
-          <div class="row mx-auto justify-content-center">
-    
-            <!--Grid column-->
-            <div class="row wow fadeIn text-center">
-              <div class='col-lg-12 col-md-12 mb-4'>
-              <div class='btn-cont mb-3'>
-                <a class='btn' href='#'>
-                  How it Works
-                  <span class='line-1'></span>
-                  <span class='line-2'></span>
-                  <span class='line-3'></span>
-                  <span class='line-4'></span>
-                </a>
-                </div>
+      </div>
+      <div class="col-xl-3 col-md-6 my-3">
+          <div class="single-cta ml-3">
+              <i class="fas fa-palette"></i>
+              <div class="cta-text">
+                  <p></p>
+                  <span><strong>Multiple Template Choices</strong></span>
               </div>
-              <div class="col-lg-4 col-md-12 mb-4">
-                <h6><i class="fab fa-amazon-pay orange-text fa-lg"></i> Part payment as commitment</h6>
-              </div>
-              <div class="col-lg-4 col-md-12 mb-4">
-                <h6><i class="fas fa-palette orange-text fa-lg"></i> Templates from which you will choose from</h6>
-              </div>
-              <div class="col-lg-4 col-md-12 mb-4">
-                <h6><i class="fas fa-layer-group orange-text fa-lg"></i> Full fledged Development</h6>
-              </div>
-            </div>
-            <!--Grid column-->
-    
           </div>
+      </div>
+      <div class="col-xl-3 col-md-6 my-3">
+          <div class="single-cta ml-3">
+              <i class="fas fa-layer-group"></i>
+              <div class="cta-text">
+                 <p></p>
+                  <span><strong>Full Fledged Development</strong></span>
+              </div>
+          </div>
+      </div>
+      <div class="col-xl-3 col-md-6 my-3">
+        <div class="single-cta ml-3">
+          <i class="fas fa-hourglass-half"></i>
+            <div class="cta-text">
+                <p></p>
+                <span><strong>Earliest Time Delivery</strong></span>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!--Grid column-->
+          
           <!--Grid row-->
     
           <!--Grid row-->
-          <div class="row text-center wow fadeIn">
+          <div class="row wow text-center fadeIn" style='font-family: Overlock, cursive;'>
     
             <!--Grid column-->
             <div class="col-lg-4 col-md-12 mb-4 mx-auto">
@@ -1408,17 +1432,17 @@ ul {
                 <!--Card content-->
                 <div class="card-body">
                   <div class='img-holder'><img src = 'https://cdn.lowgif.com/full/734c6ea00e76bc76-walk-cycles-by-jae-il-son-via-behance-2d-animations-pinterest-cycling-behance-and-sons.gif' alt=""></div>
-                  <h3 class="card-titl cyan-text pricing-card-title my-4" style='font-family: Arial Narrow;'>₦50,000
+                  <h3 class="card-titl cyan-text pricing-card-title my-4">₦50,000
                     <!-- <small class="text-muted">/ mo</small> -->
                   </h3>
     
-                  <ol class="list-unstyled mb-4">
+                  <ol class="list-unstyled  mb-4">
                     <li>Free Domain & Web Hosting
-                      <i class="fas fa-check-circle orange-text darken-4 ml-1"></i>
+                      <i class="fas fa-check-circle orange-text darken-4"></i>
                     </li>
                     <hr>
                     <li>Limited Pages
-                      <i class="fas fa-check-circle orange-text darken-4 ml-1"></i>
+                      <i class="fas fa-check-circle orange-text darken-4"></i>
                     </li>
                     <hr>
                     <li>Search Engine Optimization
@@ -1441,7 +1465,7 @@ ul {
                       <i class="fas fa-check-circle orange-text darken-4 ml-1"></i>
                     </li>
                     <hr>
-                    <li>Mobile Responsive and Dynamism
+                    <li>Mobile Responsive and Dynamic
                       <i class="fas fa-check-circle orange-text darken-4 ml-1"></i>
                     </li>
                     <div class='spacing'>
@@ -1475,7 +1499,7 @@ ul {
                 <!--Card content-->
                 <div class="card-body">
                   <div class='img-holder'><img src = 'https://static.dribbble.com/users/1475355/screenshots/9532551/media/445d29a545108a17844ca799d8a1cc33.gif' alt=""></div>
-                  <h3 class="card-titl cyan-text darken-4 pricing-card-title my-4" style="font-family: Arial Narrow;">₦150,000
+                  <h3 class="card-titl cyan-text darken-4 pricing-card-title my-4">₦150,000
                     <!-- <small class="text-muted">/ mo</small> -->
                   </h3>
     
@@ -1557,7 +1581,7 @@ ul {
                 <!--Card content-->
                 <div class="card-body">
                   <div class='img-holder'><img src = 'https://static.dribbble.com/users/2374064/screenshots/4728503/superman.gif' alt=""></div>
-                  <h3 class="card-titl cyan-text pricing-card-title my-4" style="font-family: Arial Narrow;">₦250,000
+                  <h3 class="card-titl cyan-text pricing-card-title my-4">₦250,000
                     <!-- <small class="text-muted">/ mo</small> -->
                   </h3>
     
@@ -1647,7 +1671,7 @@ ul {
       </section>
       <!--Main layout-->
       
-      <hr class="my-5 white">
+      <hr class="my-5 cyan">
       <!--Section: More-->
       <section class='my-5'>
 
@@ -1661,13 +1685,13 @@ ul {
         <div class="row features-small mt-5 wow fadeIn">
 
           <!--Grid column-->
-          <div class="col-xl-4 col-lg-6">
+          <div class="col-xl-4 col-md-9">
             <!--Grid row-->
             <div class="row">
               <div class="col-2">
-                <i class="fab fa-firefox fa-2x mb-1 orange-text" aria-hidden="true"></i>
+                <i class="fab fa-chrome fa-3x mb-1 ml-2 orange-text" aria-hidden="true"></i>
               </div>
-              <div class="col-10 mb-2 pl-3">
+              <div class="col-9 mb-2">
                 <h5 class="feature-title font-bold mb-1">Cross-browser compatibility</h5>
                 <p class="grey-text mt-2">Chrome, Firefox, IE, Safari, Opera, Microsoft Edge - Works great.
                 </p>
@@ -1678,13 +1702,13 @@ ul {
           <!--/Grid column-->
 
           <!--Grid column-->
-          <div class="col-xl-4 col-lg-6">
+          <div class="col-xl-4 col-md-9">
             <!--Grid row-->
             <div class="row">
               <div class="col-2">
-                <i class="fas fa-level-up-alt fa-2x mb-1 orange-text" aria-hidden="true"></i>
+                <i class="fas fa-level-up-alt fa-3x mb-1 ml-2 orange-text" aria-hidden="true"></i>
               </div>
-              <div class="col-10 mb-2">
+              <div class="col-9 mb-2">
                 <h5 class="feature-title font-bold mb-1">Constant Improvement</h5>
                 <p class="grey-text mt-2"> We improve every month. We love the project and enhance as much as possible.
                 </p>
@@ -1695,13 +1719,13 @@ ul {
           <!--/Grid column-->
 
           <!--Grid column-->
-          <div class="col-xl-4 col-lg-6">
+          <div class="col-xl-4 col-md-9">
             <!--Grid row-->
             <div class="row">
               <div class="col-2">
-                <i class="fas fa-comments fa-2x mb-1 orange-text" aria-hidden="true"></i>
+                <i class="fas fa-comments fa-3x mb-1 ml-2 orange-text" aria-hidden="true"></i>
               </div>
-              <div class="col-10 mb-2">
+              <div class="col-9 mb-2">
                 <h5 class="feature-title font-bold mb-1">Active Technical Support</h5>
                 <p class="grey-text mt-2">Our team grows day by day. We focus on delivering qualitative services.
                 </p>
@@ -1719,13 +1743,13 @@ ul {
         <div class="row features-small mt-4 wow fadeIn">
 
           <!--Grid column-->
-          <div class="col-xl-4 col-lg-6">
+          <div class="col-xl-4 col-md-9">
             <!--Grid row-->
             <div class="row">
               <div class="col-2">
-                <i class="fas fa-cubes fa-2x mb-1 orange-text" aria-hidden="true"></i>
+                <i class="fas fa-cubes fa-3x mb-1 ml-2 orange-text" aria-hidden="true"></i>
               </div>
-              <div class="col-10 mb-2">
+              <div class="col-9 mb-2">
                 <h5 class="feature-title font-bold mb-1">Modularity</h5>
                 <p class="grey-text mt-2">Our Design comes with both, compiled, ready to use libraries including all features as
                   well as modules for CSS (SASS files) and JS.</p>
@@ -1738,13 +1762,13 @@ ul {
           <!--Grid column-->
           
           <!--Grid column-->
-          <div class="col-xl-4 col-lg-6">
+          <div class="col-xl-4 col-md-9">
             <!--Grid row-->
             <div class="row">
               <div class="col-2">
-                <i class="fas fa-th fa-2x mb-1 orange-text" aria-hidden="true"></i>
+                <i class="fas fa-th fa-3x mb-1 ml-2 orange-text" aria-hidden="true"></i>
               </div>
-              <div class="col-10 mb-2">
+              <div class="col-9 mb-2">
                 <h5 class="feature-title font-bold mb-1">Flexbox</h5>
                 <p class="grey-text mt-2">We fully supports Flex Box. You can forget about alignment issues.</p>
               </div>
@@ -1754,13 +1778,13 @@ ul {
           <!--/Grid column-->
 
           <!--Grid column-->
-          <div class="col-xl-4 col-lg-6">
+          <div class="col-xl-4 col-md-9">
             <!--Grid row-->
             <div class="row">
               <div class="col-2">
-                <i class="far fa-file-code fa-2x mb-1 orange-text" aria-hidden="true"></i>
+                <i class="far fa-file-code fa-3x mb-1 ml-2 orange-text" aria-hidden="true"></i>
               </div>
-              <div class="col-10 mb-2">
+              <div class="col-9 mb-2">
                 <h5 class="feature-title font-bold mb-1">SASS files</h5>
                 <p class="grey-text mt-2">Arranged and well documented .scss files can't wait until you compile them.</p>
               </div>
@@ -1786,7 +1810,7 @@ ul {
         <div class="footer-cta pt-5 pb-5">
             <div class="row wow fadeIn">
                 <div class="col-xl-3 col-md-6 my-3">
-                    <div class="single-cta">
+                    <div class="single-cta ml-3">
                         <i class="fas fa-map-marker-alt"></i>
                         <div class="cta-text">
                             <h4>Find us</h4>
@@ -1795,7 +1819,7 @@ ul {
                     </div>
                 </div>
                 <div class="col-xl-3 col-md-6 my-3">
-                    <div class="single-cta">
+                    <div class="single-cta ml-3">
                         <i class="fas fa-phone"></i>
                         <div class="cta-text">
                             <h4>Call us</h4>
@@ -1804,7 +1828,7 @@ ul {
                     </div>
                 </div>
                 <div class="col-xl-3 col-md-6 my-3">
-                    <div class="single-cta">
+                    <div class="single-cta ml-3">
                         <i class="far fa-envelope-open"></i>
                         <div class="cta-text">
                             <h4>Mail us</h4>
@@ -1813,7 +1837,7 @@ ul {
                     </div>
                 </div>
                 <div class="col-xl-3 col-md-6 my-3">
-                  <div class="single-cta">
+                  <div class="single-cta ml-3">
                       <i class="fab fa-whatsapp"></i>
                       <div class="cta-text">
                           <h4>Chat us</h4>
@@ -1830,21 +1854,21 @@ ul {
                         <div class="footer-logo">
                           <a class="navbar-brand" href="index.html">
         
-                            <div class='logo'>
+                            <div class='logo ml-2'>
                               <h1 class='d-inline-block justify-content-center align-self-center first' style='font-family: Righteous, cursive;'>a</h1><h2 class='d-inline-block justify-content-center align-self-center second' style='font-family: Righteous, cursive;'>aicodings inc.</h2>
                             </div>
                           </a>
                     
                         </div>
                         <div class="footer-text">
-                          <p>Here at <strong>AICodings</strong>, we help represent your brand online thereby helping to 
+                          <p>Here at <strong style='font-family:Righteous, cursive; letter-spacing: 1px;'>aicodings inc.</strong>, we help represent your brand online thereby helping to 
                             represent your business to the larger world.</p>
                           <p>Our team grows day by day. We focus on delivering qualitative services.
                             Our goal is straightforward and pleasant. Bent upon client's objectives and ease to suit your needs.
                           </p>
                         </div>
                         <div class="footer-social-icon my-5">
-                            <span>Follow us</span>
+                            <span class='footer-widget-heading'><h3>Follow us</h3></span>
                             <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
                             <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
                             <a href="#"><i class="fab fa-gitlab gitlab-bg"></i></a>
