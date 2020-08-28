@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-=======
-# aicodings
->>>>>>> 894d2cc4cfa70dfc6f630f646da659ba64e386ac
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -31,12 +28,15 @@
         height: 100vh;
       }
 
-      @media (max-width: 740px) {
+      @media (max-width: 1040px) {
         html,
         body,
         header,
         .carousel {
-          height: 100vh;
+          height: 60vh;
+        }
+        .additional-text{
+          display: none;
         }
       }
 
@@ -45,7 +45,11 @@
         body,
         header,
         .carousel {
-          height: 100vh;
+          height: 60vh;
+          
+        }
+        .additional-text{
+          display: none;
         }
       }
 
@@ -56,6 +60,7 @@
           }
           .logo{
             padding: 0 10px;
+            margin-left:-20px;
             
           }
           .logo .first{
@@ -104,10 +109,11 @@
   outline: 0;
   color: #fff;
   line-height: 40px;
+  margin-top: 5px;
   position: relative;
   text-align: center;
   letter-spacing: 1px;
-  display: inline-block;
+  display: block;
   text-decoration: none;
   font-family: 'Open Sans';
   text-transform: uppercase;
@@ -740,7 +746,7 @@ ul {
 
   <!-- Navbar -->
   <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
-    <div class="container">
+    <div class="container-fluid">
 
       <!-- Brand -->
       <a class="navbar-brand" href="index.html">
@@ -978,10 +984,10 @@ ul {
       <section class="mt-5 wow fadeIn">
 
         <!--Grid row-->
-        <div class="row mx-auto">
+        <div class="row">
 
           <!--Grid column-->
-          <div class="fadeIn col-md-6 mt-5 mb-4">
+          <div class="fadeIn col-md-8 mt-5 mb-4">
 
             <img src="https://wallpaperaccess.com/full/1657871.jpg" class="img-fluid z-depth-1-half" alt="">
 
@@ -989,10 +995,10 @@ ul {
           <!--Grid column-->
 
           <!--Grid column-->
-          <div class="col-md-6 mt-5 mb-4 grey-text">
+          <div class="col-md-4 mt-5 mb-4 grey-text">
 
             <!-- Main heading -->
-            <h3 class="h3 mb-3">Welcome To AICodings Inc</h3>
+            <h5 class="h5 mb-3">Welcome To AICodings Inc</h5>
             <p>Here at <strong>AICodings</strong>, we help represent your brand online thereby helping to 
               represent your business to the larger world.</p>
             <p>Details below to learn more about AICodings.</p>
@@ -1000,7 +1006,7 @@ ul {
 
             <hr class='orange'>
 
-            <p>
+            <p class ='additional-text'>
               <strong>Elegant</strong> material UI elements,
               <strong>Premium</strong> Font and FontAwesome icons,
               <strong>Clean</strong> CSS animations, SASS files, templates.
@@ -1033,7 +1039,7 @@ ul {
       </button>
     </div>
     <div class="row wow fadeIn  text-center">
-      <div class="col-lg-4 mx-auto col-md-2 mt-5">
+      <div class="col-lg-4 mx-auto col-md-7 mt-5">
         <div class="card">
       <!-- Card image -->
           <div class="view overlay">
@@ -1064,7 +1070,7 @@ ul {
       </div>
     </div>
     
-    <div class="col-lg-4 mx-auto col-md-12 mt-5">
+    <div class="col-lg-4 mx-auto col-md-7 mt-5">
       <div class="card">
       <!-- Card image -->
         <div class="view overlay">
@@ -1096,7 +1102,7 @@ ul {
         </div>
       </div>
     </div>
-    <div class="col-lg-4 mx-auto col-md-12 mt-5">
+    <div class="col-lg-4 mx-auto col-md-7 mt-5">
       <div class="card">
       <!-- Card image -->
         <div class="view overlay">
@@ -1146,17 +1152,18 @@ ul {
         <div class="row wow fadeIn white-text">
 
           <!--Grid column-->
-          <div class="col-md-6 mt-5 mb-4">
+          <div class="col-lg-6 mx-auto col-md-8 mt-5">
 
             <!--First row-->
             <div class="row mt-2">
-              <div class="col-1 mr-3">
+              <div class="col-1 mr-4">
                 <i class="fas fa-code fa-2x orange-text darken-3"></i>
               </div>
               <div class="col-10">
-                <h5 class="feature-title">Bootstrap</h5>
+                <h5 class="feature-title"></h5>
                 <a class="btn-slice"><span class='orange-text'>Modern Design</span><em></em></a>
-                <p class="grey-text mt-4">Thanks to our knowledge of the newest technologies in web development.</p>
+                <p class='my-5'></p>
+                <p class="grey-text">Thanks to our knowledge of the newest technologies in web development.</p>
               </div>
             </div>
             <!--/First row-->
@@ -1165,13 +1172,13 @@ ul {
 
             <!--Second row-->
             <div class="row">
-              <div class="col-1 mr-3">
+              <div class="col-1 mr-4">
                 <i class="fas fa-book fa-2x green-text"></i>
               </div>
               <div class="col-10">
-                <h5 class="feature-title">Detailing</h5>
+                <h5 class="feature-title"></h5>
                 <a class="btn-slice"><span class='green-text'>Detailed Code</span><em></em></a>
-                <p class='my-4'></p>
+                <p class='my-5'></p>
                 <p class="grey-text">We give you detailed and readable commented out codes at disposal. This is from the best of practice. 
                   easily.
                 </p>
@@ -1183,7 +1190,7 @@ ul {
 
             <!--Third row-->
             <div class="row">
-              <div class="col-1 mr-3">
+              <div class="col-1 mr-4">
                 <i class="fas fa-graduation-cap fa-2x mdb-color-text darken-3"></i>
               </div>
               <div class="col-10">
@@ -1199,8 +1206,8 @@ ul {
           <!--/Grid column-->
 
           <!--Grid column-->
-          <div class="col-md-6 mt-5 mb-4">
-            <img src="https://i.pinimg.com/originals/b5/cc/4f/b5cc4f17bec8b6b845b4326c523ce5b5.gif" class="img-fluid z-depth-1-half" alt="">
+          <div class="col-lg-6 mx-auto col-md-8 mt-5">
+            <img src="https://i.pinimg.com/originals/b5/cc/4f/b5cc4f17bec8b6b845b4326c523ce5b5.gif" class="img-fluid z-depth-2-full" alt="">
             
           </div>
           <!--/Grid column-->
@@ -1367,11 +1374,11 @@ ul {
             </div>
           </div>
           <!--Grid row-->
-          <div class="row d-flex justify-content-center">
+          <div class="row mx-auto justify-content-center">
     
             <!--Grid column-->
-            <div class="col-md-10">
-    
+            <div class="row wow fadeIn text-center">
+              <div class='col-lg-12 col-md-12 mb-4'>
               <div class='btn-cont mb-3'>
                 <a class='btn' href='#'>
                   How it Works
@@ -1380,11 +1387,16 @@ ul {
                   <span class='line-3'></span>
                   <span class='line-4'></span>
                 </a>
+                </div>
               </div>
-              <div class='d-flex'>
-                <h6 class='ml-2 mb-5'><i class="fab fa-amazon-pay orange-text fa-lg"></i> Part payment as commitment</h6>
-                <h6 class='ml-5 mb-5'><i class="fas fa-palette orange-text fa-lg"></i> Templates from which you will choose from</h6>
-                <h6 class='ml-5 mb-5'><i class="fas fa-layer-group orange-text fa-lg"></i> Full fledged Development</h6>
+              <div class="col-lg-4 col-md-6 mb-4">
+                <h6><i class="fab fa-amazon-pay orange-text fa-lg"></i> Part payment as commitment</h6>
+              </div>
+              <div class="col-lg-4 col-md-6 mb-4">
+                <h6><i class="fas fa-palette orange-text fa-lg"></i> Templates from which you will choose from</h6>
+              </div>
+              <div class="col-lg-4 col-md-6 mb-4">
+                <h6><i class="fas fa-layer-group orange-text fa-lg"></i> Full fledged Development</h6>
               </div>
             </div>
             <!--Grid column-->
@@ -1396,7 +1408,7 @@ ul {
           <div class="row text-center wow fadeIn">
     
             <!--Grid column-->
-            <div class="col-lg-4 col-md-12 mb-4">
+            <div class="col-lg-4 col-md-8 mb-4 mx-auto">
     
               <!--Card-->
               <div class="card cyan darken-4">
@@ -1451,7 +1463,7 @@ ul {
                     <hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><li></li><hr>
                   </ol>
     
-                  <a href="https://wa.me/2349050562160" target="_blank"><button type="button" class="btn btn-lg btn-block btn-outline-cyan waves-effect"><h6 class='white-text'>Let's Get started</h6></button></a>
+                  <a href="https://wa.me/2349050562160" target="_blank"><button type="button" class="btn btn-lg btn-block btn-outline-cyan waves-effect"><h6 class='white-text'>Get started</h6></button></a>
     
                 </div>
     
@@ -1462,7 +1474,7 @@ ul {
             <!--Grid column-->
     
             <!--Grid column-->
-            <div class="col-lg-4 col-md-6 mb-4" style='font-family: Arial Narrow;'>
+            <div class="col-lg-4 col-md-8 mb-4 mx-auto" style='font-family: Arial Narrow;'>
     
               <!--Card-->
               <div class="card cyan darken-4">
@@ -1532,7 +1544,7 @@ ul {
                     <hr><hr><hr><hr><hr><hr><hr><br><hr><hr><hr><br><hr><hr><hr>
                     </ol>
     
-                    <a href="https://wa.me/2349050562160" target="_blank"><button type="button" class="btn btn-lg btn-block btn-outline-cyan waves-effect"><h6 class='white-text'>Let's Get started</h6></button></a>
+                    <a href="https://wa.me/2349050562160" target="_blank"><button type="button" class="btn btn-lg btn-block btn-outline-cyan waves-effect"><h6 class='white-text'>Get started</h6></button></a>
     
                 </div>
     
@@ -1543,7 +1555,7 @@ ul {
             <!--Grid column-->
     
             <!--Grid column-->
-            <div class="col-lg-4 col-md-6 mb-4" style='font-family: Arial Narrow;'>
+            <div class="col-lg-4 col-md-8 mb-4 mx-auto" style='font-family: Arial Narrow;'>
     
               <!--Card-->
               <div class="card cyan darken-4">
@@ -1633,7 +1645,7 @@ ul {
                     <hr>
                   </ol>
     
-                  <a href="https://wa.me/2349050562160" target="_blank"><button type="button" class="btn btn-lg btn-block btn-outline-cyan waves-effect"><h6 class='white-text'>Let's Get started</h6></button></a>
+                  <a href="https://wa.me/2349050562160" target="_blank"><button type="button" class="btn btn-lg btn-block btn-outline-cyan waves-effect"><h6 class='white-text'>Get started</h6></button></a>
     
                 </div>
     
@@ -1783,10 +1795,10 @@ ul {
 
   <!--Footer-->
   <footer class="footer-section">
-    <div class="container mr-2">
+    <div class="container">
         <div class="footer-cta pt-5 pb-5">
             <div class="row wow fadeIn">
-                <div class="col-xl-4 col-md-4 mb-30">
+                <div class="col-xl-4 col-md-12 my-3">
                     <div class="single-cta">
                         <i class="fas fa-map-marker-alt"></i>
                         <div class="cta-text">
@@ -1795,7 +1807,7 @@ ul {
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-4 col-md-4 mb-30">
+                <div class="col-xl-4 col-md-12 my-3">
                     <div class="single-cta">
                         <i class="fas fa-phone"></i>
                         <div class="cta-text">
@@ -1804,7 +1816,7 @@ ul {
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-4 col-md-4 mb-30">
+                <div class="col-xl-4 col-md-12 my-3">
                     <div class="single-cta">
                         <i class="far fa-envelope-open"></i>
                         <div class="cta-text">
@@ -1832,7 +1844,7 @@ ul {
                           <p>Here at <strong>AICodings</strong>, we help represent your brand online thereby helping to 
                             represent your business to the larger world.</p>
                         </div>
-                        <div class="footer-social-icon">
+                        <div class="footer-social-icon my-5">
                             <span>Follow us</span>
                             <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
                             <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
@@ -1920,7 +1932,4 @@ ul {
 </body>
 
 </html>
-<<<<<<< HEAD
-=======
 
->>>>>>> 894d2cc4cfa70dfc6f630f646da659ba64e386ac
