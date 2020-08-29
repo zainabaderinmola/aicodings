@@ -1,26 +1,36 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>AICodings Inc.</title>
-    <link rel='shortcut icon' type='image/png' href="img/favicon-96x96.png">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&family=Nunito:wght@300&family=Playfair+Display&family=Slabo+27px&display=swap"
-        rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Astloch:wght@700&family=MuseoModerno&family=Righteous&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Overlock&display=swap" rel="stylesheet">
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-    <!-- Material Design Bootstrap -->
-    <link href="css/mdb.min.css" rel="stylesheet">
-    <!-- Your custom styles (optional) -->
-    <link href="css/style.min.css" rel="stylesheet">
-    <style type="text/css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>aiodings Inc.</title>
+  <link rel='shortcut icon' type='image/png' href="img/favicon-96x96.png">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&family=Nunito:wght@300&family=Playfair+Display&family=Slabo+27px&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Astloch:wght@700&family=MuseoModerno&family=Righteous&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Overlock&display=swap" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.min.css" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <link href="css/style.min.css" rel="stylesheet">
+  <style type="text/css">
+    html,
+    body,
+    header,
+    .carousel {
+      height: 80vw;
+      width: 100%;
+    }
+
+    @media (max-width: 740px) {
 
       html,
       body,
@@ -30,749 +40,853 @@
         width: 100%;
       }
 
-      @media (max-width: 740px) {
-        html,
-        body,
-        header,
-        .carousel {
-          height: 80vw;
-          width: 100%;
-        }
-        .carousel-item img {
-            width: 100%;
-            height: 100%;
-        }
-        .logo .second{
-          display:none;
-        }
-        
-        .spacing {
-          display:none;
-        }
+      .carousel-item img {
+        width: 100%;
+        height: 100%;
       }
 
-      @media (min-width: 800px) and (max-width: 850px) {
-        html,
-        body,
-        header,
-        .carousel {
-          width: 100%;
-          height: 80vw;
-          
-        }
-        .logo .second{
-          display: none;
-        }
-        
-        .carousel-item img {
-            width: 100%;
-            height: auto;
-        }
+      .logo .second {
+        display: none;
       }
 
-      @media (min-width: 800px) and (max-width: 850px) {
-              .navbar:not(.top-nav-collapse) {
-                  background: #1C2331!important;
-              }
-          }
-          .logo{
-            padding: 0 10px;
-            margin-left:-20px;
-            
-          }
-          .logo .first{
-            background-color: white;
-            padding: 2px 10px;
-            font-weight:900;
-          
-            color: rgb(1, 14, 27);
-          }
-          .logo .second{
-            color: white;
-            background-color: rgb(1, 14, 27);
-            padding: 5px 10px;
+      .spacing {
+        display: none;
+      }
+    }
 
-          }
-          .carousel-item img {
-            width: 100%;
-            height: auto;
-        }
-          .carousel-indicators li.active {
-            background-color: #ff5e14;
-            
-        }
+    @media (min-width: 800px) and (max-width: 850px) {
 
-        .carousel-item {
-            filter: brightness(60%);
-        }
-        
-        .carousel-control-prev-icon,
-        .carousel-control-next-icon {
-            background-color: #ff5e14;
-            padding: 15px;
-            border-radius: 50%;
+      html,
+      body,
+      header,
+      .carousel {
+        width: 100%;
+        height: 80vw;
 
-        }
-        body {
-            font-family: Overlock, cursive;
-            font-weight: 400;
-            -webkit-font-smoothing: antialiased;
-            color: #222;
-            font-size: 112%;
-        }
-       .feature-title{
-         font-weight: 900;
-         font-size: large;
-       }
-        
-.btn-flip {
-  opacity: 1;
-  outline: 0;
-  color: #fff;
-  line-height: 40px;
-  margin-top: 5px;
-  position: relative;
-  text-align: center;
-  letter-spacing: 1px;
-  display: block;
-  text-decoration: none;
-  font-family: 'Open Sans';
-  text-transform: uppercase;
-}
-.btn-flip:hover:after {
-  opacity: 1;
-  -webkit-transform: translateY(0) rotateX(0);
-          transform: translateY(-100%) rotateX(100%);
-}
-.btn-flip:hover:before {
-  opacity: 0;
-  -webkit-transform: translateY(50%) rotateX(90deg);
-          transform: translateY(50%) rotateX(90deg);
-}
-.btn-flip:after {
-  top: 0;
-  left: 0;
-  opacity: 0;
-  width: 100%;
-  color: white;
-  font-weight: 600;
-  display: block;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  position: absolute;
-  background: teal;
-  content: attr(data-back);
-  -webkit-transform: translateY(-50%) rotateX(90deg);
-          transform: translateY(-50%) rotateX(90deg);
-}
-.btn-flip:before {
-  top: 0;
-  left: 0;
-  opacity: 1;
-  color: white;
-  display: block;
-  padding: 0 30px;
-  line-height: 40px;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  position: relative;
-  background: #ff5e14;
-  content: attr(data-front);
-  -webkit-transform: translateY(0) rotateX(0);
-          transform: translateY(0) rotateX(0);
-}
+      }
+
+      .logo .second {
+        display: none;
+      }
+
+      .carousel-item img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    @media (min-width: 800px) and (max-width: 850px) {
+      .navbar:not(.top-nav-collapse) {
+        background: #1C2331 !important;
+      }
+    }
+
+    .logo {
+      padding: 0 10px;
+      margin-left: -20px;
+
+    }
+
+    .logo .first {
+      background-color: white;
+      padding: 2px 10px;
+      font-weight: 900;
+
+      color: rgb(1, 14, 27);
+    }
+
+    .logo .second {
+      color: white;
+      background-color: rgb(1, 14, 27);
+      padding: 5px 10px;
+
+    }
+
+    .carousel-item img {
+      width: 100%;
+      height: auto;
+    }
+
+    .carousel-indicators li.active {
+      background-color: #ff5e14;
+
+    }
+
+    .carousel-item {
+      filter: brightness(60%);
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      background-color: #ff5e14;
+      padding: 15px;
+      border-radius: 50%;
+
+    }
+
+    body {
+      font-family: Overlock, cursive;
+      font-weight: 400;
+      -webkit-font-smoothing: antialiased;
+      color: #222;
+      font-size: 112%;
+    }
+
+    .feature-title {
+      font-weight: 900;
+      font-size: large;
+    }
+
+    .btn-flip {
+      opacity: 1;
+      outline: 0;
+      color: #fff;
+      line-height: 40px;
+      margin-top: 5px;
+      position: relative;
+      text-align: center;
+      letter-spacing: 1px;
+      display: block;
+      text-decoration: none;
+      font-family: 'Open Sans';
+      text-transform: uppercase;
+    }
+
+    .btn-flip:hover:after {
+      opacity: 1;
+      -webkit-transform: translateY(0) rotateX(0);
+      transform: translateY(-100%) rotateX(100%);
+    }
+
+    .btn-flip:hover:before {
+      opacity: 0;
+      -webkit-transform: translateY(50%) rotateX(90deg);
+      transform: translateY(50%) rotateX(90deg);
+    }
+
+    .btn-flip:after {
+      top: 0;
+      left: 0;
+      opacity: 0;
+      width: 100%;
+      color: white;
+      font-weight: 600;
+      display: block;
+      -webkit-transition: 0.5s;
+      transition: 0.5s;
+      position: absolute;
+      background: teal;
+      content: attr(data-back);
+      -webkit-transform: translateY(-50%) rotateX(90deg);
+      transform: translateY(-50%) rotateX(90deg);
+    }
+
+    .btn-flip:before {
+      top: 0;
+      left: 0;
+      opacity: 1;
+      color: white;
+      display: block;
+      padding: 0 30px;
+      line-height: 40px;
+      -webkit-transition: 0.5s;
+      transition: 0.5s;
+      position: relative;
+      background: #ff5e14;
+      content: attr(data-front);
+      -webkit-transform: translateY(0) rotateX(0);
+      transform: translateY(0) rotateX(0);
+    }
 
 
-.btn-cont {
-  text-align: center;
-  margin-top:10px;
-}
-.btn-cont .btn {
-  position: relative;
-  padding: 10px 50px;
-  border: 1px solid white;
-  color: white;
-  width: 300px;
-  text-decoration: none;
-  font-size: 1.125em;
-  text-transform: uppercase;
-  font: bold 18px Arial;
-  transform: scaleX(0.6);
-  letter-spacing: 3px;
-  letter-spacing: 2px;
-  -webkit-font-smoothing: antialiased;
-}
-.btn-cont .btn:hover {
-  border: none;
-}
-.btn-cont .btn:hover .line-1 {
-  -webkit-animation: move1 1500ms infinite ease;
-          animation: move1 1500ms infinite ease;
-}
-.btn-cont .btn:hover .line-2 {
-  -webkit-animation: move2 1500ms infinite ease;
-          animation: move2 1500ms infinite ease;
-}
-.btn-cont .btn:hover .line-3 {
-  -webkit-animation: move3 1500ms infinite ease;
-          animation: move3 1500ms infinite ease;
-}
-.btn-cont .btn:hover .line-4 {
-  -webkit-animation: move4 1500ms infinite ease;
-          animation: move4 1500ms infinite ease;
-}
-.btn-cont .line-1 {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 3px;
-  background-color: cyan;
-  left: 0;
-  bottom: 0;
-}
-.btn-cont .line-2 {
-  content: "";
-  display: block;
-  position: absolute;
-  height: 2px;
-  background-color: cyan;;
-  left: 0;
-  top: 0;
-}
-.btn-cont .line-3 {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 3px;
-  background-color: cyan;;
-  right: 0;
-  top: 0;
-}
-.btn-cont .line-4 {
-  content: "";
-  display: block;
-  position: absolute;
-  height: 2px;
-  background-color: cyan;;
-  right: 0;
-  bottom: 0;
-}
+    .btn-cont {
+      text-align: center;
+      margin-top: 10px;
+    }
 
-@-webkit-keyframes move1 {
-  0% {
-    height: 100%;
-    bottom: 0;
-  }
-  54% {
-    height: 0;
-    bottom: 100%;
-  }
-  55% {
-    height: 0;
-    bottom: 0;
-  }
-  100% {
-    height: 100%;
-    bottom: 0;
-  }
-}
+    .btn-cont .btn {
+      position: relative;
+      padding: 10px 50px;
+      border: 1px solid white;
+      color: white;
+      width: 300px;
+      text-decoration: none;
+      font-size: 1.125em;
+      text-transform: uppercase;
+      font: bold 18px Arial;
+      transform: scaleX(0.6);
+      letter-spacing: 3px;
+      letter-spacing: 2px;
+      -webkit-font-smoothing: antialiased;
+    }
 
-@keyframes move1 {
-  0% {
-    height: 100%;
-    bottom: 0;
-  }
-  54% {
-    height: 0;
-    bottom: 100%;
-  }
-  55% {
-    height: 0;
-    bottom: 0;
-  }
-  100% {
-    height: 100%;
-    bottom: 0;
-  }
-}
-@-webkit-keyframes move2 {
-  0% {
-    width: 0;
-    left: 0;
-  }
-  50% {
-    width: 100%;
-    left: 0;
-  }
-  100% {
-    width: 0;
-    left: 100%;
-  }
-}
-@keyframes move2 {
-  0% {
-    width: 0;
-    left: 0;
-  }
-  50% {
-    width: 100%;
-    left: 0;
-  }
-  100% {
-    width: 0;
-    left: 100%;
-  }
-}
-@-webkit-keyframes move3 {
-  0% {
-    height: 100%;
-    top: 0;
-  }
-  54% {
-    height: 0;
-    top: 100%;
-  }
-  55% {
-    height: 0;
-    top: 0;
-  }
-  100% {
-    height: 100%;
-    top: 0;
-  }
-}
-@keyframes move3 {
-  0% {
-    height: 100%;
-    top: 0;
-  }
-  54% {
-    height: 0;
-    top: 100%;
-  }
-  55% {
-    height: 0;
-    top: 0;
-  }
-  100% {
-    height: 100%;
-    top: 0;
-  }
-}
-@-webkit-keyframes move4 {
-  0% {
-    width: 0;
-    right: 0;
-  }
-  55% {
-    width: 100%;
-    right: 0;
-  }
-  100% {
-    width: 0;
-    right: 100%;
-  }
-}
-@keyframes move4 {
-  0% {
-    width: 0;
-    right: 0;
-  }
-  55% {
-    width: 100%;
-    right: 0;
-  }
-  100% {
-    width: 0;
-    right: 100%;
-  }
-}
-.card-body{
-  background-color: rgb(1, 14, 27);
-}
-body{
-  background-color: rgb(1, 20, 36);
-  color: white;
-  
-}
-.card-title:after {
-            content: '';
-            display: block;
-            width: 40px;
-            margin: auto;
-            padding-top: 10px;
-            border-bottom: 2px solid #ff5e14;
-        }
+    .btn-cont .btn:hover {
+      border: none;
+    }
 
-        
-.card-title1:after {
-  content: '';
-            display: block;
-            width: 25px;
-            margin: auto;
-            padding-top: 5px;
-            border-bottom: 2px solid #ff5e14;
-        }
+    .btn-cont .btn:hover .line-1 {
+      -webkit-animation: move1 1500ms infinite ease;
+      animation: move1 1500ms infinite ease;
+    }
 
-  /* title button anime */      
-  
-  button {
-  font-family: Overlock, cursive;
-  letter-spacing: 1px;
-  background: none;
-  color: white;
-  position: relative;
-  outline: none;
-  border: none;
-  height: 50px;
-  width: 190px;
-  font-size: 16px;
-  z-index: 2;
-  -webkit-transition: .01s .23s ease-out all;
-  transition: .01s .23s ease-out all;
-  box-shadow: 0px 0px 17px 1px rgba(0, 0, 0, 0.34);
-  overflow: hidden;
-}
-button:before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 55%;
-  background: rgb(1, 10, 19);
-  z-index: -1;
-  -webkit-transition: .3s ease-in all;
-  transition: .3s ease-in all;
-}
-button:after {
-  content: '';
-  position: absolute;
-  left: -5%;
-  top: 5%;
-  height: 90%;
-  width: 5%;
-  background: white;
-  z-index: -1;
-  -webkit-transition: .4s .02s ease-in all;
-  transition: .4s .02s ease-in all;
-}
-button:hover {
-  cursor: pointer;
-  color: transparent;
-}
-button:hover:before {
-  left: 100%;
-  width: 25%;
-}
-button:hover:after {
-  left: 100%;
-  width: 70%;
-}
-button:hover .icon-right.after:after {
-  left: -80px;
-  color: white;
-  -webkit-transition: .2s .2s ease all;
-  transition: .2s .2s ease all;
-}
-button:hover .icon-right.after:before {
-  left: -104px;
-  top: 14px;
-  opacity: 0.2;
-  color: white;
-}
+    .btn-cont .btn:hover .line-2 {
+      -webkit-animation: move2 1500ms infinite ease;
+      animation: move2 1500ms infinite ease;
+    }
 
-.icon-right {
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-.icon-right:after {
-  font-family: "FontAwesome";
-  content: '\2192';
-  font-size: 24px;
-  display: inline-block;
-  position: relative;
-  top: 26px;
-  -webkit-transform: translate3D(0, -50%, 0);
-          transform: translate3D(0, -50%, 0);
-}
-.icon-right.after:after {
-  left: -250px;
-  color: black;
-  -webkit-transition: .15s .25s ease left, .5s .05s ease color;
-  transition: .15s .25s ease left, .5s .05s ease color;
-}
-.icon-right.after:before {
-  content: 'Explore';
-  position: absolute;
-  left: -230px;
-  top: 14px;
-  opacity: 0;
-  -webkit-transition: .2s ease-in all;
-  transition: .2s ease-in all;
-}
+    .btn-cont .btn:hover .line-3 {
+      -webkit-animation: move3 1500ms infinite ease;
+      animation: move3 1500ms infinite ease;
+    }
 
-/* button slice */
+    .btn-cont .btn:hover .line-4 {
+      -webkit-animation: move4 1500ms infinite ease;
+      animation: move4 1500ms infinite ease;
+    }
 
-.btn-slice {
-  cursor: pointer;
-  background-color: rgb(1, 10, 19);
-  width: 85%;
-  height: 64px;
-  line-height: 64px;
-  position: absolute;
-  left: 48%;
-  top: 10%;
-  transform: translate(-50%, -50%);
-  z-index: 0;
-  box-shadow: 0px 0px 17px 1px rgba(0, 0, 0, 0.34);
-}
-.btn-slice span {
-  color: #fff;
-  display: inline-block;
-  padding-left: 35px;
-  text-transform: uppercase;
-  font: bold 18px/66px Arial;
-  transform: scaleX(0.6);
-  letter-spacing: 3px;
-  transform-origin: center left;
-  transition: color 0.3s ease;
-  position: relative;
-  z-index: 1;
-  font-weight: 900;
-}
-.btn-slice em {
-  position: absolute;
-  height: 1px;
-  background: #fff;
-  width: 47%;
-  right: 23px;
-  top: 50%;
-  transform: scaleX(0.25);
-  transform-origin: center right;
-  transition: all 0.3s ease;
-  z-index: 1;
-}
-.btn-slice:before,
-.btn-slice:after {
-  content: '';
-  background: #fff;
-  height: 50%;
-  width: 0;
-  position: absolute;
-  transition: 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
-}
-.btn-slice:before {
-  top: 0;
-  left: 0;
-  right: auto;
-}
-.btn-slice:after {
-  bottom: 0;
-  right: 0;
-  left: auto;
-}
-.btn-slice:hover:before {
-  width: 100%;
-  right: 0;
-  left: auto;
-}
-.btn-slice:hover:after {
-  width: 100%;
-  left: 0;
-  right: auto;
-}
-.btn-slice:hover span {
-  color: #000;
-}
-.btn-slice:hover em {
-  background: #000;
-  transform: scaleX(1);
-}
+    .btn-cont .line-1 {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 3px;
+      background-color: cyan;
+      left: 0;
+      bottom: 0;
+    }
 
-/* footer */
-ul {
-    margin: 0px;
-    padding: 0px;
-}
-.footer-section {
-  background: rgb(1, 13, 24);
-  position: relative;
-}
-.footer-cta {
-  border-bottom: 1px solid #373636;
-}
-.single-cta i {
-  color: #ff5e14;
-  font-size: 30px;
-  float: left;
-  margin-top: 8px;
-}
-.cta-text {
-  padding-left: 15px;
-  display: inline-block;
-}
-.cta-text h4 {
-  color: #fff;
-  font-size: 20px;
-  font-weight: 600;
-  margin-bottom: 2px;
-}
-.cta-text span {
-  color: #757575;
-  font-size: 15px;
-}
-.footer-content {
-  position: relative;
-  z-index: 2;
-}
-.footer-pattern img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 330px;
-  background-size: cover;
-  background-position: 100% 100%;
-}
-.footer-logo {
-  margin-bottom: 30px;
-}
-.footer-logo img {
-    max-width: 200px;
-}
-.footer-text p {
-  margin-bottom: 14px;
-  font-size: 16px;
+    .btn-cont .line-2 {
+      content: "";
+      display: block;
+      position: absolute;
+      height: 2px;
+      background-color: cyan;
+      ;
+      left: 0;
+      top: 0;
+    }
+
+    .btn-cont .line-3 {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 3px;
+      background-color: cyan;
+      ;
+      right: 0;
+      top: 0;
+    }
+
+    .btn-cont .line-4 {
+      content: "";
+      display: block;
+      position: absolute;
+      height: 2px;
+      background-color: cyan;
+      ;
+      right: 0;
+      bottom: 0;
+    }
+
+    @-webkit-keyframes move1 {
+      0% {
+        height: 100%;
+        bottom: 0;
+      }
+
+      54% {
+        height: 0;
+        bottom: 100%;
+      }
+
+      55% {
+        height: 0;
+        bottom: 0;
+      }
+
+      100% {
+        height: 100%;
+        bottom: 0;
+      }
+    }
+
+    @keyframes move1 {
+      0% {
+        height: 100%;
+        bottom: 0;
+      }
+
+      54% {
+        height: 0;
+        bottom: 100%;
+      }
+
+      55% {
+        height: 0;
+        bottom: 0;
+      }
+
+      100% {
+        height: 100%;
+        bottom: 0;
+      }
+    }
+
+    @-webkit-keyframes move2 {
+      0% {
+        width: 0;
+        left: 0;
+      }
+
+      50% {
+        width: 100%;
+        left: 0;
+      }
+
+      100% {
+        width: 0;
+        left: 100%;
+      }
+    }
+
+    @keyframes move2 {
+      0% {
+        width: 0;
+        left: 0;
+      }
+
+      50% {
+        width: 100%;
+        left: 0;
+      }
+
+      100% {
+        width: 0;
+        left: 100%;
+      }
+    }
+
+    @-webkit-keyframes move3 {
+      0% {
+        height: 100%;
+        top: 0;
+      }
+
+      54% {
+        height: 0;
+        top: 100%;
+      }
+
+      55% {
+        height: 0;
+        top: 0;
+      }
+
+      100% {
+        height: 100%;
+        top: 0;
+      }
+    }
+
+    @keyframes move3 {
+      0% {
+        height: 100%;
+        top: 0;
+      }
+
+      54% {
+        height: 0;
+        top: 100%;
+      }
+
+      55% {
+        height: 0;
+        top: 0;
+      }
+
+      100% {
+        height: 100%;
+        top: 0;
+      }
+    }
+
+    @-webkit-keyframes move4 {
+      0% {
+        width: 0;
+        right: 0;
+      }
+
+      55% {
+        width: 100%;
+        right: 0;
+      }
+
+      100% {
+        width: 0;
+        right: 100%;
+      }
+    }
+
+    @keyframes move4 {
+      0% {
+        width: 0;
+        right: 0;
+      }
+
+      55% {
+        width: 100%;
+        right: 0;
+      }
+
+      100% {
+        width: 0;
+        right: 100%;
+      }
+    }
+
+    .card-body {
+      background-color: rgb(1, 14, 27);
+    }
+
+    body {
+      background-color: rgb(1, 20, 36);
+      color: white;
+
+    }
+
+    .card-title:after {
+      content: '';
+      display: block;
+      width: 40px;
+      margin: auto;
+      padding-top: 10px;
+      border-bottom: 2px solid #ff5e14;
+    }
+
+
+    .card-title1:after {
+      content: '';
+      display: block;
+      width: 25px;
+      margin: auto;
+      padding-top: 5px;
+      border-bottom: 2px solid #ff5e14;
+    }
+
+    /* title button anime */
+
+    button {
+      font-family: Overlock, cursive;
+      letter-spacing: 1px;
+      background: none;
+      color: white;
+      position: relative;
+      outline: none;
+      border: none;
+      height: 50px;
+      width: 190px;
+      font-size: 16px;
+      z-index: 2;
+      -webkit-transition: .01s .23s ease-out all;
+      transition: .01s .23s ease-out all;
+      box-shadow: 0px 0px 17px 1px rgba(0, 0, 0, 0.34);
+      overflow: hidden;
+    }
+
+    button:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 55%;
+      background: rgb(1, 10, 19);
+      z-index: -1;
+      -webkit-transition: .3s ease-in all;
+      transition: .3s ease-in all;
+    }
+
+    button:after {
+      content: '';
+      position: absolute;
+      left: -5%;
+      top: 5%;
+      height: 90%;
+      width: 5%;
+      background: white;
+      z-index: -1;
+      -webkit-transition: .4s .02s ease-in all;
+      transition: .4s .02s ease-in all;
+    }
+
+    button:hover {
+      cursor: pointer;
+      color: transparent;
+    }
+
+    button:hover:before {
+      left: 100%;
+      width: 25%;
+    }
+
+    button:hover:after {
+      left: 100%;
+      width: 70%;
+    }
+
+    button:hover .icon-right.after:after {
+      left: -80px;
+      color: white;
+      -webkit-transition: .2s .2s ease all;
+      transition: .2s .2s ease all;
+    }
+
+    button:hover .icon-right.after:before {
+      left: -104px;
+      top: 14px;
+      opacity: 0.2;
+      color: white;
+    }
+
+    .icon-right {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+
+    .icon-right:after {
+      font-family: "FontAwesome";
+      content: '\2192';
+      font-size: 24px;
+      display: inline-block;
+      position: relative;
+      top: 26px;
+      -webkit-transform: translate3D(0, -50%, 0);
+      transform: translate3D(0, -50%, 0);
+    }
+
+    .icon-right.after:after {
+      left: -250px;
+      color: black;
+      -webkit-transition: .15s .25s ease left, .5s .05s ease color;
+      transition: .15s .25s ease left, .5s .05s ease color;
+    }
+
+    .icon-right.after:before {
+      content: 'Explore';
+      position: absolute;
+      left: -230px;
+      top: 14px;
+      opacity: 0;
+      -webkit-transition: .2s ease-in all;
+      transition: .2s ease-in all;
+    }
+
+    /* button slice */
+
+    .btn-slice {
+      cursor: pointer;
+      background-color: rgb(1, 10, 19);
+      width: 85%;
+      height: 64px;
+      line-height: 64px;
+      position: absolute;
+      left: 48%;
+      top: 10%;
+      transform: translate(-50%, -50%);
+      z-index: 0;
+      box-shadow: 0px 0px 17px 1px rgba(0, 0, 0, 0.34);
+    }
+
+    .btn-slice span {
+      color: #fff;
+      display: inline-block;
+      padding-left: 35px;
+      text-transform: uppercase;
+      font: bold 18px/66px Arial;
+      transform: scaleX(0.6);
+      letter-spacing: 3px;
+      transform-origin: center left;
+      transition: color 0.3s ease;
+      position: relative;
+      z-index: 1;
+      font-weight: 900;
+    }
+
+    .btn-slice em {
+      position: absolute;
+      height: 1px;
+      background: #fff;
+      width: 47%;
+      right: 23px;
+      top: 50%;
+      transform: scaleX(0.25);
+      transform-origin: center right;
+      transition: all 0.3s ease;
+      z-index: 1;
+    }
+
+    .btn-slice:before,
+    .btn-slice:after {
+      content: '';
+      background: #fff;
+      height: 50%;
+      width: 0;
+      position: absolute;
+      transition: 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    }
+
+    .btn-slice:before {
+      top: 0;
+      left: 0;
+      right: auto;
+    }
+
+    .btn-slice:after {
+      bottom: 0;
+      right: 0;
+      left: auto;
+    }
+
+    .btn-slice:hover:before {
+      width: 100%;
+      right: 0;
+      left: auto;
+    }
+
+    .btn-slice:hover:after {
+      width: 100%;
+      left: 0;
+      right: auto;
+    }
+
+    .btn-slice:hover span {
+      color: #000;
+    }
+
+    .btn-slice:hover em {
+      background: #000;
+      transform: scaleX(1);
+    }
+
+    /* footer */
+    ul {
+      margin: 0px;
+      padding: 0px;
+    }
+
+    .footer-section {
+      background: rgb(1, 13, 24);
+      position: relative;
+    }
+
+    .footer-cta {
+      border-bottom: 1px solid #373636;
+    }
+
+    .single-cta i {
+      color: #ff5e14;
+      font-size: 30px;
+      float: left;
+      margin-top: 8px;
+    }
+
+    .cta-text {
+      padding-left: 15px;
+      display: inline-block;
+    }
+
+    .cta-text h4 {
+      color: #fff;
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 2px;
+    }
+
+    .cta-text span {
+      color: #757575;
+      font-size: 15px;
+    }
+
+    .footer-content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .footer-pattern img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 330px;
+      background-size: cover;
+      background-position: 100% 100%;
+    }
+
+    .footer-logo {
+      margin-bottom: 30px;
+    }
+
+    .footer-logo img {
+      max-width: 200px;
+    }
+
+    .footer-text p {
+      margin-bottom: 14px;
+      font-size: 16px;
       color: #7e7e7e;
-  line-height: 28px;
-}
-.footer-social-icon span {
-  color: #fff;
-  display: block;
-  font-size: 20px;
-  font-weight: 700;
-  font-family: 'Poppins', sans-serif;
-  margin-bottom: 20px;
-}
-.footer-social-icon a {
-  color: #fff;
-  font-size: 16px;
-  margin-right: 15px;
-}
-.footer-social-icon i {
-  height: 40px;
-  width: 40px;
-  text-align: center;
-  line-height: 38px;
-  border-radius: 50%;
-}
-.facebook-bg{
-  background: #3B5998;
-}
-.twitter-bg{
-  background: #55ACEE;
-}
-.gitlab-bg{
-  background: #fc6d26;
-}
-.whatsapp-bg{
-  background: #25d366;
-}
-.github-bg{
-  background: #171515;
-}
-.instagram-bg{
-  background: #f2003c;
-}
-.footer-widget-heading h3 {
-  color: #fff;
-  font-size: 20px;
-  font-weight: 600;
-  margin-bottom: 40px;
-  position: relative;
-}
-.footer-widget-heading h3::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -15px;
-  height: 2px;
-  width: 50px;
-  background: #ff5e14;
-}
-.footer-widget ul li {
-  display: inline-block;
-  float: left;
-  width: 50%;
-  margin-bottom: 12px;
-}
-.footer-widget ul li a:hover{
-  color: #ff5e14;
-}
-.footer-widget ul li a {
-  color: #878787;
-  text-transform: capitalize;
-}
-.subscribe-form {
-  position: relative;
-  overflow: hidden;
-}
-.subscribe-form input {
-  width: 100%;
-  padding: 14px 28px;
-  background: #04070e;
-  border: 1px solid #04070e;
-  color: #fff;
-}
-.subscribe-form .sub {
-    position: absolute;
-    right: 0;
-    float: right;
-    background: #ff5e14;
-    padding: 13px 20px;
-    /* border: 1px solid #ff5e14; */
-    top: 0;
-}
-.subscribe-form .sub i {
-  color: #fff;
-  font-size: 22px;
-  transform: rotate(-6deg);
-}
-.copyright-area{
-  background: #01040a;
-  padding: 25px 0;
-}
-.copyright-text p {
-  margin: 0;
-  font-size: 14px;
-  color: #878787;
-}
-.copyright-text p a{
-  color: #ff5e14;
-}
-.footer-menu li {
-  display: inline-block;
-  margin-left: 20px;
-}
-.footer-menu li:hover a{
-  color: #ff5e14;
-}
-.footer-menu li a {
-  font-size: 14px;
-  color: #878787;
-}
-.img-holder img{
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  
-}
-.img-holder img:hover{
-  transform: scale(1.1);
-  margin-bottom: 2px;
-}
-    </style>
+      line-height: 28px;
+    }
+
+    .footer-social-icon span {
+      color: #fff;
+      display: block;
+      font-size: 20px;
+      font-weight: 700;
+      font-family: 'Poppins', sans-serif;
+      margin-bottom: 20px;
+    }
+
+    .footer-social-icon a {
+      color: #fff;
+      font-size: 16px;
+      margin-right: 15px;
+    }
+
+    .footer-social-icon i {
+      height: 40px;
+      width: 40px;
+      text-align: center;
+      line-height: 38px;
+      border-radius: 50%;
+    }
+
+    .facebook-bg {
+      background: #3B5998;
+    }
+
+    .twitter-bg {
+      background: #55ACEE;
+    }
+
+    .gitlab-bg {
+      background: #fc6d26;
+    }
+
+    .whatsapp-bg {
+      background: #25d366;
+    }
+
+    .github-bg {
+      background: #171515;
+    }
+
+    .instagram-bg {
+      background: #f2003c;
+    }
+
+    .footer-widget-heading h3 {
+      color: #fff;
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 40px;
+      position: relative;
+    }
+
+    .footer-widget-heading h3::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -15px;
+      height: 2px;
+      width: 50px;
+      background: #ff5e14;
+    }
+
+    .footer-widget ul li {
+      display: inline-block;
+      float: left;
+      width: 50%;
+      margin-bottom: 12px;
+    }
+
+    .footer-widget ul li a:hover {
+      color: #ff5e14;
+    }
+
+    .footer-widget ul li a {
+      color: #878787;
+      text-transform: capitalize;
+    }
+
+    .subscribe-form {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .subscribe-form input {
+      width: 100%;
+      padding: 14px 28px;
+      background: #04070e;
+      border: 1px solid #04070e;
+      color: #fff;
+    }
+
+    .subscribe-form .sub {
+      position: absolute;
+      right: 0;
+      float: right;
+      background: #ff5e14;
+      padding: 13px 20px;
+      /* border: 1px solid #ff5e14; */
+      top: 0;
+    }
+
+    .subscribe-form .sub i {
+      color: #fff;
+      font-size: 22px;
+      transform: rotate(-6deg);
+    }
+
+    .copyright-area {
+      background: #01040a;
+      padding: 25px 0;
+    }
+
+    .copyright-text p {
+      margin: 0;
+      font-size: 14px;
+      color: #878787;
+    }
+
+    .copyright-text p a {
+      color: #ff5e14;
+    }
+
+    .footer-menu li {
+      display: inline-block;
+      margin-left: 20px;
+    }
+
+    .footer-menu li:hover a {
+      color: #ff5e14;
+    }
+
+    .footer-menu li a {
+      font-size: 14px;
+      color: #878787;
+    }
+
+    .img-holder img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+
+    }
+
+    .img-holder img:hover {
+      transform: scale(1.1);
+      margin-bottom: 2px;
+    }
+  </style>
 </head>
 
 <body>
@@ -783,7 +897,7 @@ ul {
 
       <!-- Brand -->
       <a class="navbar-brand" href="index.html">
-        
+
         <div class='logo'>
           <div class='first d-inline-block'>
             <h1 class='first' style='font-family: Righteous, cursive;'>a</h1>
@@ -795,8 +909,9 @@ ul {
       </a>
 
       <!-- Collapse -->
-      <a href='#' class="navbar-toggler orange darken-4" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-        aria-expanded="false" aria-label="Toggle navigation">
+      <a href='#' class="navbar-toggler orange darken-4" type="button" data-toggle="collapse"
+        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </a>
 
@@ -837,8 +952,7 @@ ul {
             </a>
           </li>
           <li class="nav-item">
-            <a href="https://gitlab.com/Aifedayo" class="nav-link"
-              target="_blank">
+            <a href="https://gitlab.com/Aifedayo" class="nav-link" target="_blank">
               <i class="fab fa-gitlab mr-2"></i>
             </a>
           </li>
@@ -855,10 +969,14 @@ ul {
 
     <!--Indicators-->
     <ol class="carousel-indicators">
-      <li data-target="#carousel-example-1z" data-slide-to="0" class="active" style='width:40px; height: 3px; border-radius: 10px;'></li>
-      <li data-target="#carousel-example-1z" data-slide-to="1" style='width:40px; height: 3px; border-radius: 10px;'></li>
-      <li data-target="#carousel-example-1z" data-slide-to="2" style='width:40px; height: 3px; border-radius: 10px;'></li>
-      <li data-target="#carousel-example-1z" data-slide-to="3" style='width:40px; height: 3px; border-radius: 10px;'></li>
+      <li data-target="#carousel-example-1z" data-slide-to="0" class="active"
+        style='width:40px; height: 3px; border-radius: 10px;'></li>
+      <li data-target="#carousel-example-1z" data-slide-to="1" style='width:40px; height: 3px; border-radius: 10px;'>
+      </li>
+      <li data-target="#carousel-example-1z" data-slide-to="2" style='width:40px; height: 3px; border-radius: 10px;'>
+      </li>
+      <li data-target="#carousel-example-1z" data-slide-to="3" style='width:40px; height: 3px; border-radius: 10px;'>
+      </li>
     </ol>
     <!--/.Indicators-->
 
@@ -867,13 +985,14 @@ ul {
 
       <!--First slide-->
       <div class="carousel-item active">
-        
-        <div class="view" style="background-image: url('https://www.thelakesidepark.com/wp-content/uploads/2017/04/apple-1284085_1920.jpg'); background-repeat: no-repeat; background-size: cover;">
+
+        <div class="view"
+          style="background-image: url('../img/aicodings1.jpg'); background-repeat: no-repeat; background-size: cover;">
           <!-- Mask & flexbox options-->
           <div class="mask rgb-black-light d-flex justify-content-center align-items-center">
 
             <!-- Content -->
-            
+
             <!-- Content -->
 
           </div>
@@ -882,8 +1001,9 @@ ul {
         </div>
       </div>
       <div class="carousel-item">
-        
-        <div class="view" style="background-image: url('https://www.startupssanantonio.com/wp-content/uploads/2020/05/susanna-marsiglia-Yjr6EafseQ8-unsplash-scaled.jpg'); background-repeat: no-repeat; background-size: cover;">
+
+        <div class="view"
+          style="background-image: url('../img/aicodings2.jpeg'); background-repeat: no-repeat; background-size: cover;">
           <!-- Mask & flexbox options-->
           <div class="mask rgb-blue-light d-flex justify-content-center align-items-center">
 
@@ -904,8 +1024,9 @@ ul {
 
       <!--Second slide-->
       <div class="carousel-item">
-        <div class="view" style="background-image: url('https://389739-1225869-raikfcquaxqncofqfm.stackpathdns.com/wp-content/uploads/2020/04/AdobeStock_331446222-scaled.jpeg'); background-repeat: no-repeat; background-size: cover;">
-        
+        <div class="view"
+          style="background-image: url('../img/aicodings3.jpg'); background-repeat: no-repeat; background-size: cover;">
+
 
           <!-- Mask & flexbox options-->
           <div class="mask rgb-red-light d-flex justify-content-center align-items-center">
@@ -927,7 +1048,8 @@ ul {
 
       <!--Third slide-->
       <div class="carousel-item">
-        <div class="view" style="background-image: url('https://744025.smushcdn.com/1245953/wp-content/uploads/2019/05/per-loov-1269078-unsplash.jpg?lossy=1&strip=1&webp=1'); background-repeat: no-repeat; background-size: cover;">
+        <div class="view"
+          style="background-image: url('../img/aicodings4.webp'); background-repeat: no-repeat; background-size: cover;">
 
           <!-- Mask & flexbox options-->
           <div class="mask rgb-black-light d-flex justify-content-center align-items-center">
@@ -986,13 +1108,17 @@ ul {
           <div class="col-md-4 mt-5 mb-4 grey-text">
 
             <!-- Main heading -->
-            <p>Here at <strong style='font-family:Righteous, cursive; letter-spacing: 1px;'>aicodings inc.</strong>, we help represent your brand online thereby helping to 
-              represent your business to the larger world. </p><p>Our goal is straightforward and pleasant. Based upon achieving clients' objectives and needs.</p>
-              <hr class='cyan my-3'>
-            <p class='mb-4'>Details below to learn more about <strong style='font-family:Righteous, cursive; letter-spacing: 1px;'>aicodings inc.</strong></p>
+            <p>Here at <strong style='font-family:Righteous, cursive; letter-spacing: 1px;'>aicodings inc.</strong>, we
+              help represent your brand online thereby helping to
+              represent your business to the larger world. </p>
+            <p>Our goal is straightforward and pleasant. Based upon achieving clients' objectives and needs.</p>
+            <hr class='cyan my-3'>
+            <p class='mb-4'>Details below to learn more about <strong
+                style='font-family:Righteous, cursive; letter-spacing: 1px;'>aicodings inc.</strong></p>
             <!-- Main heading -->
-            <a href="https://wa.me/2349050562160" target="_blank" class="btn-flip" style='font-family:Arial Narrow;' data-back="Let's Talk" data-front="Get In Touch"></a>
-            
+            <a href="https://wa.me/2349050562160" target="_blank" class="btn-flip" style='font-family:Arial Narrow;'
+              data-back="Let's Talk" data-front="Get In Touch"></a>
+
             <!-- <p class ='additional-text'>
               <strong>Elegant</strong> material UI elements,
               <strong>Premium</strong> Font and FontAwesome icons,
@@ -1013,125 +1139,130 @@ ul {
       </section>
       <!--Section: Main info-->
 
-      
-<!--     What we do section -->
-<hr class="my-6">
-<section>
-  <div class='container1 my-5 mx-auto'>
-    <div class='text-center'>
-      <button class="explore">OUR SERVICES
-        <span class="icon-right"></span>
-        <span class="icon-right after"></span>
-      </button>
-    </div>
-    <div class="row wow fadeIn  text-center">
-      <div class="col-lg-4 mx-auto col-md-12 mt-5">
-        <div class="card">
-      <!-- Card image -->
-          <div class="view overlay">
-            <img class="card-img-top" src="https://www.bnecreative.com/wp-content/uploads/2019/07/illus-webdesign-2.png"
-            alt="Card image cap">
-            <a href="#!">
-              <div class="mask rgba-white-slight"></div>
-            </a>
+
+      <!--     What we do section -->
+      <hr class="my-6">
+      <section>
+        <div class='container1 my-5 mx-auto'>
+          <div class='text-center'>
+            <button class="explore">OUR SERVICES
+              <span class="icon-right"></span>
+              <span class="icon-right after"></span>
+            </button>
           </div>
-      <!-- Card content -->
-          <div class="card-body">
-        <!-- Title -->
-            <h4 class="card-title text-white">Web Development</h4>
-            <!-- Text -->
-            <p class="card-text my-4">We use content management systems (CMS) to make content changes easier with basic technical skills.
-              Dynamic web applications. Social networking sites, E-commerce. HTML5, CSS3, Bootstrap, Django, JavaScript, MySQL. </p>
-            <!-- Button -->
-            <div class='btn-cont mt-5'>
-              <button class='btn'>
-                Learn More
-                <span class='line-1'></span>
-                <span class='line-2'></span>
-                <span class='line-3'></span>
-                <span class='line-4'></span>
-              </button>
+          <div class="row wow fadeIn  text-center">
+            <div class="col-lg-4 mx-auto col-md-12 mt-5">
+              <div class="card">
+                <!-- Card image -->
+                <div class="view overlay">
+                  <img class="card-img-top"
+                    src="https://www.bnecreative.com/wp-content/uploads/2019/07/illus-webdesign-2.png"
+                    alt="Card image cap">
+                  <a href="#!">
+                    <div class="mask rgba-white-slight"></div>
+                  </a>
+                </div>
+                <!-- Card content -->
+                <div class="card-body">
+                  <!-- Title -->
+                  <h4 class="card-title text-white">Web Development</h4>
+                  <!-- Text -->
+                  <p class="card-text my-4">We use content management systems (CMS) to make content changes easier with
+                    basic technical skills.
+                    Dynamic web applications. Social networking sites, E-commerce. HTML5, CSS3, Bootstrap, Django,
+                    JavaScript, MySQL. </p>
+                  <!-- Button -->
+                  <div class='btn-cont mt-5'>
+                    <button class='btn'>
+                      Learn More
+                      <span class='line-1'></span>
+                      <span class='line-2'></span>
+                      <span class='line-3'></span>
+                      <span class='line-4'></span>
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
-        </div>
-      </div>
-    </div>
-    
-    <div class="col-lg-4 mx-auto col-md-12 mt-5">
-      <div class="card">
-      <!-- Card image -->
-        <div class="view overlay">
-          <img class="card-img-top" src="https://i.pinimg.com/originals/69/9f/ed/699fed8ef94371493787f23ae623c9ea.png"
-          alt="Card image cap">
-          <a href="#!">
-            <div class="mask rgba-white-slight"></div>
-          </a>
-        </div>
 
-      <!-- Card content -->
-        <div class="card-body">
+            <div class="col-lg-4 mx-auto col-md-12 mt-5">
+              <div class="card">
+                <!-- Card image -->
+                <div class="view overlay">
+                  <img class="card-img-top"
+                    src="https://i.pinimg.com/originals/69/9f/ed/699fed8ef94371493787f23ae623c9ea.png"
+                    alt="Card image cap">
+                  <a href="#!">
+                    <div class="mask rgba-white-slight"></div>
+                  </a>
+                </div>
 
-        <!-- Title -->
-        <h4 class="card-title text-white">Digital Marketing</h4>
-        <!-- Text -->
-        <p class="card-text my-5">We have a way to connect with and influence your potential customers. 
-          Since internet usage has more than doubled over the past decade.Email marketing,
-           pay-per-click advertising, social media marketing, blogging, UX</p>
-        <!-- Button -->
-        <div class='btn-cont mt-5'>
-          <button class='btn'>
-            Learn More
-            <span class='line-1'></span>
-            <span class='line-2'></span>
-            <span class='line-3'></span>
-            <span class='line-4'></span>
-          </button>
+                <!-- Card content -->
+                <div class="card-body">
+
+                  <!-- Title -->
+                  <h4 class="card-title text-white">Digital Marketing</h4>
+                  <!-- Text -->
+                  <p class="card-text my-5">We have a way to connect with and influence your potential customers.
+                    Since internet usage has more than doubled over the past decade.Email marketing,
+                    pay-per-click advertising, social media marketing, blogging, UX</p>
+                  <!-- Button -->
+                  <div class='btn-cont mt-5'>
+                    <button class='btn'>
+                      Learn More
+                      <span class='line-1'></span>
+                      <span class='line-2'></span>
+                      <span class='line-3'></span>
+                      <span class='line-4'></span>
+                    </button>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 mx-auto col-md-12 mt-5">
+              <div class="card">
+                <!-- Card image -->
+                <div class="view overlay">
+                  <img class="card-img-top"
+                    src="https://i.pinimg.com/originals/a4/48/f0/a448f012ac2681e47ebdd86aaf8a274a.gif"
+                    alt="Card image cap">
+                  <a href="#!">
+                    <div class="mask rgba-white-slight"></div>
+                  </a>
+                </div>
+
+                <!-- Card content -->
+                <div class="card-body">
+
+                  <!-- Title -->
+                  <h4 class="card-title text-white">Logo Design</h4>
+                  <!-- Text -->
+                  <p class="card-text my-5">We use visual compositions to solve problems and
+                    communicate ideas through typography, imagery, color and form. Logo creation,
+                    Interface design, Illustration, Animations, Graphics Design</p>
+                  <!-- Button -->
+                  <div class='btn-cont mt-5'>
+                    <button class='btn'>
+                      Learn More
+                      <span class='line-1'></span>
+                      <span class='line-2'></span>
+                      <span class='line-3'></span>
+                      <span class='line-4'></span>
+                    </button>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </section>
+      <!-- Card -->
+      <hr class="my-5 cyan">
 
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-4 mx-auto col-md-12 mt-5">
-      <div class="card">
-      <!-- Card image -->
-        <div class="view overlay">
-          <img class="card-img-top" src="https://i.pinimg.com/originals/a4/48/f0/a448f012ac2681e47ebdd86aaf8a274a.gif"
-          alt="Card image cap">
-          <a href="#!">
-            <div class="mask rgba-white-slight"></div>
-          </a>
-        </div>
-
-      <!-- Card content -->
-        <div class="card-body">
-
-        <!-- Title -->
-        <h4 class="card-title text-white">Logo Design</h4>
-        <!-- Text -->
-        <p class="card-text my-5">We use visual compositions to solve problems and 
-          communicate ideas through typography, imagery, color and form. Logo creation, 
-          Interface design, Illustration, Animations, Graphics Design</p>
-        <!-- Button -->
-        <div class='btn-cont mt-5'>
-          <button class='btn'>
-            Learn More
-            <span class='line-1'></span>
-            <span class='line-2'></span>
-            <span class='line-3'></span>
-            <span class='line-4'></span>
-          </button>
-        </div>
-
-        </div>
-      </div>
-    </div>
-    </div>
-  </div>
-</section>
-<!-- Card -->
-<hr class="my-5 cyan">
-
-<!-- Our work method -->
-<section class='wow fadeIn'>
+      <!-- Our work method -->
+      <section class='wow fadeIn'>
         <div class='text-center my-5'>
           <button class="explore">OUR WORK METHOD
             <span class="icon-right"></span>
@@ -1139,24 +1270,25 @@ ul {
           </button>
         </div>
         <!--Grid row-->
-          <!--Grid column-->
-          <div class="row wow fadeIn white-text">
+        <!--Grid column-->
+        <div class="row wow fadeIn white-text">
 
-            <!--First row-->
-            <div class="col-lg-6 col-md-12">
-              <div class ='row'>
-                <div class="col-1 mr-3">
-                  <i class="fab fa-html5 fa-2x orange-text darken-3"></i>
-                </div>
-                <div class="col-10">
-                  <h5 class="feature-title"></h5>
-                  <a class="btn-slice"><span class='orange-text'>Modern Design</span><em></em></a>
-                  <p class='my-5'></p>
-                  <p class="grey-text text-left ml-4">Thanks to our knowledge of the newest technologies in web development.</p>
-                  <div style="height:15px"></div>
-                </div>
+          <!--First row-->
+          <div class="col-lg-6 col-md-12">
+            <div class='row'>
+              <div class="col-1 mr-3">
+                <i class="fab fa-html5 fa-2x orange-text darken-3"></i>
               </div>
-            
+              <div class="col-10">
+                <h5 class="feature-title"></h5>
+                <a class="btn-slice"><span class='orange-text'>Modern Design</span><em></em></a>
+                <p class='my-5'></p>
+                <p class="grey-text text-left ml-4">Thanks to our knowledge of the newest technologies in web
+                  development.</p>
+                <div style="height:15px"></div>
+              </div>
+            </div>
+
             <!--/First row-->
 
             <div style="height:30px"></div>
@@ -1170,7 +1302,8 @@ ul {
                 <h5 class="feature-title"></h5>
                 <a class="btn-slice"><span class='green-text'>Detailed Code</span><em></em></a>
                 <p class='my-5'></p>
-                <p class="grey-text text-left ml-4">We give you detailed and readable commented out codes at disposal. This is from the best of practice. 
+                <p class="grey-text text-left ml-4">We give you detailed and readable commented out codes at disposal.
+                  This is from the best of practice.
                 </p>
                 <div style="height:15px"></div>
               </div>
@@ -1188,17 +1321,19 @@ ul {
                 <h5 class="feature-title"></h5>
                 <a class="btn-slice"><span class='mdb-color-text'>User friendly</span><em></em></a>
                 <p class='my-5'></p>
-                <p class="grey-text text-left ml-4">We care about users experience. We have the design simple and yet so enchanting.</p>
+                <p class="grey-text text-left ml-4">We care about users experience. We have the design simple and yet so
+                  enchanting.</p>
                 <div style="height:15px"></div>
               </div>
             </div>
             <!--/Third row-->
-            
+
           </div>
           <!--/Grid column-->
           <!--Grid column-->
           <div class="col-lg-6 mx-auto col-md-8">
-            <img src="https://i.pinimg.com/originals/b5/cc/4f/b5cc4f17bec8b6b845b4326c523ce5b5.gif" class="img-fluid z-depth-2-half" alt="">
+            <img src="https://i.pinimg.com/originals/b5/cc/4f/b5cc4f17bec8b6b845b4326c523ce5b5.gif"
+              class="img-fluid z-depth-2-half" alt="">
           </div>
           <!--/Grid column-->
 
@@ -1232,7 +1367,8 @@ ul {
               </div>
               <div class="col-10">
                 <h6 class="feature-title">Our Focus on Trendy Innovation</h6>
-                <p class="grey-text">Our design is user-friendly and always evolving. It keeps up with the latest trend and in-thing.
+                <p class="grey-text">Our design is user-friendly and always evolving. It keeps up with the latest trend
+                  and in-thing.
                 </p>
                 <div style="height:15px"></div>
               </div>
@@ -1246,11 +1382,12 @@ ul {
               </div>
               <div class="col-10">
                 <h6 class="feature-title">Dedicated Teams</h6>
-                <p class="grey-text">Our Team is always on the go to deliver quality and reliable services at the earliest time.</p>
+                <p class="grey-text">Our Team is always on the go to deliver quality and reliable services at the
+                  earliest time.</p>
                 <div style="height:15px"></div>
               </div>
             </div>
-            
+
             <!--/Second row-->
 
             <!--Third row-->
@@ -1273,7 +1410,8 @@ ul {
               </div>
               <div class="col-10">
                 <h6 class="feature-title">Responsiveness</h6>
-                <p class="grey-text">It doesn't matter whether your project will be displayed on desktop, laptop, tablet or mobile phone. It
+                <p class="grey-text">It doesn't matter whether your project will be displayed on desktop, laptop, tablet
+                  or mobile phone. It
                   looks great on each screen.</p>
                 <div style="height:15px"></div>
               </div>
@@ -1283,7 +1421,7 @@ ul {
           <!--/First column-->
 
           <!--Second column-->
-          
+
 
           <!--Third column-->
           <div class="col-md-6">
@@ -1294,7 +1432,8 @@ ul {
               </div>
               <div class="col-10">
                 <h6 class="feature-title">CSS animations</h6>
-                <p class="grey-text">Cool animations that will ensure interactivity of your project and delight your visitors.
+                <p class="grey-text">Cool animations that will ensure interactivity of your project and delight your
+                  visitors.
                 </p>
                 <div style="height:15px"></div>
               </div>
@@ -1336,7 +1475,8 @@ ul {
               </div>
               <div class="col-10">
                 <h6 class="feature-title">Our respect for clients needs</h6>
-                <p class="grey-text">Our goal is straightforward and pleasant. Bent upon client's objectives, our components flexibility allows deep customization. Ease
+                <p class="grey-text">Our goal is straightforward and pleasant. Bent upon client's objectives, our
+                  components flexibility allows deep customization. Ease
                   in adjusting each component to suit your needs.</p>
                 <div style="height:15px"></div>
               </div>
@@ -1349,99 +1489,101 @@ ul {
         <!--/First row-->
 
       </section>
-      
+
       <!--Pricing section-->
       <hr class="my-5 cyan">
-<section class="mt-5 pt-4">
-  <div class="container" id='pricing'>
-    <div class='container'>
-      <div class='text-center'>
-        <button class="explore">OUR PRICING PLANS
-          <span class="icon-right"></span>
-          <span class="icon-right after"></span>
-        </button>
-      </div>
-    </div>
-          <!--Grid row-->    
-    <div class="row wow fadeIn text-center">
-      <div class='col-lg-12 col-md-12'>
-        <div class='btn-cont'>
-          <button class='btn'>
-            How it Works
-            <span class='line-1'></span>
-            <span class='line-2'></span>
-            <span class='line-3'></span>
-            <span class='line-4'></span>
-          </button>
-        </div>
-      </div>
-    </div>
+      <section class="mt-5 pt-4">
+        <div class="container" id='pricing'>
+          <div class='container'>
+            <div class='text-center'>
+              <button class="explore">OUR PRICING PLANS
+                <span class="icon-right"></span>
+                <span class="icon-right after"></span>
+              </button>
+            </div>
+          </div>
+          <!--Grid row-->
+          <div class="row wow fadeIn text-center">
+            <div class='col-lg-12 col-md-12'>
+              <div class='btn-cont'>
+                <button class='btn'>
+                  How it Works
+                  <span class='line-1'></span>
+                  <span class='line-2'></span>
+                  <span class='line-3'></span>
+                  <span class='line-4'></span>
+                </button>
+              </div>
+            </div>
+          </div>
 
-    <div class="row wow fadeIn">
-      <div class="col-xl-3 col-md-6 my-3">
-          <div class="single-cta ml-3">
-              <i class="fab fa-cc-amazon-pay"></i>
-              <div class="cta-text">
+          <div class="row wow fadeIn">
+            <div class="col-xl-3 col-md-6 my-3">
+              <div class="single-cta ml-3">
+                <i class="fab fa-cc-amazon-pay"></i>
+                <div class="cta-text">
                   <p></p>
                   <span><strong>Dedicated Part Payment</strong></span>
+                </div>
               </div>
-          </div>
-      </div>
-      <div class="col-xl-3 col-md-6 my-3">
-          <div class="single-cta ml-3">
-              <i class="fas fa-palette"></i>
-              <div class="cta-text">
+            </div>
+            <div class="col-xl-3 col-md-6 my-3">
+              <div class="single-cta ml-3">
+                <i class="fas fa-palette"></i>
+                <div class="cta-text">
                   <p></p>
                   <span><strong>Multiple Template Choices</strong></span>
+                </div>
               </div>
-          </div>
-      </div>
-      <div class="col-xl-3 col-md-6 my-3">
-          <div class="single-cta ml-3">
-              <i class="fas fa-layer-group"></i>
-              <div class="cta-text">
-                 <p></p>
-                  <span><strong>Full Fledged Development</strong></span>
-              </div>
-          </div>
-      </div>
-      <div class="col-xl-3 col-md-6 my-3">
-        <div class="single-cta ml-3">
-          <i class="fas fa-hourglass-half"></i>
-            <div class="cta-text">
-                <p></p>
-                <span><strong>Earliest Time Delivery</strong></span>
             </div>
-        </div>
-    </div>
-    </div>
-    <!--Grid column-->
-          
+            <div class="col-xl-3 col-md-6 my-3">
+              <div class="single-cta ml-3">
+                <i class="fas fa-layer-group"></i>
+                <div class="cta-text">
+                  <p></p>
+                  <span><strong>Full Fledged Development</strong></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-md-6 my-3">
+              <div class="single-cta ml-3">
+                <i class="fas fa-hourglass-half"></i>
+                <div class="cta-text">
+                  <p></p>
+                  <span><strong>Earliest Time Delivery</strong></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Grid column-->
+
           <!--Grid row-->
-    
+
           <!--Grid row-->
           <div class="row wow text-center grey-text fadeIn" style='font-family: Overlock, cursive;'>
-    
+
             <!--Grid column-->
             <div class="col-lg-4 col-md-12 mb-4 mx-auto">
-    
+
               <!--Card-->
               <div class="card cyan darken-4">
-    
+
                 <!-- Card header -->
                 <div class="card-header">
                   <h4>
                     <strong style='font-family: Arial Narrow;'>Lite</strong>
                   </h4>
                 </div>
-    
+
                 <!--Card content-->
                 <div class="card-body">
-                  <div class='img-holder'><img src = 'https://cdn.lowgif.com/full/734c6ea00e76bc76-walk-cycles-by-jae-il-son-via-behance-2d-animations-pinterest-cycling-behance-and-sons.gif' alt=""></div>
+                  <div class='img-holder'><img
+                      src='https://cdn.lowgif.com/full/734c6ea00e76bc76-walk-cycles-by-jae-il-son-via-behance-2d-animations-pinterest-cycling-behance-and-sons.gif'
+                      alt=""></div>
                   <h3 class="card-titl cyan-text pricing-card-title my-4">₦50,000
                     <!-- <small class="text-muted">/ mo</small> -->
                   </h3>
-    
+
                   <ol class="list-unstyled  mb-4">
                     <li>Free Domain & Web Hosting
                       <i class="fas fa-check-circle orange-text darken-4"></i>
@@ -1475,40 +1617,75 @@ ul {
                       <i class="fas fa-check-circle orange-text darken-4 ml-1"></i>
                     </li>
                     <div class='spacing'>
-                    <hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><br><hr><hr><hr><hr><hr><hr><hr><hr><hr>
-                    <hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><li></li><hr></div>
+                      <hr>
+                      <hr>
+                      <hr>
+                      <hr>
+                      <hr>
+                      <hr>
+                      <hr>
+                      <hr>
+                      <hr>
+                      <hr><br>
+                      <hr>
+                      <hr>
+                      <hr>
+                      <hr>
+                      <hr>
+                      <hr>
+                      <hr>
+                      <hr>
+                      <hr>
+                      <hr>
+                      <hr>
+                      <hr>
+                      <hr>
+                      <hr>
+                      <hr>
+                      <hr>
+                      <hr>
+                      <hr>
+                      <hr>
+                      <li></li>
+                      <hr>
+                    </div>
                   </ol>
-    
-                  <a href="https://wa.me/2349050562160" target="_blank"><button type="button" class="btn btn-lg btn-block btn-outline-cyan waves-effect"><h6 class='white-text'>Get started</h6></button></a>
-    
+
+                  <a href="https://wa.me/2349050562160" target="_blank"><button type="button"
+                      class="btn btn-lg btn-block btn-outline-cyan waves-effect">
+                      <h6 class='white-text'>Get started</h6>
+                    </button></a>
+
                 </div>
-    
+
               </div>
               <!--/.Card-->
-    
+
             </div>
             <!--Grid column-->
-    
+
             <!--Grid column-->
             <div class="col-lg-4 col-md-12 mb-4 mx-auto">
-    
+
               <!--Card-->
               <div class="card cyan darken-4">
-    
+
                 <!-- Card header -->
                 <div class="card-header">
                   <h4>
                     <strong style="font-family: Arial Narrow;">Pro</strong>
                   </h4>
                 </div>
-    
+
                 <!--Card content-->
                 <div class="card-body">
-                  <div class='img-holder'><img src = 'https://static.dribbble.com/users/1475355/screenshots/9532551/media/445d29a545108a17844ca799d8a1cc33.gif' alt=""></div>
+                  <div class='img-holder'><img
+                      src='https://static.dribbble.com/users/1475355/screenshots/9532551/media/445d29a545108a17844ca799d8a1cc33.gif'
+                      alt=""></div>
                   <h3 class="card-titl cyan-text darken-4 pricing-card-title my-4">₦150,000
                     <!-- <small class="text-muted">/ mo</small> -->
                   </h3>
-    
+
                   <ol class="list-unstyled mb-4">
                     <li>Free Domain & Web Hosting
                       <i class="fas fa-check-circle orange-text darken-4 ml-1"></i>
@@ -1546,7 +1723,7 @@ ul {
                       <i class="fas fa-check-circle orange-text darken-4 ml-1"></i>
                     </li>
                     <hr>
-                    <li>Payment Gateway Integration 
+                    <li>Payment Gateway Integration
                       <i class="fas fa-check-circle orange-text darken-4 ml-1"></i>
                     </li>
                     <hr>
@@ -1558,39 +1735,56 @@ ul {
                       <i class="fas fa-check-circle orange-text darken-4 ml-1"></i>
                     </li>
                     <div class='spacing'>
-                    <hr><hr><hr><hr><hr><hr><hr><br><hr><hr><hr><br><hr><hr><hr></div>
-                    </ol>
-    
-                    <a href="https://wa.me/2349050562160" target="_blank"><button type="button" class="btn btn-lg btn-block btn-outline-cyan waves-effect"><h6 class='white-text'>Get started</h6></button></a>
-    
+                      <hr>
+                      <hr>
+                      <hr>
+                      <hr>
+                      <hr>
+                      <hr>
+                      <hr><br>
+                      <hr>
+                      <hr>
+                      <hr><br>
+                      <hr>
+                      <hr>
+                      <hr>
+                    </div>
+                  </ol>
+
+                  <a href="https://wa.me/2349050562160" target="_blank"><button type="button"
+                      class="btn btn-lg btn-block btn-outline-cyan waves-effect">
+                      <h6 class='white-text'>Get started</h6>
+                    </button></a>
+
                 </div>
-    
+
               </div>
               <!--/.Card-->
-    
+
             </div>
             <!--Grid column-->
-    
+
             <!--Grid column-->
             <div class="col-lg-4 col-md-12 mb-4 mx-auto">
-    
+
               <!--Card-->
               <div class="card cyan darken-4">
-    
+
                 <!-- Card header -->
                 <div class="card-header">
                   <h4>
                     <strong style="font-family: Arial Narrow;">Enterprise</strong>
                   </h4>
                 </div>
-    
+
                 <!--Card content-->
                 <div class="card-body">
-                  <div class='img-holder'><img src = 'https://static.dribbble.com/users/2374064/screenshots/4728503/superman.gif' alt=""></div>
+                  <div class='img-holder'><img
+                      src='https://static.dribbble.com/users/2374064/screenshots/4728503/superman.gif' alt=""></div>
                   <h3 class="card-titl cyan-text pricing-card-title my-4">₦250,000
                     <!-- <small class="text-muted">/ mo</small> -->
                   </h3>
-    
+
                   <ol class="list-unstyled mb-4">
                     <li>Free Domain & Web Hosting
                       <i class="fas fa-check-circle orange-text darken-4 ml-1"></i>
@@ -1632,7 +1826,7 @@ ul {
                       <i class="fas fa-check-circle orange-text darken-4 ml-1"></i>
                     </li>
                     <hr>
-                    <li>Payment Gateway Integration 
+                    <li>Payment Gateway Integration
                       <i class="fas fa-check-circle orange-text darken-4 ml-1"></i>
                     </li>
                     <hr>
@@ -1661,22 +1855,25 @@ ul {
                     </li>
                     <hr>
                   </ol>
-    
-                  <a href="https://wa.me/2349050562160" target="_blank"><button type="button" class="btn btn-lg btn-block btn-outline-cyan waves-effect"><h6 class='white-text'>Get started</h6></button></a>
-    
+
+                  <a href="https://wa.me/2349050562160" target="_blank"><button type="button"
+                      class="btn btn-lg btn-block btn-outline-cyan waves-effect">
+                      <h6 class='white-text'>Get started</h6>
+                    </button></a>
+
                 </div>
-    
+
               </div>
               <!--/.Card-->
             </div>
-            
+
             <!--Grid column-->
           </div>
           <!--Grid row-->
         </div>
       </section>
       <!--Main layout-->
-      
+
       <hr class="my-5 cyan">
       <!--Section: More-->
       <section class='my-5'>
@@ -1741,7 +1938,7 @@ ul {
           </div>
           <!--/Grid column-->
 
-          
+
         </div>
         <!--/First row-->
 
@@ -1757,7 +1954,8 @@ ul {
               </div>
               <div class="col-9 mb-2">
                 <h5 class="feature-title font-bold mb-1">Modularity</h5>
-                <p class="grey-text mt-2">Our Design comes with both, compiled, ready to use libraries including all features as
+                <p class="grey-text mt-2">Our Design comes with both, compiled, ready to use libraries including all
+                  features as
                   well as modules for CSS (SASS files) and JS.</p>
               </div>
             </div>
@@ -1766,7 +1964,7 @@ ul {
           <!--/Grid column-->
 
           <!--Grid column-->
-          
+
           <!--Grid column-->
           <div class="col-xl-4 col-md-9">
             <!--Grid row-->
@@ -1792,7 +1990,8 @@ ul {
               </div>
               <div class="col-9 mb-2">
                 <h5 class="feature-title font-bold mb-1">SASS files</h5>
-                <p class="grey-text mt-2">Arranged and well documented .scss files can't wait until you compile them.</p>
+                <p class="grey-text mt-2">Arranged and well documented .scss files can't wait until you compile them.
+                </p>
               </div>
             </div>
             <!--/Grid row-->
@@ -1808,155 +2007,162 @@ ul {
     </div>
   </main>
   <!--Main layout-->
-<!-- Card -->
+  <!-- Card -->
 
   <!--Footer-->
   <footer class="footer-section">
     <div class="container-fluid">
-        <div class="footer-cta pt-5 pb-5">
-            <div class="row wow fadeIn">
-                <div class="col-xl-3 col-md-6 my-3">
-                    <div class="single-cta ml-3">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div class="cta-text">
-                            <h4>Find us</h4>
-                            <span>Ajah, Lagos, Nigeria</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-md-6 my-3">
-                    <div class="single-cta ml-3">
-                        <i class="fas fa-phone"></i>
-                        <div class="cta-text">
-                            <h4>Call us</h4>
-                            <span>+234 8061 3895 94</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-md-6 my-3">
-                    <div class="single-cta ml-3">
-                        <i class="far fa-envelope-open"></i>
-                        <div class="cta-text">
-                            <h4>Mail us</h4>
-                            <span>akeemifedayolag@gmail.com</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-md-6 my-3">
-                  <div class="single-cta ml-3">
-                      <i class="fab fa-whatsapp"></i>
-                      <div class="cta-text">
-                          <h4>Chat us</h4>
-                          <a href='https://wa.me/2349050562160'><span>+234 9050 5621 60</span></a>
-                      </div>
-                  </div>
+      <div class="footer-cta pt-5 pb-5">
+        <div class="row wow fadeIn">
+          <div class="col-xl-3 col-md-6 my-3">
+            <div class="single-cta ml-3">
+              <i class="fas fa-map-marker-alt"></i>
+              <div class="cta-text">
+                <h4>Find us</h4>
+                <span>Ajah, Lagos, Nigeria</span>
               </div>
             </div>
-        </div>
-        <div class="footer-content pt-5 pb-5">
-            <div class="row">
-                <div class="col-xl-4 col-lg-4 mb-50">
-                    <div class="footer-widget">
-                        <div class="footer-logo">
-                          <a class="navbar-brand" href="index.html">
-        
-                            <div class='logo ml-2'>
-                              <h1 class='d-inline-block justify-content-center align-self-center first' style='font-family: Righteous, cursive;'>a</h1><h2 class='d-inline-block justify-content-center align-self-center second' style='font-family: Righteous, cursive;'>aicodings inc.</h2>
-                            </div>
-                          </a>
-                    
-                        </div>
-                        <div class="footer-text">
-                          <p>Here at <strong style='font-family:Righteous, cursive; letter-spacing: 1px;'>aicodings inc.</strong>, we help represent your brand online thereby helping to 
-                            represent your business to the larger world.</p>
-                          <p>Our team grows day by day. We focus on delivering qualitative services.
-                            Our goal is straightforward and pleasant. Bent upon client's objectives and ease to suit your needs.
-                          </p>
-                        </div>
-                        <div class="footer-social-icon my-5">
-                            <span class='footer-widget-heading'><h3>Follow us</h3></span>
-                            <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
-                            <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
-                            <a href="#"><i class="fab fa-gitlab gitlab-bg"></i></a>
-                            <a href="#"><i class="fab fa-whatsapp whatsapp-bg"></i></a>
-                            <a href="#"><i class="fab fa-github github-bg"></i></a>
-                            <a href="#"><i class="fab fa-instagram instagram-bg mt-3"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
-                    <div class="footer-widget">
-                        <div class="footer-widget-heading">
-                            <h3>Useful Links</h3>
-                        </div>
-                        <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">about</a></li>
-                            <li><a href="#">services</a></li>
-                            <li><a href="#">portfolio</a></li>
-                            <li><a href="#">Contact</a></li>
-                            <li><a href="#">About us</a></li>
-                            <li><a href="#">Our Services</a></li>
-                            <li><a href="#">Expert Team</a></li>
-                            <li><a href="#">Contact us</a></li>
-                            <li><a href="#">Latest News</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
-                    <div class="footer-widget">
-                        <div class="footer-widget-heading">
-                            <h3>Subscribe</h3>
-                        </div>
-                        <div class="footer-text mb-25">
-                            <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
-                        </div>
-                        <div class="subscribe-form">
-                            <form action="#">
-                                <input type="text" placeholder="Email Address">
-                                <a href='#' type='submit' class='sub'><i class="fab fa-telegram-plane"></i></a>
-                            </form>
-                        </div>
-                    </div>
-                </div>
+          </div>
+          <div class="col-xl-3 col-md-6 my-3">
+            <div class="single-cta ml-3">
+              <i class="fas fa-phone"></i>
+              <div class="cta-text">
+                <h4>Call us</h4>
+                <span>+234 8061 3895 94</span>
+              </div>
             </div>
+          </div>
+          <div class="col-xl-3 col-md-6 my-3">
+            <div class="single-cta ml-3">
+              <i class="far fa-envelope-open"></i>
+              <div class="cta-text">
+                <h4>Mail us</h4>
+                <span>akeemifedayolag@gmail.com</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-md-6 my-3">
+            <div class="single-cta ml-3">
+              <i class="fab fa-whatsapp"></i>
+              <div class="cta-text">
+                <h4>Chat us</h4>
+                <a href='https://wa.me/2349050562160'><span>+234 9050 5621 60</span></a>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+      <div class="footer-content pt-5 pb-5">
+        <div class="row">
+          <div class="col-xl-4 col-lg-4 mb-50">
+            <div class="footer-widget">
+              <div class="footer-logo">
+                <a class="navbar-brand" href="index.html">
+
+                  <div class='logo ml-2'>
+                    <h1 class='d-inline-block justify-content-center align-self-center first'
+                      style='font-family: Righteous, cursive;'>a</h1>
+                    <h2 class='d-inline-block justify-content-center align-self-center second'
+                      style='font-family: Righteous, cursive;'>aicodings inc.</h2>
+                  </div>
+                </a>
+
+              </div>
+              <div class="footer-text">
+                <p>Here at <strong style='font-family:Righteous, cursive; letter-spacing: 1px;'>aicodings inc.</strong>,
+                  we help represent your brand online thereby helping to
+                  represent your business to the larger world.</p>
+                <p>Our team grows day by day. We focus on delivering qualitative services.
+                  Our goal is straightforward and pleasant. Bent upon client's objectives and ease to suit your needs.
+                </p>
+              </div>
+              <div class="footer-social-icon my-5">
+                <span class='footer-widget-heading'>
+                  <h3>Follow us</h3>
+                </span>
+                <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                <a href="#"><i class="fab fa-gitlab gitlab-bg"></i></a>
+                <a href="#"><i class="fab fa-whatsapp whatsapp-bg"></i></a>
+                <a href="#"><i class="fab fa-github github-bg"></i></a>
+                <a href="#"><i class="fab fa-instagram instagram-bg mt-3"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+            <div class="footer-widget">
+              <div class="footer-widget-heading">
+                <h3>Useful Links</h3>
+              </div>
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">services</a></li>
+                <li><a href="#">portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Our Services</a></li>
+                <li><a href="#">Expert Team</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Latest News</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+            <div class="footer-widget">
+              <div class="footer-widget-heading">
+                <h3>Subscribe</h3>
+              </div>
+              <div class="footer-text mb-25">
+                <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+              </div>
+              <div class="subscribe-form">
+                <form action="#">
+                  <input type="text" placeholder="Email Address">
+                  <a href='#' type='submit' class='sub'><i class="fab fa-telegram-plane"></i></a>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="copyright-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-6 col-lg-6 text-center text-lg-left">
-                    <div class="copyright-text">
-                        <p>Copyright &copy; 2020, All Right Reserved <a href="https://codepen.io/anupkumar92/"> AICodings Inc.</a></p>
-                    </div>
-                </div>
-                <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
-                    <div class="footer-menu">
-                        <ul>
-                            <li class='card-title1'><a href="#">Home</a></li>
-                            <li class='card-title1'><a href="#">Terms</a></li>
-                            <li class='card-title1'><a href="#">Privacy</a></li>
-                            <li class='card-title1'><a href="#">Policy</a></li>
-                            <li class='card-title1'><a href="#">Contact</a></li>
-                        </ul>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+            <div class="copyright-text">
+              <p>Copyright &copy; 2020, All Right Reserved <a href="https://codepen.io/anupkumar92/"> AICodings Inc.</a>
+              </p>
             </div>
+          </div>
+          <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+            <div class="footer-menu">
+              <ul>
+                <li class='card-title1'><a href="#">Home</a></li>
+                <li class='card-title1'><a href="#">Terms</a></li>
+                <li class='card-title1'><a href="#">Privacy</a></li>
+                <li class='card-title1'><a href="#">Policy</a></li>
+                <li class='card-title1'><a href="#">Contact</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-</footer>
+  </footer>
   <!--/.Footer-->
 
-    <!-- SCRIPTS -->
-    <!-- JQuery -->
-    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-    <!-- Bootstrap tooltips -->
-    <script type="text/javascript" src="js/popper.min.js"></script>
-    <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <!-- MDB core JavaScript -->
-    <script type="text/javascript" src="js/mdb.min.js"></script>
-      <!-- Initializations -->
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- Initializations -->
   <script type="text/javascript">
     // Animations initialization
     new WOW().init();
@@ -1964,4 +2170,3 @@ ul {
 </body>
 
 </html>
-
