@@ -2,11 +2,11 @@ html,
     body,
     header,
     .carousel {
-      height: 80vw;
+      height: 50vw;
       width: 100%;
     }
 
-    @media (max-width: 740px) {
+    @media (max-width: 850px) {
 
       html,
       body,
@@ -100,7 +100,7 @@ html,
       border-radius: 50%;
 
     }
-
+    
     body {
       font-family: Overlock, cursive;
       font-weight: 400;
