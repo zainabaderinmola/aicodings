@@ -132,6 +132,72 @@
       font-size: 112%;
     }
 
+     /* Hover effect */
+
+     .tiles .tile {
+            display: inline-block;
+            margin: 10px;
+            text-align: left;
+            opacity: .99;
+            overflow: hidden;
+            position: relative;
+            border-radius: 3px;
+            box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.05);
+        }
+
+        .tiles .tile:before {
+            content: '';
+            background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.7)));
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%);
+            width: 100%;
+            height: 50%;
+            opacity: 0;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            z-index: 2;
+            -webkit-transition-property: top, opacity;
+            transition-property: top, opacity;
+            -webkit-transition-duration: 0.3s;
+            transition-duration: 0.3s;
+        }
+
+        .tiles .tile img {
+            display: block;
+            max-width: 100%;
+            backface-visibility: hidden;
+            -webkit-backface-visibility: hidden;
+        }
+        
+        .tiles .tile:focus:before,
+        .tiles .tile:focus span,
+        .tiles .tile:hover:before,
+        .tiles .tile:hover span {
+            opacity: 1;
+        }
+
+        .tiles .tile:focus:before,
+        .tiles .tile:hover:before {
+            top: 50%;
+        }
+
+        .tiles .tile:focus span,
+        .tiles .tile:hover span {
+            top: 0;
+        }
+
+        .tiles .tile:focus .title,
+        .tiles .tile:hover .title {
+            -webkit-transition-delay: 0.15s;
+            transition-delay: 0.15s;
+        }
+
+        .tiles .tile:focus .info,
+        .tiles .tile:hover .info {
+            -webkit-transition-delay: 0.25s;
+            transition-delay: 0.25s;
+            z-index: 1;
+        }
     .feature-title {
       font-weight: 900;
       font-size: large;
@@ -1114,9 +1180,11 @@
 
           <!--Grid column-->
           <div class="fadeIn col-lg-8 col-md-7 mt-5 mb-4">
-
-            <img src="https://wallpaperaccess.com/full/1657871.jpg" class="img-fluid z-depth-1-half" alt="">
-
+            <div class="tiles">
+              <a class="tile">
+                <img src="https://wallpaperaccess.com/full/1657871.jpg" class="img-fluid z-depth-1-half" alt="">
+              </a>
+            </div>
           </div>
           <!--Grid column-->
 
@@ -2151,7 +2219,11 @@
             </div>
           </div>
           <div class="col-lg-8 col-md-7 mt-5 mb-4">
-            <img src="https://www.techasoft.com/blog/2020/06/1592934228.png" class="img-fluid z-depth-1-half" alt="">
+            <div class='tiles'>
+              <a class='tile'>
+                <img src="https://www.techasoft.com/blog/2020/06/1592934228.png" class="img-fluid z-depth-1-half" alt="">
+              </a>
+            </div>
           </div>
           <!--Grid column-->
 
