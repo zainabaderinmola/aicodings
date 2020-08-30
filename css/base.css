@@ -78,7 +78,9 @@ html,
       padding: 5px 10px;
 
     }
-
+    .carousel{
+      margin-top:100px;
+    }
     .carousel-item img {
       width: 100%;
       height: auto;
