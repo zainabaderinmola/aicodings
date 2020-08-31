@@ -131,7 +131,7 @@
       </div>
       <div class="carousel-item">
         <div class="view">
-          <img class="d-block w-100" src="img/aicodings8.webp" loading="lazy"
+          <img class="lazy" data-src="img/aicodings8.webp" loading="lazy"
             alt="First slide">
           <div class="mask rgb-black-light"></div>
         </div>
@@ -148,14 +148,14 @@
     <!--/.Slides-->
 
     <!--Controls-->
-     <!-- <a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev" style='background-color: red; width: 20px;'>
+     <a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true" style='margin:0; left:0;position: absolute;justify-content: flex-start;'></span>
       <span class="sr-only">Previous</span>
     </a>
     <a class="carousel-control-next" href="#carousel-example-1z" role="button" data-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true" style='margin:0; position: absolute;justify-content: flex-start; right:0;'></span>
       <span class="sr-only">Next</span>
-    </a>  -->
+    </a>
     <!--/.Controls-->
 
   </div>
@@ -227,8 +227,8 @@
               <div class="card">
                 <!-- Card image -->
                 <div class="view overlay">
-                  <img class="card-img-top"
-                    src="img/aicodings13.webp" loading="lazy"
+                  <img class="card-img-top lazy"
+                    data-src="img/aicodings13.webp" loading="lazy"
                     alt="Card image cap">
                   <a href="#!">
                     <div class="mask rgba-red-slight"></div>
@@ -299,8 +299,8 @@
               <div class="card">
                 <!-- Card image -->
                 <div class="view overlay">
-                  <img class="card-img-top"
-                    src="img/aicodings12.webp" loading="lazy"
+                  <img class="card-img-top lazy"
+                    data-src="img/aicodings12.webp" loading="lazy"
                     alt="Card image cap">
                   <a href="#!">
                     <div class="mask rgba-cyan-slight"></div>
@@ -1056,6 +1056,55 @@
   <script type="text/javascript">
     // Animations initialization
     new WOW().init();
+    document.addEventListener("DOMContentLoaded", function() {
+  var lazyloadImages;    
+
+  if ("IntersectionObserver" in window) {
+    lazyloadImages = document.querySelectorAll(".lazy");
+    var imageObserver = new IntersectionObserver(function(entries, observer) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          var image = entry.target;
+          image.src = image.dataset.src;
+          image.classList.remove("lazy");
+          imageObserver.unobserve(image);
+        }
+      });
+    });
+
+    lazyloadImages.forEach(function(image) {
+      imageObserver.observe(image);
+    });
+  } else {  
+    var lazyloadThrottleTimeout;
+    lazyloadImages = document.querySelectorAll(".lazy");
+    
+    function lazyload () {
+      if(lazyloadThrottleTimeout) {
+        clearTimeout(lazyloadThrottleTimeout);
+      }    
+
+      lazyloadThrottleTimeout = setTimeout(function() {
+        var scrollTop = window.pageYOffset;
+        lazyloadImages.forEach(function(img) {
+            if(img.offsetTop < (window.innerHeight + scrollTop)) {
+              img.src = img.dataset.src;
+              img.classList.remove('lazy');
+            }
+        });
+        if(lazyloadImages.length == 0) { 
+          document.removeEventListener("scroll", lazyload);
+          window.removeEventListener("resize", lazyload);
+          window.removeEventListener("orientationChange", lazyload);
+        }
+      }, 20);
+    }
+
+    document.addEventListener("scroll", lazyload);
+    window.addEventListener("resize", lazyload);
+    window.addEventListener("orientationChange", lazyload);
+  }
+})
 
   </script>
 </body>
