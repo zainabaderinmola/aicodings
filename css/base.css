@@ -96,7 +96,7 @@ html,
       padding: 10px 1px;
     }
     .carousel-caption p{
-      font-size: 5.2vw;
+      font-size: 4rem;
       font-weight: 900;
       color: #ff5e14;
       margin-bottom: 40px;
@@ -104,7 +104,7 @@ html,
     }
    
     .carousel-caption h4{
-      font-size: 2.0vw;
+      font-size: 2.0rem;
       }
     .carousel-indicators li.active {
       background-color: #ff5e14;
