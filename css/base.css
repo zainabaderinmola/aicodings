@@ -98,11 +98,11 @@ html,
     .carousel-control-prev-icon,
     .carousel-control-next-icon {
       background-color: #ff5e14;
-      padding: 20px;
+      padding: 30px;
       border-radius: 50%;
-
     }
-    
+  
+
     body {
       font-family: Overlock, cursive;
       font-weight: 400;
