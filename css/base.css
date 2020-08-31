@@ -2,10 +2,13 @@ html,
     body,
     header,
     .carousel {
-      height: 50vw;
+      height: 100%;
       width: 100%;
     }
-
+@font-face{
+  font-family: "CeraPro-Regular";
+  src: url('../font/CeraPro-Regular.otf');
+}
     @media (max-width: 850px) {
 
       html,
@@ -91,9 +94,9 @@ html,
 
     }
 
-    .carousel-item {
+    /* .carousel-item {
       filter: brightness(60%);
-    }
+    } */
 
     .carousel-control-prev-icon,
     .carousel-control-next-icon {
@@ -105,7 +108,7 @@ html,
   
 
     body {
-      font-family: Overlock, cursive;
+      font-family: "CeraPro-Regular";
       font-weight: 400;
       -webkit-font-smoothing: antialiased;
       color: #222;
