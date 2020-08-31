@@ -48,6 +48,9 @@ html,
       .logo .second {
         display: none;
       }
+      .carousel-caption h4{
+        display: none;
+      }
 
       .carousel-item img {
         width: 100%;
