@@ -8,6 +8,7 @@ html,
 @font-face{
   font-family: "CeraPro-Regular";
   src: url('../font/CeraPro-Regular.otf');
+  font-display: swap;
 }
     @media (max-width: 850px) {
 
