@@ -542,7 +542,7 @@ html,
     /* title button anime */
 
     button {
-
+      font-family: "CeraPro-Regular" !important;
       letter-spacing: 1px;
       background: none;
       color: white;
@@ -621,7 +621,7 @@ html,
     }
 
     .icon-right:after {
-      font-family: "FontAwesome";
+      font-family: "CeraPro-Regular" !important;
       content: '\2192';
       font-size: 24px;
       display: inline-block;
