@@ -4,12 +4,13 @@ html,
     .carousel {
       height: 60vw;
       width: 100%;
-    }
-@font-face{
+     }
+
+     /* @font-face{
   font-family: "CeraPro-Regular";
   src: url('../font/CeraPro-Regular.otf');
   font-display: swap;
-}
+}  */
     @media (max-width: 850px) {
 
       html,
