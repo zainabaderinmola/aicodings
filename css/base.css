@@ -8,6 +8,7 @@ html,
 @font-face{
   font-family: "CeraPro-Regular";
   src: url('../font/CeraPro-Regular.otf');
+  font-display: swap;
 }
     @media (max-width: 850px) {
 
@@ -98,7 +99,7 @@ html,
     .carousel-caption p{
       font-size: 5.2vw;
       font-weight: 900;
-      color: #ff5e14;
+      color: white;
       margin-bottom: 40px;
       text-align: center;
     }
@@ -125,7 +126,7 @@ html,
   
 
     body {
-      font-family: "CeraPro-Regular" !important;
+      font-family: "CeraPro-Regular";
       font-weight: 400;
       -webkit-font-smoothing: antialiased;
       color: #222;
@@ -541,7 +542,7 @@ html,
     /* title button anime */
 
     button {
-      font-family: Overlock, cursive;
+      font-family: "CeraPro-Regular" !important;
       letter-spacing: 1px;
       background: none;
       color: white;
@@ -620,7 +621,7 @@ html,
     }
 
     .icon-right:after {
-      font-family: "FontAwesome";
+      font-family: "CeraPro-Regular" !important;
       content: '\2192';
       font-size: 24px;
       display: inline-block;
