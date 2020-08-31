@@ -86,7 +86,26 @@ html,
       width: 100%;
       height: auto;
     }
-
+    .carousel-caption{
+      top:150px;
+      
+    }
+    .carousel-caption .heading{
+      text-align: center;
+      background: rgba(0,0,0,0.5);
+      padding: 10px 1px;
+    }
+    .carousel-caption p{
+      font-size: 4.8vw;
+      font-weight: 900;
+      color: #ff5e14;
+     
+      text-align: center;
+    }
+   
+    .carousel-caption h4{
+      font-size: 2.0vw;
+      }
     .carousel-indicators li.active {
       background-color: #ff5e14;
 
