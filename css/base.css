@@ -275,22 +275,17 @@ ul{margin:0;padding:0}
 
 ::selection{
 	background-color:#2d98da;
-	color:#fff;
-}
-.loader-wrapper{
-	background-color:#292929;
-	display:flex;
-	justify-content:center;
-	align-items:center;
-	width:100%;
-  min-height:100vh;
-  padding:0px;
-	margin:0px;
-	box-sizing:border-box;
+  color:#fff;}
+  
+  body.loaded .Box {
+    opacity: 1;
 }
 .Box{
-	position:relative;
-	width:100px;
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  width:100px;
+  transform: translate(-50%, -50%);
 	height:100px;
 	transform-style:preserve-3d;
 	transform-origin:center;
