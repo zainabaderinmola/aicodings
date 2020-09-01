@@ -315,7 +315,7 @@ nav.navbar{
 .Box span:first-of-type{
 	left:0px;
 	top:0px;
-	background:#eb3b5a;
+	background:#ff5e14;
 }
 .Box span:nth-of-type(2){
 	right:0px;
@@ -330,7 +330,7 @@ nav.navbar{
 .Box span:last-of-type{
 	right:0px;
 	bottom:0px;
-	background:#227093;
+	background:#011322;
 }
 
 @keyframes Loading{
