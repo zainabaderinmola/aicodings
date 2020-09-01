@@ -127,7 +127,7 @@ body{font-family:"CeraPro-Regular";font-weight:400;-webkit-font-smoothing:antial
 
 .info h5 {
   padding: 15px 10px;
-  background-color: rgb(241, 165, 23);
+  background-color: orangered;
   color: white;
   text-align: center;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
