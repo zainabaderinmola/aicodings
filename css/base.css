@@ -275,18 +275,21 @@ ul{margin:0;padding:0}
 
 ::selection{
 	background-color:#2d98da;
-  color:#fff;}
-  
-  body.loaded .Box {
-    opacity: 1;
+	color:#fff;
+}
+.loader-wrapper{
+  background-color:#aa340f;
+  display:flex;
+	justify-content:center;
+	align-items:center;
+	width:100%;
+
 }
 .Box{
-  position:absolute;
-  top: 50%;
-  left: 50%;
-  width:100px;
-  transform: translate(-50%, -50%);
-	height:100px;
+	position:relative;
+	width:100px;
+  height:100px;
+  
 	transform-style:preserve-3d;
 	transform-origin:center;
 	transform:rotate(45deg);
