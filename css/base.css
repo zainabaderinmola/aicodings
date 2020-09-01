@@ -1,5 +1,4 @@
-body,header,html, .carousel{height:60vw;width:100%}
-@font-face{font-family:CeraPro-Regular;src:url(../font/CeraPro-Regular.otf);font-display:swap}
+body,header,html, .carousel{height:70vw;width:100%}
 @media (max-width:850px) {
 .carousel,body,header,html{height:80vw;width:100%}
 .carousel-item img{width:100%;height:100%}
@@ -94,7 +93,7 @@ h1{letter-spacing:8px}
 100%{width:0;right:100%}
 }
 .card-body{background-color:#010e1b}
-body{background-color:#011424;color:#fff}
+body{background-color:#011424;color:#fff;font-weight: 400;-webkit-font-smoothing: antialiased;}
 .card-title:after{content:'';display:block;width:40px;margin:auto;padding-top:10px;border-bottom:2px solid #ff5e14}
 .card-title1:after{content:'';display:block;width:25px;margin:auto;padding-top:5px;border-bottom:2px solid #ff5e14}
 button{font-family:CeraPro-Regular!important;letter-spacing:1px;background:0 0;color:#fff;position:relative;outline:0;border:none;height:50px;width:190px;font-size:16px;z-index:2;-webkit-transition:.01s .23s ease-out all;transition:.01s .23s ease-out all;box-shadow:0 0 17px 1px rgba(0,0,0,.34);overflow:hidden}
