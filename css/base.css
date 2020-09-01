@@ -72,9 +72,9 @@ body{font-family:"CeraPro-Regular";font-weight:400;-webkit-font-smoothing:antial
 
 .tiles .tile .details span {
   display: block;
-  opacity: 0;
+  opacity: 1;
   position: relative;
-  top: 100px;
+  top: 1px;
   -webkit-transition-property: top, opacity;
   transition-property: top, opacity;
   -webkit-transition-duration: 0.3s;
