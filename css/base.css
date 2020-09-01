@@ -1,4 +1,5 @@
-body,header,html, .carousel{height:70vw;width:100%}
+body,header,html, .carousel{height:60vw;width:100%}
+@font-face{font-family:CeraPro-Regular;src:url(../font/CeraPro-Regular.otf);font-display:swap}
 @media (max-width:850px) {
 .carousel,body,header,html{height:80vw;width:100%}
 .carousel-item img{width:100%;height:100%}
@@ -14,6 +15,7 @@ body,header,html, .carousel{height:70vw;width:100%}
 .logo{padding:0 10px;margin-left:-20px}
 .logo .first{background-color:#fff;padding:2px 10px;font-weight:900;color:#010e1b}
 .logo .second{color:#fff;background-color:#010e1b;padding:5px 10px}
+body{font-family:CeraPro-Regular;font-weight:400;-webkit-font-smoothing:antialiased;color:#222}
 h1{letter-spacing:8px}
 .hr-light{border-top:3px solid #cc6606;width:80px}
 .tiles .tile{display:inline-block;margin:10px;text-align:left;opacity:.99;overflow:hidden;position:relative;border-radius:3px;box-shadow:0 0 20px 0 rgba(0,0,0,.05)}
@@ -92,10 +94,10 @@ h1{letter-spacing:8px}
 100%{width:0;right:100%}
 }
 .card-body{background-color:#010e1b}
-body{background-color:#011424;color:#fff;font-family:;font-weight: 400;-webkit-font-smoothing: antialiased;}
+body{background-color:#011424;color:#fff}
 .card-title:after{content:'';display:block;width:40px;margin:auto;padding-top:10px;border-bottom:2px solid #ff5e14}
 .card-title1:after{content:'';display:block;width:25px;margin:auto;padding-top:5px;border-bottom:2px solid #ff5e14}
-button{font-family:'Arial Narrow';!important;letter-spacing:1px;background:0 0;color:#fff;position:relative;outline:0;border:none;height:50px;width:190px;font-size:16px;z-index:2;-webkit-transition:.01s .23s ease-out all;transition:.01s .23s ease-out all;box-shadow:0 0 17px 1px rgba(0,0,0,.34);overflow:hidden}
+button{font-family:CeraPro-Regular!important;letter-spacing:1px;background:0 0;color:#fff;position:relative;outline:0;border:none;height:50px;width:190px;font-size:16px;z-index:2;-webkit-transition:.01s .23s ease-out all;transition:.01s .23s ease-out all;box-shadow:0 0 17px 1px rgba(0,0,0,.34);overflow:hidden}
 button:before{content:'';position:absolute;left:0;top:0;height:100%;width:55%;background:#010a13;z-index:-1;-webkit-transition:.3s ease-in all;transition:.3s ease-in all}
 button:after{content:'';position:absolute;left:-5%;top:5%;height:90%;width:5%;background:#fff;z-index:-1;-webkit-transition:.4s .02s ease-in all;transition:.4s .02s ease-in all}
 button:hover{cursor:pointer;color:transparent}
@@ -104,7 +106,7 @@ button:hover:after{left:100%;width:70%}
 button:hover .icon-right.after:after{left:-80px;color:#fff;-webkit-transition:.2s .2s ease all;transition:.2s .2s ease all}
 button:hover .icon-right.after:before{left:-104px;top:14px;opacity:.2;color:#fff}
 .icon-right{position:absolute;top:0;right:0}
-.icon-right:after{font-family:'Arial Narrow';content:'\2192';font-size:24px;display:inline-block;position:relative;top:26px;-webkit-transform:translate3D(0,-50%,0);transform:translate3D(0,-50%,0)}
+.icon-right:after{font-family:CeraPro-Regular!important;content:'\2192';font-size:24px;display:inline-block;position:relative;top:26px;-webkit-transform:translate3D(0,-50%,0);transform:translate3D(0,-50%,0)}
 .icon-right.after:after{left:-250px;color:#000;-webkit-transition:.15s .25s ease left,.5s .05s ease color;transition:.15s .25s ease left,.5s .05s ease color}
 .icon-right.after:before{content:'Explore';position:absolute;left:-230px;top:14px;opacity:0;-webkit-transition:.2s ease-in all;transition:.2s ease-in all}
 .btn-slice{cursor:pointer;background-color:#010a13;width:85%;height:64px;line-height:64px;position:absolute;left:48%;top:10%;transform:translate(-50%,-50%);z-index:0;box-shadow:0 0 17px 1px rgba(0,0,0,.34)}
@@ -129,7 +131,7 @@ ul{margin:0;padding:0}
 .footer-logo{margin-bottom:30px}
 .footer-logo img{max-width:200px}
 .footer-text p{margin-bottom:14px;font-size:16px;color:#7e7e7e;line-height:28px}
-.footer-social-icon span{color:#fff;display:block;font-size:20px;font-weight:700;font-family:sans-serif;margin-bottom:20px}
+.footer-social-icon span{color:#fff;display:block;font-size:20px;font-weight:700;font-family:Poppins,sans-serif;margin-bottom:20px}
 .footer-social-icon a{color:#fff;font-size:16px;margin-right:15px}
 .footer-social-icon i{height:40px;width:40px;text-align:center;line-height:38px;border-radius:50%}
 .facebook-bg{background:#3b5998}
