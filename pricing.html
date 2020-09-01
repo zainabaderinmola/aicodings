@@ -68,14 +68,11 @@
               <li class="nav-item active">
                 <a class="nav-link" href="#pricing">Pricing</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" data-toggle="modal" data-target="#ModalWarning" href="#">Who We Are</a>
+              <li class="nav-item"> <a class="nav-link" data-toggle="modal" data-target="#ModalWarning" href="#">About Us</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" data-toggle="modal" data-target="#modalContactForm" href="#">Get In Touch</a>
+              <li class="nav-item"> <a class="nav-link" data-toggle="modal" data-target="#modalContactForm" href="#">Get In Touch</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" data-toggle="modal" data-target="#sideModalTLInfo" href="#">Tech News</a>
+              <li class="nav-item"> <a class="nav-link" data-toggle="modal" data-target="#sideModalTLInfo" href="#">Tech News</a>
               </li>
             </ul>
     
@@ -776,6 +773,115 @@
       </div>
     </div>
   </footer>
+
+
+  <!-- Contact form modal -->
+  <div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content" style='background-color:rgb(1, 20, 36);'>
+        <div class="modal-header text-center" style='background-color:rgb(1, 13, 24); border-bottom:none;'>
+          <h4 class="modal-title w-100 orange-text font-weight-bold">Write to us</h4>
+          <span type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <div class='cta-text'>
+              <h4><i class="fas fa-times"></i></h4>
+            </div>
+          </span>
+        </div>
+        <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+          <div class="modal-body mx-3">
+            <div class="md-form mb-5"> <i class="fas fa-user prefix grey-text"></i>
+              <input type="text" id="name" class="form-control validate" style='border-bottom:1px solid cyan'>
+              <label data-error="wrong" data-success="right" for="name">Your name</label>
+            </div>
+            <div class="md-form mb-5"> <i class="fas fa-envelope prefix grey-text"></i>
+              <input type="email" id="email" class="form-control validate" style='border-bottom:1px solid cyan'>
+              <label data-error="wrong" data-success="right" for="email">Your email</label>
+            </div>
+            <div class="md-form mb-5"> <i class="fas fa-tag prefix grey-text"></i>
+              <input type="text" id="subject" class="form-control validate" style='border-bottom:1px solid cyan'>
+              <label data-error="wrong" data-success="right" for="subject">Subject</label>
+            </div>
+            <div class="md-form"> <i class="fas fa-edit prefix grey-text"></i>
+              <textarea type="text" id="message" class="md-textarea form-control" rows="4" style='border-bottom:1px solid cyan'></textarea>
+              <label data-error="wrong" data-success="right" for="message">Your message</label>
+            </div>
+          </div>
+          <div class="modal-footer d-flex justify-content-center" style='border-top: none;'> <a class="btn btn-orange" onclick="validateForm();">Send <i class="fas fa-paper-plane ml-1"></i></a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- Who we are modal box -->
+  <div class="modal fade" id="ModalWarning" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <!--Content-->
+      <div class="modal-content" style='background-color:rgb(1, 20, 36);'>
+        <div class="modal-header text-center" style='background-color:rgb(1, 13, 24); border-bottom:none;'>
+          <h4 class="modal-title w-100 font-weight-bold" style='color:#ff5e14;'>About Us</h4>
+          <span type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <div class='cta-text'>
+              <h4><i class="fas fa-times"></i></h4>
+            </div>
+          </span>
+        </div>
+        <!--Body-->
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-4 text-center">
+              <img src="img/favicon-96x96.png" alt="IMG of aicodings" class="img-fluid z-depth-1-half rounded-circle">
+              <div style="height: 10px"></div>
+              <p class="title mb-0"><strong style='font-family:Righteous, cursive; letter-spacing: 1px;'>aicodings
+                  inc.</strong>.</p>
+              <p class="text" style="font-size: 13px">Technology</p>
+            </div>
+            <div class="col-8 grey-text">Here at <strong style='font-family:Righteous, cursive; letter-spacing: 1px;'>aicodings inc.</strong>, we help represent your brand online thereby helping to represent your business to the larger world.</p>
+              <p>Our team grows day by day. We focus on delivering qualitative services. Our goal is straightforward and pleasant. Bent upon client's objectives and ease to suit your needs.</p>
+              <p><strong style='font-family:Righteous, cursive; letter-spacing: 1px;'>aicodings inc.</strong>, design versions are developed on a global standard. The packages are ideal for people with personal or hobby projects that are or aren’t business-critical.</p>
+            </div>
+          </div>
+        </div>
+        <!--Footer-->
+        <div class="modal-footer justify-content-center" style='border-top: 1px solid cyan;'> <a type="button" class="btn btn" style='background-color:#ff5e14;'>Know More <i
+              class="far fa-smile-wink ml-1 white-text"></i></a>
+          <a type="button" class="btn btn-outline waves-effect" style='border:1px solid #ff5e14; color: #ff5e14;' data-dismiss="modal">No, thanks</a>
+        </div>
+      </div>
+      <!--/.Content-->
+    </div>
+  </div>
+  <!-- Tech news coming -->
+  <div class="modal fade left" id="sideModalTLInfo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <!--Content-->
+      <div class="modal-content" style='background-color:rgb(1, 20, 36);'>
+        <div class="modal-header text-center" style='background-color:rgb(1, 13, 24); border-bottom:none;'>
+          <h4 class="modal-title w-100 font-weight-bold" style='color:cyan;'>Tech Blog</h4>
+          <span type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <div class='cta-text'>
+              <h4><i class="fas fa-times"></i></h4>
+            </div>
+          </span>
+        </div>
+        <!--Body-->
+        <div class="modal-body">
+          <!-- <video width="100%" autoplay loop>
+            <source src="img/aicodings3.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video> -->
+          <div class="justify-center mt-3">
+            <p>Hello There. Thank you for taking your time through our site. However, we are sorry to inform you that we are currently working on this webpage.
+              <hr>This will be done in a jiffy. Kindly keep yourself glued to our other sections. Once again we apologise for any inconvenience caused.</p>
+          </div>
+        </div>
+        <!--Footer-->
+        <div class="modal-footer justify-content-center" style='border-top: 1px solid orange;'> <a type="button" class="btn btn-info">Little Time <i class="fas fa-stopwatch ml-1 white-text"></i></a>
+          <a type="button" class="btn btn-outline-info waves-effect" data-dismiss="modal">Thank You</a>
+        </div>
+      </div>
+      <!--/.Content-->
+    </div>
+  </div>
   <!--/.Footer-->
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
   <!-- Bootstrap tooltips -->
