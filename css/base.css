@@ -278,11 +278,12 @@ ul{margin:0;padding:0}
 	color:#fff;
 }
 .loader-wrapper{
-  background-color:#aa340f;
-  display:flex;
+  background-color:#292929;
+	display:flex;
 	justify-content:center;
 	align-items:center;
 	width:100%;
+	min-height:100vh;
 
 }
 .Box{

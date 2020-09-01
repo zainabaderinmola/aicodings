@@ -867,15 +867,14 @@
   <!--Main layout-->
   
   <!-- Preloading loader -->
-  <!-- <div class='loader-wrapper'>
+  <div class='loader-wrapper'>
     <div class="Box">
       <span></span>
       <span></span>
       <span></span>
       <span></span>
     </div>
-  </div> -->
-
+  </div>
   <!--Footer-->
   <footer class="footer-section">
     <div class="container-fluid">
@@ -1040,7 +1039,7 @@
     // Animations initialization
     new WOW().init();
    $(window).on('load', function(){
-     $(".Box").fadeOut("slow");
+     $(".loader-wrapper").fadeOut("slow");
    });
   </script>
 </body>
