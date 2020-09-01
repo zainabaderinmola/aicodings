@@ -277,12 +277,15 @@ ul{margin:0;padding:0}
 	background-color:#2d98da;
 	color:#fff;
 }
+nav.navbar{
+  z-index:10;
+}
 #loader{
   padding:0px;
   top: 0;
   left:0;
   margin:auto;
-  z-index: 1;
+  z-index: 11;
 	box-sizing:border-box;
   display:flex;
   position: fixed;
