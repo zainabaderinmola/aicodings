@@ -330,7 +330,7 @@ nav.navbar{
 .Box span:last-of-type{
 	right:0px;
 	bottom:0px;
-	background:white;
+	background:red;
 }
 
 @keyframes Loading{
