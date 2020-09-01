@@ -15,13 +15,6 @@ carousel,body,header,html{height:60vw;width:100%}
 .logo{padding:0 10px;margin-left:-20px}
 .logo .first{background-color:#fff;padding:2px 10px;font-weight:900;color:#010e1b}
 .logo .second{color:#fff;background-color:#010e1b;padding:5px 10px}
-.carousel-item img{width:100%;height:auto}
-.carousel-caption{top:20%}
-.carousel-caption .heading{text-align:center;background:rgba(0,0,0,.5);padding:10px 1px}
-.carousel-caption p{font-size:5.2vw;font-weight:900;color:#fff;margin-bottom:40px;text-align:center}
-.carousel-caption h4{font-size:2vw}
-.carousel-indicators li.active{background-color:#ff5e14}
-.carousel-control-next-icon,.carousel-control-prev-icon{background-color:#ff5e14;padding:35px;border-radius:50%;align-items:flex-start}
 body{font-family:CeraPro-Regular;font-weight:400;-webkit-font-smoothing:antialiased;color:#222}
 h1{letter-spacing:8px}
 .hr-light{border-top:3px solid #cc6606;width:80px}
@@ -170,10 +163,10 @@ nav.navbar{z-index:10}
 #loader{padding:0;top:0;left:0;margin:auto;z-index:11;box-sizing:border-box;display:flex;position:fixed;justify-content:center;background-color:#010114;align-items:center;width:100%;height:100vh}
 .Box{position:relative;width:100px;height:100px;transform-style:preserve-3d;transform-origin:center;transform:rotate(45deg);animation:Loading 1s linear infinite}
 .Box span{position:absolute;width:50px;height:50px;animation:MyLoading 1s ease-in-out infinite}
-.Box span:first-of-type{left:0;top:0;background:#ff5e14}
-.Box span:nth-of-type(2){right:0;top:0;background:#0fb9b1}
-.Box span:nth-of-type(3){left:0;bottom:0;background:#e1b12c}
-.Box span:last-of-type{right:0;bottom:0;background:#00ff7f}
+.Box span:first-of-type{left:0;top:0;}
+.Box span:nth-of-type(2){right:0;top:0;}
+.Box span:nth-of-type(3){left:0;bottom:0;}
+.Box span:last-of-type{right:0;bottom:0;}
 @keyframes Loading {
 0%,100%,90%{width:100px;height:100px}
 50%{width:150px;height:150px}
