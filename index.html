@@ -865,8 +865,16 @@
     </div>
   </main>
   <!--Main layout-->
-  <!-- Card -->
-
+  
+  <!-- Preloading loader -->
+  <div class='loader-wrapper'>
+    <div class="Box">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
   <!--Footer-->
   <footer class="footer-section">
     <div class="container-fluid">
@@ -1030,7 +1038,9 @@
   <script type="text/javascript">
     // Animations initialization
     new WOW().init();
-   
+   $(window).on('load', function(){
+     $(".loader-wrapper").fadeOut("slow");
+   });
   </script>
 </body>
 
