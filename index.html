@@ -26,6 +26,14 @@
 </head>
 
 <body>
+  <div class='loader'>
+    <div class="Box">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
 <header>
   <!-- Navbar -->
   <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
@@ -863,14 +871,6 @@
       <!-- Central Modal Medium Info-->
     </div>
 
-    <div class='loader-wrapper'>
-      <div class="Box">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </div>
   </main>
   <!--Main layout-->
   
@@ -1039,9 +1039,9 @@
   <script type="text/javascript">
     // Animations initialization
     new WOW().init();
-    var overlay= document.getElementById()
+    
    $(window).on('load', function(){
-     $(".loader-wrapper").fadeOut("slow");
+     $(".loader").fadeOut("slow");
    });
   </script>
   <noscript>Your browser does not support JavaScript</noscript>

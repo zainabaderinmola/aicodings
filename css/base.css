@@ -277,25 +277,29 @@ ul{margin:0;padding:0}
 	background-color:#2d98da;
 	color:#fff;
 }
-.loader-wrapper{
-  background-color:#292929;
+.loader{
+  padding:0px;
+  top: 0;
+  left:0;
+	margin:0px;
+	box-sizing:border-box;
 	display:flex;
 	justify-content:center;
 	align-items:center;
 	width:100%;
-	min-height:100vh;
+	min-height:100%;
 
 }
 .Box{
 	position:relative;
 	width:100px;
-  height:100px;
-  
+	height:100px;
 	transform-style:preserve-3d;
 	transform-origin:center;
 	transform:rotate(45deg);
 	animation:Loading 1s linear infinite;
 }
+
 .Box span{
 	position:absolute;
 	width:50px;
