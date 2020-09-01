@@ -24,7 +24,19 @@ html,body,header,.carousel{width:100%;height:80vw}
 .carousel-caption h4{font-size:2vw}
 .carousel-indicators li.active{background-color:#ff5e14}
 .carousel-control-prev-icon,.carousel-control-next-icon{background-color:#ff5e14;padding:35px;border-radius:50%;align-items:flex-start}
-body{font-family:"CeraPro-Regular";font-weight:400;-webkit-font-smoothing:antialiased;color:#222;font-size:112%}
+body{font-family:"CeraPro-Regular";font-weight:400;-webkit-font-smoothing:antialiased;color:#222;}
+h1 {
+  letter-spacing: 8px;
+}
+
+h5 {
+  letter-spacing: 3px;
+}
+
+.hr-light {
+  border-top: 3px solid rgb(204, 102, 6);
+  width: 80px;
+}
 .tiles .tile {
   display: inline-block;
   margin: 10px;
