@@ -156,7 +156,6 @@ ul{margin:0;padding:0}
 .footer-menu li{display:inline-block;margin-left:20px}
 .footer-menu li:hover a{color:#ff5e14}
 .footer-menu li a{font-size:14px;color:#878787}
-.img-holder{width:150px;height:150px;border-radius:50%}
 .img-holder img:hover{transform:scale(1.1);margin-bottom:2px}
 ::selection{background-color:#2d98da;color:#fff}
 nav.navbar{z-index:10}
