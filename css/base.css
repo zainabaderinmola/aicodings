@@ -1,4 +1,4 @@
-body,header,html, .carousel{height:60vw;width:100%}
+body,header,html, .carousel{height:80vw;width:100%}
 @font-face{font-family:CeraPro-Regular;src:url(../font/CeraPro-Regular.otf);font-display:swap}
 @media (max-width:850px) {
 .carousel,body,header,html{height:80vw;width:100%}
