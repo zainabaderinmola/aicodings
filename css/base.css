@@ -1,7 +1,7 @@
 body,header,html, .carousel{height:60vw;width:100%}
 @font-face{font-family:CeraPro-Regular;src:url(../font/CeraPro-Regular.otf);font-display:swap}
 @media (max-width:850px) {
-.carousel,body,header,html{height:100vh;width:100%;padding:0;top:0;left:0;margin:auto;z-index:11;box-sizing:border-box;display:flex;justify-content:center;}
+.carousel,body,header,html{height:80vw;width:100%}
 .carousel-item img{width:100%;height:100%}
 .logo .second{display:none}
 .spacing{display:none}
