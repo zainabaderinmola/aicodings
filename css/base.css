@@ -49,6 +49,7 @@ body{background-color: var(--bg-color);
 .view{width: 100%;height:100%;}
 .logo .second{display:none}
 .spacing{display:none}
+.heading .tag{margin-top:auto;}
 }
 @media (min-width:855px){
 .carousel,body,header,html,.view{height:100%;}
