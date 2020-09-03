@@ -2,7 +2,7 @@
     --bg-color:#011424;
     --font-color: #fff;
     --heading-color: grey;
-    --bg:url('https://images.unsplash.com/photo-1520881363902-a0ff4e722963?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80');
+    --bg:url('https://images.unsplash.com/photo-1590234703820-65e1f86ef8e8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1189&q=80');
     --hr-color: cyan;
     --button-color: #ff5e14;
     --strong-color: white;
@@ -52,11 +52,13 @@ body{background-color: var(--bg-color);
 .logo .second{display:none}
 .spacing{display:none}
 .heading .tag{margin-top:auto;}
+nav.navbar{top:0;}
 }
 @media (min-width:855px){
 .carousel,body,header,html,.view{height:100%;}
 .logo .first{display:none}
 .carousel-item img{width:100%;height:auto}
+nav.navbar{top:90%;}
 }
 @media (min-width:987px){
 .navbar:not(.top-nav-collapse){background:var(--fa-nav-color) !important}
@@ -222,11 +224,11 @@ ul{margin:0;padding:0}
 .heading{padding:0;top:0;left:0;margin:auto;box-sizing:border-box;display:block;justify-content: center;align-items: center;width:100%;height:100%;}
 nav.navbar{z-index:10}
 #loader{padding:0;top:0;left:0;margin:auto;z-index:11;box-sizing:border-box;display:flex;position:fixed;justify-content:center;background-color:#010114;align-items:center;width:100%;height:100vh}
-.Box{position:relative;width:100px;height:100px;transform-style:preserve-3d;transform-origin:center;transform:rotate(45deg);animation:Loading 1s linear infinite}
+.Box{position:relative;width:70px;height:70px;transform-style:preserve-3d;transform-origin:center;transform:rotate(45deg);animation:Loading 1s linear infinite}
 .Box span{position:absolute;width:50px;height:50px;animation:MyLoading 1s ease-in-out infinite}
 .Box span:first-of-type{left:0;top:0;background:#ff5e14}
 .Box span:nth-of-type(2){right:0;top:0;background:#0fb9b1}
-.Box span:nth-of-type(3){left:0;bottom:0;background:#bb8901}
+.Box span:nth-of-type(3){left:0;bottom:0;background:#ce7713;}
 .Box span:last-of-type{right:0;bottom:0;background:#00ff7f}
 @keyframes Loading {
 0%,100%,90%{width:100px;height:100px}
