@@ -55,7 +55,7 @@ body,header,html, .carousel{height:50vw;width:100%}
 body{font-family:CeraPro-Regular;font-weight:400;-webkit-font-smoothing:antialiased;}
 .theme-switch-wrapper{display:flex;align-items:center;align-content: center; position: sticky;position: -webkit-sticky;top:0;z-index:2;}
 em{margin-left:10px;font-size:1rem;}
-.theme-switch{display:inline-block;height:30px;position: relative;width:60px;left:45%;}
+.theme-switch{display:inline-block;height:30px;position: relative;width:60px;left:43%;}
 .theme-switch input{display:none;}
 .slider{background-color:black;border:2px solid white;bottom:0;cursor: pointer;left:0;position: absolute;right:0;top:0;transition:.4s;}
 .slider:before{background-color:white;
