@@ -214,7 +214,7 @@ ul{margin:0;padding:0}
 .footer-menu li a{font-size:14px;color:#878787}
 .img-holder img:hover{transform:scale(1.1);margin-bottom:2px}
 ::selection{background-color:#2d98da;color:#fff}
-.heading{padding:0;top:0;left:0;margin:auto;box-sizing:border-box;display:block;justify-content: center;align-items: center;width:100%;height:100vh;}
+.heading{padding:0;top:0;left:0;margin:auto;box-sizing:border-box;display:block;justify-content: center;align-items: center;width:100%;height:100%;}
 nav.navbar{z-index:10}
 #loader{padding:0;top:0;left:0;margin:auto;z-index:11;box-sizing:border-box;display:flex;position:fixed;justify-content:center;background-color:#010114;align-items:center;width:100%;height:100vh}
 .Box{position:relative;width:100px;height:100px;transform-style:preserve-3d;transform-origin:center;transform:rotate(45deg);animation:Loading 1s linear infinite}
