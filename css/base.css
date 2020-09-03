@@ -55,7 +55,7 @@ body{background-color: var(--bg-color);
 .logo .second{display:none}
 .carousel-item img{width:100%;height:auto}
 .navbar:not(.top-nav-collapse){background:#1c2331!important}
-.heading{top:0;left:0;margin:auto;}
+.heading{top:50%;left:0%;margin:auto;}
 }
 .heading{width:100%;margin:auto;}
 .view{background:linear-gradient(rgba(34, 32, 32, 0.5), rgba(14, 13, 13, 0.5)),var(--bg);background-repeat: no-repeat; background-size:cover; background-position: center;}
