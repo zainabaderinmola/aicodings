@@ -46,7 +46,7 @@
 					</div>
 				</a>
 				<!-- Collapse -->
-				<a href='#' class="navbar-toggler orange darken-4" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span>
+				<a href='#' class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span>
 				</a>
 				<!-- Links -->
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -84,6 +84,12 @@
 							</a>
 						</li>
 					</ul>
+					<div class='theme-switch-wrapper'>
+						<label class='theme-switch' for ='checkbox'>
+							<input type='checkbox' id='checkbox' />
+							<div class='slider round'></div>
+						</label>
+					</div>
 				</div>
 			</div>
 		</nav>
@@ -105,12 +111,6 @@
 							<h5 class="text-uppercase mb-2 white-text wow fadeInDown" style='font-weight: 900;' data-wow-delay="0.3s"><strong style='color:white;'>Web Designer & Developer</strong></h5>
 							<a href='https://wa.me/2349050562160' target="_blank" class="btn btn-orange white-text wow fadeInDown mb-2" data-wow-delay="0.3s" style='font-weight: 600;'>Contact Us<i class="fab fa-whatsapp white-text ml-2"></i></a>
 							<!-- <a class="btn btn-outline-white wow fadeInDown" data-wow-delay="0.3s"></a> -->
-							<div class='theme-switch-wrapper'style='justify-content:center;'>
-								<label class='theme-switch' for ='checkbox'>
-									<input type='checkbox' id='checkbox' />
-									<div class='slider round'></div>
-								</label>
-							</div>
 						</div>
 						<!--Grid column-->
 					</div>
@@ -669,6 +669,36 @@
 				</div>
 			</div>
 			<!-- Central Modal Medium Info-->
+			<!-- Button trigger modal -->
+			<button id="modalActivate" type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModalPreview">
+				Launch demo modal
+			</button>
+  			<!-- Modal for user preference -->
+			<div class="modal fade right" id="exampleModalPreview" tabindex="-1" role="dialog" aria-labelledby="exampleModalPreviewLabel" aria-hidden="true">
+				<div class="modal-dialog modal-side modal-top-right" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalPreviewLabel">How Do you want it?</h5>
+					<a class=button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true" style='font-size: 20px;font-weight:800;'>&times;</span>
+					</a>
+					</div>
+					<div class="modal-body">
+						<h4>Dark mode or Light Mode?</h4>
+						
+					</div>
+					<div class="modal-footer">
+						<div class='theme-switch-wrapper'style='justify-content:center;'>
+							<label class='theme-switch' for ='checkbox'>
+								<input type='checkbox' id='checkbox' />
+								<div class='slider round'></div>
+							</label>
+						</div>
+					</div>
+				</div>
+				</div>
+			</div>
+  <!-- Modal -->
 		</div>
 	</main>
 	<!--Main layout-->
@@ -836,7 +866,9 @@
 	<script type="text/javascript">
 		// Animations initialization
 		    new WOW().init();
-		    
+			$(document).ready(function () {
+            $("#exampleModalPreview").modal('show');
+        });
 		   $(window).on('load', function(){
 		     $("#loader").fadeOut("slow");
 		   });
@@ -861,10 +893,6 @@
 				   toggleSwitch.checked = true;
 			   }
 		   }
-		   // Tooltips Initialization
-$(function () {
-  $('[data-toggle="tooltip"]').tooltip()
-})
 	</script>
 	<noscript>Your browser does not support JavaScript</noscript>
 </body>

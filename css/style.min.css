@@ -4,6 +4,6 @@
 .carousel .carousel-inner,.carousel .carousel-inner .active,.carousel .carousel-inner .carousel-item,.view{height:100%}
 @media (max-width:776px){.carousel{height:100%}}
 .navbar{background-color:rgba(0,0,0,.8)}
-.page-footer,.top-nav-collapse{background-color:#0c111b}
+.page-footer,.top-nav-collapse{background-color:#1b150c}
 @media only screen and (max-width:768px){.navbar{background-color:rgba(#1C2331}}
 
