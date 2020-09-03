@@ -2,11 +2,14 @@
     --bg-color:#011424;
     --font-color: #fff;
     --heading-color: grey;
+    --bg:url(../img/aicodings22.webp);
 }
 [data-theme='dawn']{
-    --bg-color:#fff;
+    --bg-color:rgb(233, 233, 233);
     --font-color: #011424;
     --heading-color: #010f1b;
+    --strong:#010f1b;
+    --bg:url(../img/aicodings8.webp);
 }
 body{background-color: var(--bg-color);
     color: var(--font-color);}
@@ -25,6 +28,7 @@ body,header,html, .carousel{height:50vw;width:100%}
 .carousel-item img{width:100%;height:auto}
 .navbar:not(.top-nav-collapse){background:#1c2331!important}
 }
+.view{background-image: var(--bg);background-repeat: no-repeat; background-size: cover; background-position: center center;}
 .logo{padding:0 10px;margin-left:-20px}
 .logo .first{background-color:#fff;padding:2px 10px;font-weight:900;color:#010e1b}
 .logo .second{color:#fff;background-color:#010e1b;padding:5px 10px}
