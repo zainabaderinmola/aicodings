@@ -12,6 +12,7 @@
     --button-color2:black;
     --button-color3:#011424;
     --card-color: #010e1b;
+    --fa-button: cyan;
 }
 [data-theme='dawn']{
     --bg-color:white;
@@ -27,6 +28,10 @@
     --font-weight: 600;
     --button-color2: black;
     --card-color: black;
+    --fa-button: #ff5e14;
+}
+section.choose .fas{
+    color:var(--fa-button);
 }
 hr{border-top:1px solid var(--hr-color);}
 strong{color:var(--strong-color);}
@@ -55,7 +60,7 @@ body,header,html, .carousel{height:50vw;width:100%}
 body{font-family:CeraPro-Regular;font-weight:400;-webkit-font-smoothing:antialiased;}
 .theme-switch-wrapper{display:flex;align-items:center;align-content: center; position: sticky;position: -webkit-sticky;top:0;z-index:2;}
 em{margin-left:10px;font-size:1rem;}
-.theme-switch{display:inline-block;height:30px;position: relative;width:60px;left:43%;}
+.theme-switch{display:inline-block;height:30px;position: relative;width:60px;left:45%;}
 .theme-switch input{display:none;}
 .slider{background-color:black;border:2px solid white;bottom:0;cursor: pointer;left:0;position: absolute;right:0;top:0;transition:.4s;}
 .slider:before{background-color:white;
@@ -83,7 +88,7 @@ h1{letter-spacing:8px}
 .tiles .tile:focus .info,.tiles .tile:hover .info{-webkit-transition-delay:.25s;transition-delay:.25s;z-index:1}
 .info h5{padding:15px 10px;background-color:#011424;color:#fff;text-align:center;box-shadow:0 4px 8px 0 rgba(0,0,0,.5)}
 .info h5:hover{background-color:#ff5e14}
-.feature-title{font-weight:900;font-size:large}
+.feature-title{font-weight:900;font-size:22px;}
 .btn-flip{opacity:1;outline:0;color:#fff;line-height:40px;margin-top:5px;position:relative;text-align:center;letter-spacing:1px;display:block;text-decoration:none;font-family:'Open Sans';text-transform:uppercase}
 .btn-flip:hover:after{opacity:1;-webkit-transform:translateY(0) rotateX(0);transform:translateY(-100%) rotateX(100%)}
 .btn-flip:hover:before{opacity:0;-webkit-transform:translateY(50%) rotateX(90deg);transform:translateY(50%) rotateX(90deg)}
