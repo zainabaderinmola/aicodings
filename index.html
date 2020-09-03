@@ -87,7 +87,8 @@
 				<div class='theme-switch-wrapper'>
 					<label class='theme-switch' for ='checkbox'>
 						<input type='checkbox' id='checkbox' />
-						<div class='slider round'></div>
+						<a  tabindex="0" class='slider round' data-toggle="popover" data-trigger="focus" title='For User Ease: Try it' 
+						data-content="And here's some amazing user experience. Which do you prefer Dark or Light?"></a>
 					</label>
 				</div>
 			</div>
@@ -836,12 +837,18 @@
 	<script type="text/javascript">
 		// Animations initialization
 		    new WOW().init();
-			$(document).ready(function () {
-            $("#exampleModalPreview").modal('show');
-        });
+			
 		   $(window).on('load', function(){
 		     $("#loader").fadeOut("slow");
 		   });
+		   // popovers Initialization
+$(function () {
+$('[data-toggle="popover"]').popover('show')
+})
+
+$('.popover-dismiss').popover({
+trigger: 'focus'
+})
 		   // Toggle button
 		   const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
 		   function switchTheme(e) {
