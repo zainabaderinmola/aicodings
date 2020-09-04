@@ -2,7 +2,7 @@
     --bg-color:#011424;
     --font-color: #fff;
     --heading-color: grey;
-    --bg:url('../img/aicodings25.webp');
+    --bg:url('../img/aicodings23.webp');
     --hr-color: cyan;
     --button-color: #ff5e14;
     --strong-color: white;
@@ -58,6 +58,7 @@ body{background-color: var(--bg-color);
 .logo .first{display:none}
 .carousel-item img{width:100%;height:auto}
 }
+.navbar{background-color:var(--fa-nav-color);}
 @media (min-width:987px){
 .navbar:not(.top-nav-collapse){background:var(--fa-nav-color) !important}
 .heading .tag{margin-top:auto;}
@@ -80,7 +81,8 @@ input:checked + .slider:before{transform: translate(37px);background-color:#cc66
     border-radius: 50%;
 }
 h1{letter-spacing:8px}
-.hr-light{border-top:3px solid #cc6606;width:80px}
+.btn-contact {background-color:var(--fa-nav-color);}
+.hr-light{border-top:3px solid var(--fa-nav-color);width:80px}
 .tiles .tile{display:inline-block;margin:10px;text-align:left;opacity:.99;overflow:hidden;position:relative;border-radius:3px;box-shadow:0 0 20px 0 rgba(0,0,0,.05)}
 .tiles .tile:before{content:'';background:-webkit-gradient(linear,left top,left bottom,from(rgba(0,0,0,0)),to(rgba(0,0,0,.7)));background:linear-gradient(to bottom,rgba(0,0,0,0) 0,rgba(0,0,0,.7) 100%);width:100%;height:50%;opacity:0;position:absolute;top:100%;left:0;z-index:2;-webkit-transition-property:top,opacity;transition-property:top,opacity;-webkit-transition-duration:.3s;transition-duration:.3s}
 .tiles .tile img{display:block;max-width:100%;backface-visibility:hidden;-webkit-backface-visibility:hidden}
