@@ -2,7 +2,7 @@
     --bg-color:#011424;
     --font-color: #fff;
     --heading-color: grey;
-    --bg:url('https://images.unsplash.com/photo-1590234703820-65e1f86ef8e8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1189&q=80');
+    --bg:url('../img/aicodings25.webp');
     --hr-color: cyan;
     --button-color: #ff5e14;
     --strong-color: white;
@@ -52,13 +52,11 @@ body{background-color: var(--bg-color);
 .logo .second{display:none}
 .spacing{display:none}
 .heading .tag{margin-top:auto;}
-nav.navbar{top:0;}
 }
 @media (min-width:855px){
 .carousel,body,header,html,.view{height:100%;}
 .logo .first{display:none}
 .carousel-item img{width:100%;height:auto}
-nav.navbar{top:90%;}
 }
 @media (min-width:987px){
 .navbar:not(.top-nav-collapse){background:var(--fa-nav-color) !important}
