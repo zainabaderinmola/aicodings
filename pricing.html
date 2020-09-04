@@ -8,15 +8,11 @@
   <title>aicodings Inc.</title>
   <link rel='shortcut icon' type='image/png' href="img/favicon-96x96.png">
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
-  <link
-    href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&family=Nunito:wght@300&family=Playfair+Display&family=Slabo+27px&display=swap"
-    rel="stylesheet">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Astloch:wght@700&family=MuseoModerno&family=Righteous&display=swap"
-    rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Overlock&display=swap" rel="stylesheet">
-  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preload" href="/font/CeraPro-Regular.otf" as="style">
+	  <link rel="preload" href="/font/CeraPro-Medium.otf"  as="style">
+	<link rel="stylesheet" href="fontawesome/css/all.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+   <link href="css/bootstrap.min.css" rel="stylesheet">
   <!-- Material Design Bootstrap -->
   <link href="css/mdb.min.css" rel="stylesheet">
   <!-- Your custom styles (optional) -->
@@ -32,95 +28,86 @@
         <span></span>
       </div>
     </div>
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
-        <div class="container-fluid">
-    
-          <!-- Brand -->
-          <a class="navbar-brand" href="index.html">
-    
-            <div class='logo'>
-              <div class='first d-inline-block'>
-                <h1 class='first' style='font-family: Righteous, cursive;'>a</h1>
-              </div>
-              <div class='second d-inline-block'>
-                <h2 class='second' style='font-family: Righteous, cursive;'>aicodings inc.</h2>
-              </div>
-            </div>
-          </a>
-    
-          <!-- Collapse -->
-          <a href='#' class="navbar-toggler orange darken-4" type="button" data-toggle="collapse"
-            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </a>
-    
-          <!-- Links -->
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    
-            <!-- Left -->
-            <ul class="navbar-nav px-5 mx-auto">
-              <li class="nav-item ">
-                <a class="nav-link" href="index.html">Home
-                  <span class="sr-only">(current)</span>
-                </a>
-              </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="#pricing">Pricing</a>
-              </li>
-              <li class="nav-item"> <a class="nav-link" data-toggle="modal" data-target="#ModalWarning" href="#">About Us</a>
-              </li>
-              <li class="nav-item"> <a class="nav-link" data-toggle="modal" data-target="#modalContactForm" href="#">Get In Touch</a>
-              </li>
-              <li class="nav-item"> <a class="nav-link" data-toggle="modal" data-target="#sideModalTLInfo" href="#">Tech News</a>
-              </li>
-            </ul>
-    
-            <!-- Right -->
-            <ul class="navbar-nav nav-flex-icons px-5 mx-auto">
-              <li class="nav-item">
-                <a href="https://www.facebook.com/aicodings.inc" class="nav-link" target="_blank">
-                  <i class="fab fa-facebook-f fa-lg"></i>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="https://twitter.com/AILagundoye" class="nav-link" target="_blank">
-                  <i class="fab fa-twitter fa-lg"></i>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="https://gitlab.com/Aifedayo" class="nav-link" target="_blank">
-                  <i class="fab fa-gitlab fa-lg"></i>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="https://github.com/zainabaderinmola" class="nav-link" target="_blank">
-                  <i class="fab fa-github fa-lg mr-2"></i>
-                </a>
-              </li>
-            </ul>
-    
-          </div>
-    
-        </div>
-    </nav>
-    <!--Carousel Wrapper-->
-    <div class="view" style="background-image: url('img/aicodings21.webp'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+    <!-- Navbar -->
+		<nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+			<div class="container-fluid">
+				<!-- Brand -->
+				<a class="navbar-brand" href="index.html">
+					<div class='logo'style='margin:-10px 0;'>
+						<div class='first d-inline-block'>
+							<h1 class='first' style='font-family: Righteous, cursive;'>a</h1>
+						</div>
+						<div class='second d-inline-block'>
+							<h2 class='second' style='font-family: Righteous, cursive;'>aicodings inc.</h2>
+						</div>
+					</div>
+				</a>
+				<!-- Collapse -->
+				<a href='#' class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span>
+				</a>
+				<!-- Links -->
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<!-- Left -->
+					<ul class="navbar-nav mx-auto">
+						<li class="nav-item"> <a class="nav-link" href="index.html">Home
+              				<span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item"> <a class="nav-link" data-toggle="modal" data-target="#ModalWarning" href="#">About Us</a>
+						</li>
+						<li class="nav-item"> <a class="nav-link" data-toggle="modal" data-target="#modalContactForm" href="#">Get In Touch</a>
+						</li>
+						<li class="nav-item active"> <a class="nav-link" href="pricing.html">Pricing</a>
+						</li>
+						<li class="nav-item"> <a class="nav-link" data-toggle="modal" data-target="#sideModalTLInfo" href="#">Tech News</a>
+						</li>
+					</ul>
+					<!-- Right -->
+					<ul class="navbar-nav nav-flex-icons px-2 mx-auto">
+						<li class="nav-item">
+							<a href="https://www.facebook.com/aicodings.inc" class="nav-link" target="_blank"> <i class="fab fa-facebook-f fa-lg"></i>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="https://twitter.com/AILagundoye" class="nav-link" target="_blank"> <i class="fab fa-twitter fa-lg"></i>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="https://gitlab.com/Aifedayo" class="nav-link" target="_blank"> <i class="fab fa-gitlab fa-lg"></i>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="https://github.com/zainabaderinmola" class="nav-link" target="_blank"> <i class="fab fa-github fa-lg"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class='theme-switch-wrapper'>
+					<label class='theme-switch' for ='checkbox'>
+						<input type='checkbox' id='checkbox' />
+						<div class='slider round' data-toggle="popover" data-trigger="focus" title='For User Ease: Try it pls' 
+						data-content="And here's an amazing user experience. Which do you prefer Dark or Light?"></div>
+					</label>
+				</div>
+			</div>
+		</nav>
+		<!-- Navbar -->
+		<div class="view" style='background:linear-gradient(rgba(34, 32, 32, 0.5), rgba(10, 9, 9, 0.5)),url("img/aicodings28.webp");background-repeat: no-repeat;background-size: cover;background-position: center;'>
 			<!-- Mask & flexbox options-->
-			<div class="mask rgba-black-strong align-items-center">
+			<div class="mask align-items-center">
 				<!-- Content -->
 				<div class="container">
 					<!--Grid row-->
 					<div class="row">
 						<!--Grid column-->
-						<div class="col-md-12 mb-5 my-auto white-text text-center">
-							<hr>
-							<h1 class="h1-reponsive white-text font-weight-bold mb-0 mt-md-5 pt-md-5 pt-5 wow fadeInDown" data-wow-delay="0.3s">
-              <strong style='font-family:Righteous, cursive; letter-spacing: 1px; color: white;'>aicodings inc.</strong></h1>
-							<hr class="hr-light my-4 wow fadeInDown" data-wow-delay="0.3s">
-							<h5 class="text-uppercase mb-3 white-text wow fadeInDown" style='font-weight: 900;' data-wow-delay="0.3s"><strong>Web Designer & Developer</strong></h5>
-							<a class="btn btn-outline-orange white-text wow fadeInDown" data-wow-delay="0.3s" style='font-weight: 600;'>Contact Us</a>
-							<!-- <a class="btn btn-outline-white wow fadeInDown" data-wow-delay="0.8s">Contact Us</a> -->
+						<div class="heading col-md-12 mb-5 mt-5 white-text text-center">
+							<div class='tag'><h1 class='h1 font-weight-bolder mt-md-5 mb-0 pt-md-5 pt-5' style='font-family:CeraPro-Medium;letter-spacing: -2px;margin-top:30px;font-weight:900;font-size:3.5rem;'>Do you need a Website?</h1></div>
+							<h1 class="h1 company-name font-weight-bold mb-0  wow fadeInDown" data-wow-delay="0.3s">@
+							  <strong style='font-family:Righteous, cursive; letter-spacing: 1px; color: white;'>aicodings inc.</strong></h1>
+							  <h5>We will design according to your specs and needs</h5>
+							<hr class="hr-light mt-4 wow fadeInDown" data-wow-delay="0.3s">
+							<h5 class="text-uppercase mb-2 white-text wow fadeInDown" style='font-weight: 900;' data-wow-delay="0.3s"><strong style='color:white;'>Web Designer & Developer</strong></h5>
+							<a href='https://wa.me/2349050562160' target="_blank" class="btn btn-contact white-text wow fadeInDown mb-2" data-wow-delay="0.3s" style='font-weight: 600;'>Contact Us<i class="fab fa-whatsapp white-text ml-2"></i></a>
+							<!-- <a class="btn btn-outline-white wow fadeInDown" data-wow-delay="0.3s"></a> -->
 						</div>
 						<!--Grid column-->
 					</div>
@@ -130,7 +117,6 @@
 			</div>
 			<!-- Mask & flexbox options-->
 		</div>
-    <!--Carousel Wrapper-->
     <section class='my-5' id='pricing' >
       <div class="container-fluid features-small mt-5 wow fadeIn">
         <div class='container mb-2'>
@@ -225,7 +211,6 @@
             </ul>
           </div>
         </div>
-        <hr class='mb-4'>
         <div class="tab-content" id="pills-tabContent">
           <!-- starter version -->
           <div class="tab-pane fade show active" id="pills-starter" role="tabpanel" aria-labelledby="pills-starter-tab">
