@@ -121,6 +121,9 @@
 			<!-- Mask & flexbox options-->
 		</div>
 	</header>
+	<div id='top' style='box-shadow:0 4px 8px rgba(0,0,0,0.5);width:50px;padding:7px;text-align: center;border-radius: 50%; height:50px'>
+		<a href='#'><i class='fas fa-arrow-up fa-2x' style='color:white;font-weight:900;'></i></a>
+	</div>
 	<!--Main layout-->
 	<main>
 		<div class="container-fluid">
@@ -870,6 +873,10 @@
 				   toggleSwitch.checked = true;
 			   }
 		   }
+		   var scroll = document.getElementById("top")
+		   window.addEventListener("scroll", function(){
+			   scroll.style.transform = "rotate("+window.pageYOffset+"deg)";
+		   })
 	</script>
 	<noscript>Your browser does not support JavaScript</noscript>
 </body>

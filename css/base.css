@@ -1,3 +1,4 @@
+* {scroll-behavior: smooth;}
 :root{
     --bg-color:#011424;
     --font-color: #fff;
@@ -13,7 +14,7 @@
     --button-color3:#011424;
     --card-color: #010e1b;
     --fa-button: cyan;
-    --fa-nav-color: #010d18;
+    --fa-nav-color: rgba(1, 2, 24, 0.9);
     --tag-color: orange;
 }
 [data-theme='dawn']{
@@ -31,7 +32,7 @@
     --button-color2: black;
     --card-color: #011424;
     --fa-button: #011424;
-    --fa-nav-color: #ce7713;
+    --fa-nav-color: rgba(185, 101, 5, 0.9);
     --tag-color: white;
 }
 
@@ -83,6 +84,7 @@ input:checked + .slider:before{transform: translate(30px); box-shadow: none; bot
 .slider.round:before {
     border-radius: 50%;
 }
+#top{position:fixed;bottom:20px;right:20px;z-index:10;background:var(--fa-nav-color);}
 h1{letter-spacing:8px}
 .btn-contact {background-color:var(--fa-nav-color);}
 .hr-light{border-top:3px solid var(--fa-nav-color);width:80px}
