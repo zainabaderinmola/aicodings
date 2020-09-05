@@ -41,7 +41,7 @@ section .fas, section .fab, section .far{
 }
 hr{border-top:1px solid var(--hr-color);}
 strong{color:var(--strong-color);}
-.company-name{color:var(--button-color);}
+
 p{color:var(--p-color);font-weight:var(--font-weight);}
 body{background-color: var(--bg-color);
     color: var(--font-color);}
