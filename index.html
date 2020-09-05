@@ -177,7 +177,10 @@
 									<p class="card-text" style='font-weight:400; font-size: 17px;'>Dynamic web applications. Social networking sites, E-commerce. HTML5, CSS3, Bootstrap, Django, JavaScript, MySQL.</p>
 									<!-- Button -->
 									<div class='btn-cont mt-5'>
-										<button class='btn'>Learn More <span class='line-1'></span>
+										<button class='btn' data-toggle="tooltip" title='Web development can range from developing a simple single static page of plain text to complex Web-based Internet applications (Web apps),
+										 electronic businesses, and social network services. A more comprehensive list of tasks to which Web development commonly refers, may include Web engineering,
+										  Web design, Web content development, client liaison, client-side/server-side scripting, Web server and network security configuration, and e-commerce development.
+										  (wikipedia)' data-placement="bottom">Learn More <span class='line-1'></span>
 											<span class='line-2'></span>
 											<span class='line-3'></span>
 											<span class='line-4'></span>
@@ -205,11 +208,11 @@
 									<p class="card-text" style='font-weight:400; font-size: 17px;'> Logo creation, Interface design, Illustration, Animations, Graphics Design</p>
 									<!-- Button -->
 									<div class='btn-cont mt-5'>
-										<button class='btn'>Learn More <span class='line-1'></span>
+										<a href='https://wa.me/2349050562160' target="_blank"><button class='btn'>Learn More <span class='line-1'></span>
 											<span class='line-2'></span>
 											<span class='line-3'></span>
 											<span class='line-4'></span>
-										</button>
+										</button></a>
 									</div>
 								</div>
 							</div>
@@ -232,7 +235,11 @@
 									<p class="card-text" style='font-weight:400; font-size: 17px;'> Email marketing, pay-per-click advertising, social media marketing, blogging, UX</p>
 									<!-- Button -->
 									<div class='btn-cont mt-5'>
-										<button class='btn'>Learn More <span class='line-1'></span>
+										<button class='btn' data-toggle="tooltip" title='Basically, digital marketing refers to any online marketing efforts or assets. 
+										Email marketing, pay-per-click advertising, social media marketing and even 
+										blogging are all great examples of digital marketing—they help introduce 
+										people to your company and convince them to buy.
+										(disruptive advertising)' data-placement="bottom">Learn More <span class='line-1'></span>
 											<span class='line-2'></span>
 											<span class='line-3'></span>
 											<span class='line-4'></span>
@@ -873,11 +880,10 @@
 // $(function () {
 // $('[data-toggle="popover"]').popover('show')
 // })
-
-// $('.popover-dismiss').popover({
-// trigger: 'focus'
-// })
-		   // Toggle button
+// Tooltips Initialization
+			$(function () {
+  			$('[data-toggle="tooltip"]').tooltip()
+			})
 		   const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
 		   function switchTheme(e) {
 				if (e.target.checked){
