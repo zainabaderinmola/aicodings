@@ -669,9 +669,38 @@
 					<!--/.Content-->
 				</div>
 			</div>
-			<!-- Central Modal Medium Info-->
-			<!-- Button trigger modal -->
-		</div>
+			<!-- Toggle Modal Danger Alert-->
+			<div class="modal fade right" id="ModalDanger" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+			aria-hidden="true">
+			<div class="modal-dialog modal-notify modal-danger modal-bottom modal-bottom-right" role="document">
+			<!--Content-->
+			<div class="modal-content">
+				<!--Header-->
+				<div class="modal-header">
+				<p class="heading">UX Alert</p>
+
+				<span type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true" class="white-text">&times;</span>
+				</span>
+				</div>
+
+				<!--Body-->
+				<div class="modal-body">
+					<div class="col-12">
+					<p style='color:#011424;font-weight:900;'>Hello there, for best user experience, use the button at the top right corner to toggle between dark and light mode.</p></div>
+				</div>
+
+				<!--Footer-->
+				<div class="modal-footer justify-content-center">
+				<a type="button" class="btn btn-danger waves-effect" data-dismiss="modal">No, thanks</a>
+				</div>
+			</div>
+			<!--/.Content-->
+			</div>
+			</div>
+			<!-- Central Modal Danger Demo-->
+			
+			</div>
 	</main>
 	<!--Main layout-->
 	<!-- Preloading loader -->
@@ -842,6 +871,9 @@
 		   $(window).on('load', function(){
 		     $("#loader").fadeOut("slow");
 		   });
+		   $(document).ready(function () {
+            $("#ModalDanger").modal('show');
+        });
 		   // popovers Initialization
 // $(function () {
 // $('[data-toggle="popover"]').popover('show')
