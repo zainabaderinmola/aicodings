@@ -102,7 +102,7 @@ h1{letter-spacing:8px}
 .tiles .tile:focus .info,.tiles .tile:hover .info{-webkit-transition-delay:.25s;transition-delay:.25s;z-index:1}
 .info h5{padding:15px 10px;background-color:#011424;color:#fff;text-align:center;box-shadow:0 4px 8px 0 rgba(0,0,0,.5)}
 .info h5:hover{background-color:#ff5e14}
-.feature-title{font-weight:900;font-size:22px;}
+.feature-title{font-weight:900;font-size:20px;}
 .btn-flip{opacity:1;outline:0;color:#fff;line-height:40px;margin-top:5px;position:relative;text-align:center;letter-spacing:1px;display:block;text-decoration:none;font-family:'Open Sans';text-transform:uppercase}
 .btn-flip:hover:after{opacity:1;-webkit-transform:translateY(0) rotateX(0);transform:translateY(-100%) rotateX(100%)}
 .btn-flip:hover:before{opacity:0;-webkit-transform:translateY(50%) rotateX(90deg);transform:translateY(50%) rotateX(90deg)}
