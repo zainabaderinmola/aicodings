@@ -22,7 +22,7 @@
     --font-color: #011424;
     --heading-color: #010f1b;
     --strong:#010f1b;
-    --bg:url('../img/aicodings27.webp');
+    --bg:url('https://images.unsplash.com/photo-1477327070293-75f15e291bb0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80');
     --hr-color: black;
     --button-color: #ff5e14;
     --button-color1: #ff5e14;
@@ -32,7 +32,7 @@
     --button-color2: black;
     --card-color: #011424;
     --fa-button: #011424;
-    --fa-nav-color: #ff5e14;
+    --fa-nav-color: #116ebf;
     --tag-color: white;
 }
 
@@ -79,7 +79,7 @@ em{margin-left:10px;font-size:1rem;}
 .slider{background-color:white;border:2px solid 0;bottom:4px;cursor: pointer;left:0;position: absolute;right:0;top:0;transition:.4s;}
 .slider:before{background-color:transparent;  box-shadow:-6px 3px 0 3px #011424; bottom:7px;content: "";height: 18px;left:10px;position: absolute; transition:.4s;width:18px;}
 input:checked + .slider{background-color:white;}
-input:checked + .slider:before{transform: translate(30px); box-shadow: none; bottom: 4px; background-color:#ff5e14;}
+input:checked + .slider:before{transform: translate(30px); box-shadow: none; bottom: 4px; background-color:var(--fa-nav-color);}
 .slider.round{border-radius:34px;}
 .slider.round:before {
     border-radius: 50%;
