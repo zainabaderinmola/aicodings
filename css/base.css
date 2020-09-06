@@ -281,7 +281,7 @@ nav.navbar{z-index:10}
     text-align: center;
     background-color:var(--fa-nav-color);
     color:white;
-    height: 10vh;
+    padding:5px;
     line-height: 2.6;
   }
   
