@@ -36,10 +36,11 @@
     --fa-nav-color: #116ebf;
     --tag-color: white;
 }
-
+.single-cta .fas, .single-cta .fab{color:var(--button-color);}
 section .fas, section .fab, section .far{
     color:var(--fa-button);
 }
+.title{color:var(--button-color);}
 hr{border-top:1px solid var(--hr-color);}
 strong{color:var(--strong-color);}
 
@@ -233,8 +234,8 @@ nav.navbar{z-index:10}
 .Box{position:relative;width:70px;height:70px;transform-style:preserve-3d;transform-origin:center;transform:rotate(45deg);animation:Loading 1s linear infinite}
 .Box span{position:absolute;width:50px;height:50px;animation:MyLoading 1s ease-in-out infinite}
 .Box span:first-of-type{left:0;top:0;border:4px solid #ff5e14; border-radius:9px;}
-.Box span:nth-of-type(2){right:0;top:0;border:4px solid #0fb9b1; border-radius:9px;}
-.Box span:nth-of-type(3){left:0;bottom:0;border:4px solid red; border-radius:9px;}
+.Box span:nth-of-type(2){right:0;top:0;border:4px solid cyan; border-radius:9px;}
+.Box span:nth-of-type(3){left:0;bottom:0;border:4px solid orange; border-radius:9px;}
 .Box span:last-of-type{right:0;bottom:0;border:4px solid #00ff7f; border-radius: 9px;}
 @keyframes Loading {
 0%,100%,90%{width:100px;height:100px}
