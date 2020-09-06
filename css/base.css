@@ -47,7 +47,7 @@ strong{color:var(--strong-color);}
 p{color:var(--p-color);font-weight:var(--font-weight);}
 body{background-color: var(--bg-color);
     color: var(--font-color);}
-.card-body{background-color:var(--card-color);}
+.card-body{background-color:var(--card-color); box-shadow: 0 20px 30px rgba(0, 0, 0, 0.6);}
 /* body,header,html, .carousel{height:100%;width:100%} */
 @font-face{font-family:CeraPro-Regular;src:url(../font/CeraPro-Regular.otf);font-display:swap}
 @font-face{font-family:CeraPro-Medium;src:url(../font/Cera\ Pro\ Medium.otf );font-display:swap}
@@ -245,3 +245,53 @@ nav.navbar{z-index:10}
 0%{transform:rotate(0)}
 100%{transform:rotate(90deg)}
 }
+
+.container {
+    display: -webkit-box;
+   
+    width: 100%;
+    /* padding: 4% 2%; */
+    box-sizing: border-box;
+    /* height: 100vh; */
+  }
+  
+  .box {
+    -webkit-box-flex: 1;
+            flex: 1;
+    overflow: hidden;
+    -webkit-transition: .5s;
+    transition: .5s;
+    margin: 0 2%;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.6);
+    line-height: 0;
+  }
+  
+  .box > img {
+    width: 200%;
+    height: calc(100% - 10vh);
+    -o-object-fit: cover;
+       object-fit: cover;
+    -webkit-transition: .5s;
+    transition: .5s;
+  }
+  
+  .box > span {
+    font-size: 1.2rem;
+    display: block;
+    text-align: center;
+    background-color:var(--fa-nav-color);
+    color:white;
+    height: 10vh;
+    line-height: 2.6;
+  }
+  
+  .box:hover {
+    -webkit-box-flex: 1;
+            flex: 1 1 50%;
+  }
+  
+  .box:hover > img {
+    width: 100%;
+    height: 100%;
+  }
+  
