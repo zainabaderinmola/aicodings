@@ -63,11 +63,11 @@ body{background-color: var(--bg-color);
 .carousel,body,header,html,.view{height:100%;}
 .logo .first{display:none}
 .carousel-item img{width:100%;height:auto}
+.heading{margin-top:50vh;}
 }
 .navbar{background-color:var(--fa-nav-color);}
 @media (min-width:987px){
 .navbar:not(.top-nav-collapse){background:var(--fa-nav-color) !important}
-.heading .tag{margin-top:auto;}
 }
 .view{background:linear-gradient(rgba(34, 32, 32, 0.5), rgba(10, 9, 9, 0.5)),var(--bg);background-repeat: no-repeat; background-size:cover; background-position: center;}
 .logo{padding:0 10px;margin-left:-20px}
